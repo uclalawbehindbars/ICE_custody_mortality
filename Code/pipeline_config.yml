@@ -1,0 +1,966 @@
+foia2003-2017:
+  src:
+    path: "Data/Raw/foia2003-2017.csv"
+    args:
+      col_types: cccccccccccccc
+  corrections_index: alien_name
+  corrections:
+    "GONZALEZ_BAEZ,\nCESAR":
+      alien_name: Cesar Gonzalez-Baez
+    "NAND, MAYA\n(AKA NARID,\nMAYA)":
+      alien_name: Maya Nand (AKA Maya Narid)
+      location_of_death: "St. Mary's Hospital, Tucson, AZ"
+    "CARLOS, TIOMBE\nKIMANA":
+      alien_name: Tiombe Kimana Carlos
+      location_of_death: York County Prison, York, PA
+    "GARCIA‐\nMALDANADO,\nJORGE":
+      alien_name: Jorge Garcia Maldonado
+    "NEGUSSE, HULUF":
+      alien_name: Huluf Guangule Negusse
+    "CRUZ ‐SILVA,\nARNOLDO":
+      alien_name: Arnoldo Cruz-Silva
+    "NEWBOROUGH,\nGUIDO":
+      alien_name: Guido Newbrough
+      date_of_death: 11-27-2008 # dod confirmed 11/27, not 28 as foia docs indicate
+    "ARELLANO,\nVICTOR":
+      alien_name: Victoria Arellano  # Victoria was a transgender woman, foia files misgender her as "Victor" (dead name)
+      sex: F
+    "CARLOS‐CORTEZ,\nRAUDEL":
+      alien_name: Carlos Cortez-Raudel
+    "DELAPAZ,\nEDUARDO": 
+      alien_name: Eduardo DeLaPaz
+    "ENRIQUEZ‐\nBETANCOURT, N": 
+      alien_name: N. Enriquez-Betancourt
+    "JIMINEZ‐Joseph,\nJean Carlos\nAlfonso": 
+      alien_name: Jeancarlo Alfonso Jimenez Joseph
+      location_of_death: Phoebe Sumter Medical Center, Americus, Georgia  # add full hospital name
+    "JOSHUA‐Toyin,\nOlubunmi": 
+      alien_name: Olubunmi Toyin Joshua
+    "Leonardo LEMUS‐\nRajo, Jose": 
+      alien_name: Jose Leonardo Lemus Rajo
+    "GARCIA‐\nHERNADEZ, JUAN": 
+      alien_name: Juan Garcia Hernandez
+    "AZURDIA‐\nHERNANDEZ,\nJOSE MANUEL":
+      date_of_death: 12-24-2015  # Press release gives 12/23, but DDR says 12/24
+      location_of_death: St. Mary Medical Center, Apple Valley, California
+    DANTICA, JOSEPH:
+      date_of_death: 11-03-2004
+    CARELA, Santo:
+      location_of_death: Orange Regional Medical Center Middletown, New York  # fix spelling error
+    "NAVARRETTE‐\nQUINTANA,\nMARCOS":
+      location_of_death: "University of Colorado Memorial Hospital\nColorado Springs, CO"  # per press release
+    "TAVAREZ, PEDRO\nJUAN":
+      location_of_death: Brigham & Women's Hospital, Boston, MA  # fix spelling error
+    BARNETT, EDWIN:
+      location_of_death: Brigham & Women's Hospital, Boston, MA  # fix spelling error
+    SMITH, GLASTON:
+      location_of_death: Centro Medico Hospital, Rio Piedras, Puerto Rico  # per press release
+    GUO, QI GEN:
+      location_of_death: Lock Haven Hospital, Lock Haven, PA  # per press release
+    "GOMEZ‐\nVASQUEZ,\nERNESTO":
+      location_of_death: Kindred Rehabilitation Hospital, Los Angeles, CA  # per press release
+    SINGH, JAMER:
+      location_of_death: Lerdo Pretrial Facility, Bakersfield, CA  # fix spelling error
+    "RODRIGUEZ\nCASTRO, WALTER":
+      location_of_death: Kern County Jail (Lerdo), Bakersfield, CA  # fix spelling error
+    "GARCIA‐MEJIA,\nGEOVANNY":
+      location_of_death: Newton County Correctional Center, Newton, TX  # normalize name
+    "ROSELL SIERRA,\nJOSE":
+      location_of_death: Fort Worth Federal Medical Center, Fort Worth, TX  # fix spelling error
+    "RUIZ‐TABARES,\nERVIN":
+      location_of_death: Guaynabo Metropolitan Detention Center, San Juan, Puerto Rico  # Expand abbreviation
+    "CACERES‐\nMaradiaga,\nVicente":
+      location_of_death: Adelanto Detention Facility, Adelanto, California
+    "ROCKWELL,\nPETER GEORGE\nCARLYSLE":
+      location_of_death: Memorial Hermann Northeast Hospital, Humble, Texas
+    "MPONDA,\nCLEMENTE\nNTANGOLA":
+      location_of_death: Memorial Hermann Northeast Hospital, Humble, Texas
+    "SARABIA‐\nORTEGA, MIGUEL\nANGEL":
+      location_of_death: Desert Springs Hospital, Las Vegas, Nevada
+    "MILITEC, AMRA":
+      alien_name: Amra Miletic
+    "CALDERON‐De\nHildago, Raquel":
+      alien_name: Raquel Calderon De Hidalgo
+    "SATKUNES‐\nWARAN,\nKANDIAH":
+      alien_name: Kandiah Satkuneswaran
+  mutations:
+    alien_name: "clean_name(alien_name)"
+    date_of_birth: "mdy(date_of_birth)"
+    date_of_death: "mdy(date_of_death)"
+    death_year: "year(date_of_death)"
+    country_of_birth: "str_to_title(country_of_birth)"
+    location_of_death: "expand_state(location_of_death)"
+    death_location_validation: "str_replace_all(location_of_death, '[^A-Za-z]', '')"
+  renamings:
+    name: alien_name
+    dod: date_of_death
+    dob: date_of_birth
+    detention_center: location_of_last_detention
+    gender: sex
+bbdp_ice_deaths:
+  src:
+    path: https://docs.google.com/spreadsheets/d/1Zwpt9Uk2xJDX91rJ9f_s4zlSab4i8CaYW1E3FrogWjI/edit?usp=sharing
+    args:
+      col_types: cccccccccccccccccccccccccccc
+      sheet: 1. Master Data Set
+  corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
+  corrections:
+    Jairo Garcia-Hernandez_2026-02-16:
+      place_of_death: "Larkin Community Hospital\nMiami, Florida"
+      detention_center: Larkin Community Hospital Behavioral Health Center
+    Lorth Sim_2026-02-18:
+      date_of_death: 02/16/2026
+      place_of_death: "Miami Correctional Facility\nBunker Hill, Indiana"
+    Victor Manuel Diaz_2026-01-14:
+      place_of_death: "Camp East Montana\nFt. Bliss, Texas"
+    Heber Sanchaz Dominguez_2026-01-14:
+      place_of_death: "Robert A Deyton Detention Center\nLovejoy, Georgia"
+    Parady La_2026-01-09:
+      place_of_death: "Thomas Jefferson University Hospital\nPhiladelphia, Pennsylvania"
+    Luis Beltran Yanez–Cruz_2026-01-06:
+      name: Luis Beltran Yanez-Cruz
+      place_of_death: "John F. Kennedy Hospital \nIndio, California"
+    Luis Gustavo Nunez Caceras_2026-01-05:
+      name: Luis Gustavo Nunez Caceres
+      place_of_death: "HCA Houston Healthcare \nConroe, Texas"
+    Geraldo Lunas Campos_2026-01-03:
+      place_of_death: "Camp East Montana \nFt. Bliss, Texas"
+    Nenko Stanvev Gantchev_2025-12-15:
+      place_of_death: "North Lake Processing Center\nBaldwin, Michigan"
+    Delvin Francisco Rodriguez_2025-12-14:
+      place_of_death: "Merit Health \nNatchez, Mississippi"
+    Fouad Saeed Abdulkadir_2025-12-14:
+      do_b: 3/15/1979
+      place_of_death: "Moshannon Valley ICE Processing Center\nPhilipsburg, Pennsylvania"
+    Jean Wilson Brutus_2025-12-12:
+      place_of_death: "University Hospital\nNewark, New Jersey"
+    Shiraz Fatehali Sachwani_2025-12-06:
+      do_b: NA
+      place_of_death: "Texas Health Huguley Hospital\nBurleson, Texas"
+      cause_of_death: Suspected Natural Causes
+    Pete Sumalo Montejo_2025-12-05:
+      cause_of_death: NA  # current value reflects _past_ illnesses, not cause of death
+      place_of_death: "Valley Baptist Medical Center\nHarlingen, Texas"
+      ice_death_report: ""
+    Franscico Gaspar-Andres_2025-12-03:
+      place_of_death: "The Hospitals of Providence East\nEl Paso, Texas"  # per press release
+      age: 48  # per press release
+    Kai Yin Wong_2025-10-25:
+      cause_of_death: Suspected complications following heart surgery  # per press release
+      detention_center: South Texas ICE Processing Center  # per press release
+      place_of_death: "Methodist Metropolitan Hospital\nSan Antonio, Texas"
+    Gabriel Garcia Aviles_2025-10-23:
+      detention_center: Adelanto ICE Processing Center
+      place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
+    "Hasan Ali Moh'D Saleh_2025-10-11":
+      place_of_death: "Larkin Community Hospital\nSouth Miami, Florida"
+    Leo Cruz-Silva_2025-10-08:
+      date_of_death: 10/04/2025  # per press release
+      place_of_death: "Ste. Genevieve County Jail\nSte. Genevieve, Missouri"
+    Huabing Xie_2025-09-29:
+      place_of_death: "El Centro Regional Medical Center\nEl Centro, California"
+    Miguel Angel Garcia Hernandez_2025-09-24:
+      age: 31
+      date_of_death: 09/29/2025
+      place_of_death: "ICE Dallas ERO Field Office\nDallas, Texas"
+    Norlan Guzman Fuentes_2025-09-24:
+      place_of_death: "ICE Dallas ERO Field Office\nDallas, Texas"
+    Ismael Ayala Uribe_2025-09-22:
+      detention_center: Adelanto ICE Processing Center
+      place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
+    Santos Reyes Banegas_2025-09-18:
+      place_of_death: "Nassau County Correctional Center\nEast Meadow, New York"
+    Oscar Rascon Duarte_2025-09-08:
+      do_b: NA
+      detention_center: Florence Staging Facility
+      place_of_death: "Banner Desert Medical Center\nMesa, Arizona"
+    Lorenzo Antonio Batrez Vargas_2025-08-31:
+      place_of_death: "Florence Service PRocessing Center\nFlorence, Arizona"  # pronounced dead by doctor at Mountain View, but he was physically at Florence
+    Chaofeng Ge_2025-08-05:
+      place_of_death: "Moshannon Valley ICE Processing Center\nPhilipsburg, Pennsylvania"
+    Tien Xuan Phan_2025-07-19:
+      place_of_death: "Methodist Hospital Northeast\nLive Oak, Texas"
+    Isidro Perez_2025-06-26:
+      place_of_death: "HCA Kendall Hospital\nMiami, Florida"
+    Johnny Novielo_2025-06-23:
+      name: Johnny Noviello
+      place_of_death: "BOP Federal Detention Center Miami\nMiami, Florida"
+    Jesus Molina-Veya_2025-06-07:
+      place_of_death: "Phoebe Sumter Medical Center\nAmericus, Georgia"
+    Abelardo Avellaneda-Delgado_2025-05-05:
+      place_of_death: "In transit to Stewart Detention Center\nLumpkin, Georgia"
+    Marie Ange Blaise_2025-04-25:
+      place_of_death: "Broward Transitional Center\nPompano Beach, Florida"
+    Nhon Ngoc Nguyen_2025-04-16:
+      place_of_death: "Long Term Acute Care Hospital\nEl Paso, Texas"
+    Brayan Rayo-Garzon_2025-04-08:
+      cause_of_death: Suicide
+      place_of_death: "Mercy South Hospital\nSt. Louis, Missouri"
+    Maksym Chernyak_2025-02-20:
+      place_of_death: "HCA Kendall Hospital\nMiami, Florida"
+    Juan Alexis Tineo-Martinez_2025-02-23:
+      age: 44
+      place_of_death: "Centro Medical Hospital\nSan Juan, Puerto Rico"
+      ice_death_report: "https://www.ice.gov/doclib/foia/reports/ddrTINEOMartinezJuanAlexis.pdf"
+    Serawit Gezahegn Dejene_2025-01-29:
+      place_of_death: "Banner University Medical Center Phoenix\nPhoenix, Arizona"
+    Genry Ruiz Guillen_2025-01-23:
+      place_of_death: "Larkin Hospital Palm Springs\nHialeah, Florida"
+    Ramesh Amerchand_2024-12-16:
+      name: Ramesh Amechand
+      place_of_death: "Texas Health Hurst Euless Bedford Hospital\nBedford, Texas"
+    Pankaj Karan Singh Kataria_2024-11-01:
+      place_of_death: "Texas Health Hurst Euless Bedford Hospital\nBedford, Texas"
+    Jose Manuel Sanchez-Castro_2024-10-27:
+      place_of_death: "Northwest ICE Processing Center\nTacoma, Washington"
+    Brendy Yohana Bamaca-Zacarias_2024-09-07:
+      detention_center: El Valle Detention Facility
+      place_of_death: "Valley Baptist Medical Center\nHarlingen, Texas"
+    Jhon Javier Benavides-Quintana_2024-06-15:
+      place_of_death: "Otero County ICE Processing Center\nChaparral, New Mexico"
+    Hugo Roberto Boror Urla_2024-05-22:
+      detention_center: Calhoun County Correctional Center
+      ice_press_release: https://www.ice.gov/news/releases/guatemalan-national-ice-custody-dies-hospital
+      place_of_death: "Bronson Battle Creek Hospital\nBattle Creek, Michigan"
+    Cambric Dennis_2024-05-21:
+      date_of_death: 5/22/2024
+      place_of_death: "Phoebe Sumter Medical Center\nAmericus, Georgia"
+    Jaspal Signh_2024-04-15:
+      name: Jaspal Singh
+      place_of_death: "Southeast Georgia Health System\nCamden, Georgia"
+    Ousmane Ba_2024-02-24:
+      date_of_death: 02/23/2024
+      place_of_death: "St. Francis Cabrini Hospital\nAlexandria, Louisiana"
+    Frankline Okpu_2023-12-06:
+      place_of_death: "Moshannon Valley ICE Processing Center\nPhilipsburg, Pennsylvania"
+    Carlos Juan Francisco_2023-12-04:
+      place_of_death: "Larkin Community Hospital\nSouth Miami, Florida"
+    Subash Shrestha_2023-11-13:
+      place_of_death: "Karnes County ICE Processing Center\nKarnes City, Texas"
+      detention_center: Karnes County ICE Processing Center
+    Julio Cesar Chirino Peralta_2023-10-08:
+      cause_of_death: cardiac arrest secondary to disseminated intravascular coagulopathy from leukemia
+      place_of_death: "Valley Baptist Medical Center\nHarlingen, Texas"
+    Ernesto Rocha-Cuadra_2023-06-23:
+      place_of_death: "LaSalle General Hospital\nJena, Louisiana"
+    Salvador Rosales-Vargas_2023-04-04:
+      place_of_death: "Piedmont Regional Columbus\nColumbus, Georgia"
+    Cristian Dumitriscu_2023-03-05:
+      do_b: 3/3/1973
+      name: Cristian Dumitrascu
+      place_of_death: "Otay Mesa Detention Center\nSan Diego, California"
+      ice_press_release: https://www.ice.gov/news/releases/romanian-national-passes-away-ice-custody
+    Melvin Calero_2022-10-13:
+      name: Melvin Ariel Calero Mendoza
+      detention_center: Denver Contract Detention Facility
+      cause_of_death: NA  # not listed anywhere I can find
+      place_of_death: "University of Colorado Hospital\nAurora, Colorado"
+    Kesley Vial_2022-08-24:
+      place_of_death: "University of New Mexico Medical Center\nAlbuquerque, New Mexico"
+    Benjamin Gonzalez-Soto_2022-07-08:
+      place_of_death: "Florence ICE Processing Center\nFlorence, Arizona"
+    Pablo Sanchez-Gotopo_2021-10-01:
+      place_of_death: "Merit Health River Oaks Hospital\nFlowood, Mississippi"
+    Elba Maria Centeno Briones_2021-08-03:
+      place_of_death: "Valley Baptist Medical Center Harlingen,\nTexas"
+    Diego Fernando Gallego-Agudelo_2021-03-15:
+      do_b: 07/15/1975
+    Romien Jally_2020-09-26:
+      place_of_death: "Christus St. Francis Cabrini Hospital\nAlexandria, Louisiana"
+    Cipriano Chavez-Alvarez_2020-09-21:
+      name: Cipriano Chavez Alvarez
+    Jose Guillen-Vega_2020-08-10:
+      name: Jose Freddy Guillen Vega
+    James Thomas Hill_2020-08-05:
+      name: James Tomas Hill
+      place_of_death: "Lynchburg General Hospital\nLynchburg, Virginia"
+    Luis Sanchez-Perez_2020-07-15:
+      place_of_death: "Ochsner Louisiana State University Health\nMonroe, Louisiana"
+      cause_of_death: complications of diabetes mellitus with contribution of hypertensive atherosclerotic cardiovascular disease  # official autopsy finding https://www.documentcloud.org/documents/24656099-part-2-selected-death-review-reports-and-related-documents-of-ice-detainees/
+    Onoval Perez-Montufa_2020-07-12:
+      place_of_death: "Lakeside Medical Center\nBelle Glade, Florida"
+    Santiago Baten-Oxlaj_2020-05-25:
+      date_of_death: 05/24/2020
+    Choung Won Ahn_2020-05-17:
+      name: Choung Woong Ahn
+    Orlan Ariel Carcamo-Navarro_2020-03-18:
+      detention_center: Karnes County ICE Processing Center
+    Maria Celeste Ochoa Yoc de Ramirez_2020-03-08:
+      place_of_death: "Texas Health Harris Methodist Hospital - Fort Worth\nFort Worth, Texas"
+    David Hernandez Colula_2020-02-20:
+      place_of_death: "In transit to hospital\nYoungstown, Ohio"  # He died en route to hospital after found hanging in cell
+    Alberto Hernandez-Fundora_2020-01-27:
+      place_of_death: "Larkin Community Hospital\nSouth Miami, Florida"  # Changed from just "Miami"
+      detention_center: Krome North Service Processing Center # Current says "Unclear [See Note]," but there is no note.
+    Ben James Owen_2020-01-25:
+      do_b: 09/16/1980
+    Samuelino Pitchout Mavinga_2019-12-29:
+      listed_citizenship: France # Born in Angola but had French citizenship
+      cause_of_death: cardiac arrest related to septic shock
+      detention_center: Torrance County Detention Facility
+    Roberto Rodriguez-Espinoza_2019-09-10:
+      place_of_death: "Northwestern Medicine Central DuPage Hospital (NMWH) ED\nWinfield, Illinois"
+    Pedro Arriago-Santoya_2019-07-24:
+      cause_of_death: cardio-pulmonary arrest secondary to multi-organ system failure, endocarditis, dilated cardiomyopathy and respiratory failure
+    Simratpal Singh_2019-05-03:
+      gender: M
+      place_of_death: "Abrazo West Campus Hospital\nGoodyear, Arizona"
+    Abel Reyes-Clemente_2019-04-03:
+      place_of_death: "Florence Service Processing Center\nFlorence, Arizona"
+      gender: M
+    Yimi Alexis Balderramos-Torres_2019-06-30:
+      gender: M
+      place_of_death: "Memorial Hermann Northeast Hospital\nHumble, Texas"
+    Guerman Volkov_2018-11-30:
+      gender: M
+      place_of_death: "Memorial Hospital\nJacksonville, Florida"
+      cause_of_death: NA
+    Mergensana Amar_2018-11-24:
+      gender: M
+      date_of_death: 11/18/2018  # death certificate signed 11/18/18, but kept on life support until 11/24
+      cause_of_death: suicide by hanging
+    Wilfredo Padron_2018-11-01:
+      gender: M
+      cause_of_death: NA
+    Augustina Ramirez-Arreola_2018-07-25:
+      gender: F
+    Efrain De La Rosa_2018-07-10:
+      name: Efrain Romero De La Rosa
+      gender: M
+    Huy Chi Tran_2018-06-12:
+      gender: M
+    Zeresenay Ermias Tesfatsion_2018-06-06:
+      gender: M # press release uses he/him
+      do_b: 05/05/1984 # https://www.aila.org/File/Related/16050900ag.pdf
+      detention_center: Broward Transitional Center # ibid
+      cause_of_death: suicide by hanging # ibid
+      news_link: https://www.aila.org/File/Related/16050900ag.pdf
+    Roxana Hernandez_2018-05-25:
+      place_of_death: "Lovelace Medical Center\nAlbuquerque, New Mexico"
+    Ronald Cruz (AKA Ronal Romero)_2018-05-16:
+      name: Ronal Francisco Romero  # see below
+      gender: M
+      cause_of_death: NA
+    Gourgen Mirimanian_2018-04-10:
+      gender: M
+      place_of_death: "Texas Health Huguley Hospital\nBurleson, Texas"
+    Luis Ramirez-Marcano_2018-02-19:
+      gender: M # Press release uses he/him
+    Yulio Castro-Garrido_2018-01-30:
+      gender: M
+      cause_of_death: bronchopneumonia with pulmonary abscesses and viral influenza
+    Kamyar Samimi_2017-12-02:
+      gender: M
+      detention_center: Denver Contract Detention Facility
+      cause_of_death: undetermined with chronic obstructive pulmonary disease (emphysema) and gastrointestinal bleeding as contributing factors
+    Felipe Almazan-Ruiz_2017-09-17:
+      gender: M
+    Osvadis Montesino-Cabrera_2017-09-01:
+      gender: M
+      cause_of_death: complications of hanging
+      place_of_death: "Larkin Community Hospital\nSouth Miami, Florida"  # just said "Miami" before
+    Carlos Mejia-Bonilla_2017-06-10:
+      gender: M
+      age: 46  # From DDR
+      cause_of_death: gastro-intestinal hemorrhage due to chronic alcoholism
+    Vicente Caceres-Maradiaga_2017-05-31:
+      gender: M
+      place_of_death: "Adelanto Detention Facility\nAdelanto, California"
+    Atulkumar Babubhai Patel_2017-05-16:
+      gender: M
+    Jeancarlo Alfonso Jimenez-Joseph_2017-05-15:
+      gender: M
+    Sergio Alonso Lopez_2017-04-13:
+      gender: M
+      ice_death_report: https://web.archive.org/web/20230502003550/https://docs.pogo.org/primary-source/2018/ddrLopez.pdf
+      cause_of_death: upper gastrointestinal bleed, esophageal varices, cirrhosis of the liver, and heroin and alcohol abuse
+      place_of_death: "Victor Valley Community Hospital\nVictorville, California"
+    Osmar Epifanio Gonzalez-Gadba_2017-03-28:
+      gender: M
+      cause_of_death: hypoxic encephalopathy and hanging
+      place_of_death: "Victor Valley Community Hospital\nVictorville, California"
+    Roger Rayson_2017-03-13:
+      gender: M
+      ice_death_report: https://docs.pogo.org/document/2020/Roger-Rayson-Searchable.pdf
+      cause_of_death: remote subdural hematoma due to unknown factors
+    Raquel Calderon-De Hildago_2016-11-27:
+      name: Raquel Calderon-De Hidalgo
+      gender: F
+      cause_of_death: pulmonary embolism due to deep vein thromboses
+    Wenceslau Esmerio Campos_2016-11-25:
+      gender: M
+      place_of_death: "Methodist Hospital\nSan Antonio, Texas"
+      cause_of_death: complications of myocardial infarcation with atherosclerotic cardiovascular disease
+    Olubunmi Toyin Joshua_2016-10-24:
+      gender: F
+      cause_of_death: hypertensive cardiovascular disease
+    Moises Tino-Lopez_2016-09-27:
+      gender: M
+      detainee_death_report: https://www.ice.gov/doclib/foia/reports/ddr-Tino.pdf
+      cause_of_death: anoxic brain injury due to, or as a consequence of, cardiac arrest due to, or as a consequence of, a seizure
+    Santo Carela_2016-07-28:
+      gender: M
+      detention_center: Orange County Jail
+      cause_of_death: hypertensive and atherosclerotic cardiovascular disease
+    Luis Alonso Fino Martinez_2016-06-13:
+      gender: M
+      place_of_death: "UMDNJ/Rutgers Hospital\nNewark, New Jersey"
+    Juan Luis Boch-Paniagua_2016-06-01:
+      gender: M
+      cause_of_death: upper gastrointestinal hemorrhage due to cirrhosis with contribution of emphysema and disseminated tuberculosis
+    Igor Zyazin_2016-05-01:
+      gender: M
+    Jose Leonardo Lemus Rajo_2016-04-28:
+      gender: M
+      cause_of_death: acute alcohol withdrawal syndrome due to chronic ethanolism
+    Rafael Barcenas-Padilla_2016-04-07:
+      gender: M
+      detention_center: Otero County Processing Center  # original says "Unclear [See Note]"
+    Thongchay Saengsiri_2016-03-17:
+      gender: M
+      cause_of_death: hypertensive atherosclerotic cardiovascular disease with emphysema and obesity
+    Saul Enrique Banegas-Guzman_2016-01-22:
+      gender: M
+      age: 45
+      cause_of_death: NA
+    Jose Manuel Azurdia-Hernandez_2015-12-23:
+      date_of_death: 12/24/2015
+      gender: M
+      place_of_death: "St. Mary Medical Center\nApple Valley, California"
+      cause_of_death: Cardiogenic Shock, Massive Right Ventricular Infarction, and Severe Ischemic Heart Disease
+    Juan Garcia-Hernandez_2015-09-14:
+      gender: M
+      place_of_death: "Florence Hospital at Anthem (FHA)\nFlorence, Arizona"
+    Nho Thi Nguyen_2015-07-02:
+      gender: F
+      ice_press_release: https://www.ice.gov/news/releases/ice-detainee-vietnam-passes-away-houston-hospital
+      place_of_death: "Memorial Hermann Hospital (MHH)\nHouston, Texas"
+    Marcos Navarrette-Quintana_2015-06-18:
+      gender: M
+      place_of_death: "University of Colorado Memorial Hospital\nColorado Springs, Colorado"
+      death_city: Colorado Springs
+    Jose de Jesus Deniz-Sahagun_2015-05-20:
+      gender: M
+    Carlos Funez Ochoa_2015-04-23:
+      gender: M
+      place_of_death: "Valley Regional Medical Center (VRMC)\nBrownsville, Texas"
+    Raul Ernesto Morales-Ramos_2015-04-06:
+      gender: M
+    Jorge Alberto Umana-Martinez_2014-10-30:
+      gender: M
+    Welmer Alberto Garcia-Huezo_2014-08-03:
+      gender: M
+      cause_of_death: Undetermined
+    Santiago Sierra-Sanchez_2014-07-12:
+      gender: M
+    Jose Javier Hernandez-Valencia_2014-04-12:
+      gender: M
+    Peter George Carlysle Rockwell_2014-02-22:
+      gender: M
+      place_of_death: "Memorial Hermann Northeast Hospital\nHumble, Texas"
+    Marjorie Annmarie Bell_2014-02-13:
+      gender: F
+      cause_of_death: sudden cardiac death, acute coronary syndrome, and multivessel coronary artery disease
+    Carlos Tiombe Kimana_2013-10-23: 
+      name: Tiombe Kimana Carlos
+      listed_citizenship: Antigua and Barbuda
+      gender: F
+      place_of_death: "York County Prison\nYork, Pennsylvania"
+    Clemente Ntangola Mponda_2013-09-02:
+      place_of_death: "Memorial Hermann Northeast Hospital\nHumble, Texas"
+      gender: M
+      cause_of_death: combined toxicity of amitryptiline (brand name Elavil) and risperidone (brand name Risperdal)
+      death_city: Humble
+    Leslis Rodriguez_2013-07-31:
+      gender: M
+    Federico Mendez-Hernandez_2013-06-11:
+      gender: M
+    Jorge Garcia Maldonado_2013-04-30:
+      gender: M
+    Elsa Guadalupe-Gonzales_2013-04-28:
+      gender: F
+    Oldrich Tomanek_2013-04-25:
+      gender: M
+    Glaston Smith_2013-04-04:
+      gender: M
+    Pablo Ortiz-Matamoros_2013-02-08:
+      gender: M
+      cause_of_death: acute renal failure from tumor lysis syndrome from metabolic cancer
+    Manuel Cota-Domingo_2012-12-23:
+      gender: M
+      cause_of_death: diabetic ketoacidosis
+    Juan Pablo Flores-Segura_2012-05-30:
+      gender: M
+      place_of_death: "Saint Bernardine Hospital\nSan Bernardino, California"
+    Evalin-Ali Mandza_2012-04-12:
+      gender: M
+      do_b: 12/05/1965
+      age: 46
+      detention_center: Denver Contract Detention Facility
+    Fernando Dominguez-Valivia_2012-03-04:
+      gender: M
+      place_of_death: "Victor Valley Community Hospital\nVictorville, California"
+    Miguel Angel Sarabia-Ortega_2012-01-17:
+      place_of_death: "Desert Springs Hospital\nLas Vegas, Nevada"
+      gender: M
+    Ricardo Rojas-Martinez_2011-12-19:
+      gender: M
+      place_of_death: "Memorial Hermann Hospital (MHH) \nHouston, Texas"
+      ice_death_report: https://embed.documentcloud.org/documents/2698740-Rojas-Martinez-Ricardo/
+    Pablo Gracida-Conte_2011-10-30:
+      gender: M
+      place_of_death: "University Medical Center\nTucson, Arizona"
+    Mauro Rivera-Romero_2011-10-05:
+      gender: M
+      cause_of_death: disseminated cryptococcosis
+    Anibal Ramirez-Ramirez_2011-10-02:
+      gender: M
+    Victor Ramirez-Reyes_2011-09-26:
+      gender: M
+    Irene Bamenga_2011-07-27:
+      listed_citizenship: France
+      gender: F
+      place_of_death: "Albany Memorial Hospital and Medical Center\nAlbany, New York"
+    Miguel Angel Hernandez_2011-04-28:
+      gender: M
+    Amra Miletic (or Amra Militec)_2011-03-20: 
+      name: Amra Miletic
+      gender: F
+    Qi Gen Guo_2011-02-23:
+      gender: M
+      place_of_death: "Lock Haven Hospital\nLock Haven, Pennsylvania"
+    Jose Aguilar-Espinoza_2011-01-31:
+      gender: M
+    Juan Palomo-Rodriquez_2011-01-13:
+      place_of_death: "Memorial Hermann Hospital (MHH) \nHouston, Texas"
+      gender: M
+    Jose Manuel Segundo_2010-12-23:
+      gender: M
+    John Sterling_2010-11-06:
+      gender: M
+    Jose Antonio Hernandez-Gomez_2010-11-05:
+      place_of_death: "Loyola Medical Center\nMaywood, Illinois"
+      gender: M
+    Jose Nelson Reyes-Zalaya_2010-07-17:
+      gender: M
+    Kazimierz Holowienko_2010-06-16:
+      gender: M
+    Julian Cogle-Del Pino_2010-05-07:
+      gender: M
+    Arnulfo Rodriguez-Solis_2010-03-13:
+      gender: M
+    Evelyn Obey_2010-03-12:
+      gender: F
+    Ernesto Gomez-Vasquez_2010-03-05:
+      gender: M
+    Sebastian Padilla-Perez_2009-11-21:
+      gender: M
+    Pedro Juan Tavarez_2009-10-19:
+      gender: M
+    Rolando Jimon Tiniguardo_2009-09-30:
+      gender: M
+    Huluf Guangle Negusse_2009-08-14:
+      name: Huluf Guangule Negusse
+      gender: M
+      cause_of_death: suicide
+    Vera Stojka_2009-07-24:
+      gender: F
+    Arnoldo Cruz-Silva_2009-05-10:
+      gender: M
+    Roberto Martinez Medina_2009-03-11:
+      gender: M
+    Sergio Jimenez-Rojas_2009-02-07:
+      gender: M
+    Claudio Coronado-Gabriel_2009-01-12:
+      place_of_death: "Jena/LaSalle Detention Facility\nJena, Louisiana"
+      gender: M
+    Julio Martinez_2009-01-04:
+      gender: M
+    Jose Alvarez Gomez_2008-12-27:
+      gender: M
+    Guido Newbrough_2008-11-27:
+      gender: M
+    Hadayatullahh Saylab_2008-11-24: 
+      name: Hadayatullah Saylab
+      gender: M
+    Alberto Santos Maidiqui_2008-11-18:
+      gender: M
+    Juan Baires_2008-11-12:
+      gender: M
+    Emmanuel Owusu_2008-10-06:
+      gender: M
+    Edwin Barnett_2008-08-12:
+      gender: M
+    Hiu Lui Ng_2008-08-06:
+      gender: M
+    Nail Yoursef Dawood_2008-07-21:
+      gender: M
+    Rogelio Canales Baca_2008-07-08:
+      gender: M
+    Ambrocio Valasquez_2008-06-27:
+      place_of_death: "Vaughan Regional Medical Center\nSelma, Alabama"
+      gender: M
+    Valery Joseph_2008-06-20:
+      gender: M
+    Luis Dubegel-Paez_2008-03-14:
+      gender: M
+    Arturo Suares-Almenares_2008-03-03:
+      gender: M
+    Alejandro Diaz-Salgado_2008-02-03:
+      gender: M
+    Pedro Gumayagay_2008-01-29:
+      gender: M
+    Cesar Gonzalez-Baez_2007-12-05:
+      gender: M
+    Alejandro Guevara-Lazaro_2007-08-13:
+      gender: M
+    Rosa Isela Contreras-Dominguez_2007-08-09:
+      gender: F
+    Edimar De Araujo_2007-08-07:
+      gender: M
+      detention_center: Providence ICE ERO Holding Room
+    Victoria Arellano_2007-07-20:
+      gender: F
+    Boubacar Bah_2007-05-30:
+      gender: M
+    Nery Romero_2007-02-12:
+      gender: M
+    Felix Rodriguez-Torres_2007-01-18:
+      gender: M
+    Mario Francisco Chavez-Torres_2006-12-13:
+      gender: M
+    Sall Abdeulaye_2006-12-02:
+      gender: M
+    Jesus Cervantes-Corona_2006-11-19:
+      gender: M
+    Antonio Martinez-Rivas_2006-10-04:
+      gender: M
+    Carlos Cortez-Raudel_2006-10-03:
+      gender: M
+    Jose Lopez-Gregorio_2006-09-29:
+      gender: M
+    Jamer Singh_2006-09-20:
+      gender: M
+    Young Sook Kim_2006-09-11:
+      gender: F
+    Rene Castro-Jimenez_2006-08-15:
+      place_of_death: "Devens Federal Medical Center\nAyer, Massachusetts"
+      death_city: Ayers
+      death_state: Massachusetts
+      gender: M
+    Yusif Osman_2006-06-27:
+      gender: M
+    Jorge Lazano-Blanco_2006-06-03:
+      gender: M
+    Miguel Rodriguez-Gonzalez_2006-05-21:
+      gender: M
+    Walter Rodriguez Castro_2006-04-23:
+      gender: M
+      place_of_death: "Kern County Jail (Lerdo)\nBakersfield, California"
+    Maria Inamagua-Mercha_2006-04-04:
+      gender: F
+    Angel Polanco-Molina_2006-03-30:
+      gender: M
+    Geovanny Garcia-Mejia_2006-03-18:
+      gender: M
+    Felipe Garcia-Sanchez_2006-02-13:
+      gender: M
+    Vincent Murphy_2006-02-04:
+      gender: M
+    Sandra Marina Kenley_2005-12-18:
+      gender: F
+    Juan Salazar-Gomez_2005-12-14:
+      gender: M
+    Roberto Ledesman-Guerreo_2005-12-02:
+      gender: M
+    Domingo Marrero-Abreo_2005-11-15:
+      gender: M
+    Sergio Sanchez-Rodriguez_2005-10-30:
+      gender: M
+    Reinaldo Prado-Arencilia_2005-10-03:
+      gender: M
+      place_of_death: "Northeast Medical Center Hospital\nHumble, Texas"
+    Eduardo DeLaPaz_2005-09-27:
+      place_of_death: "Richland Memorial Hospital\nColumbia, South Carolina"
+      gender: M
+    Tanveer Ahmad_2005-09-09:
+      place_of_death: "Monmouth County Correctional Institute\nFreehold, New Jersey"
+      detention_center: Monmouth County Correctional Institute
+      gender: M
+    Walter Alvarez-Esquivel_2005-07-06:
+      gender: M
+    Rene Cruz Garcia_2005-06-11:
+      gender: M
+    Nhung Vargas_2005-06-08:
+      gender: F
+    Jose Tunon-Abeal_2005-05-21:
+      gender: M
+    Silvio Lazo Reinoso_2005-04-07:
+      gender: M
+    Hassiba Belbachir_2005-03-17:
+      gender: F
+    Sung Soo Heo_2005-02-16:
+      gender: M
+      detention_center: Passaic County Jail  # fix spelling error
+    Maya Nand (AKA Maya Narid)_2005-02-02:
+      gender: M
+      place_of_death: "St. Mary's Hospital\nTucson, Arizona"
+    Conrado Correoso-Jay_2005-01-31:
+      gender: M
+      detention_center: Butner Federal Correctional Institute
+    Jose Rosell Sierra_2005-01-08:
+      gender: M
+    Ignacio Sarabia-Vallasenor_2005-01-04:
+      gender: M
+    Elias Lopez Ruelas_2005-01-04:
+      gender: M
+    Pedro Herrera-Limas_2004-12-15:
+      gender: M
+    Luis Anache-Campos_2004-11-30:
+      gender: M
+    Yvel Fils-Aime_2004-11-22:
+      gender: M
+      ice_death_report: ""
+    Joseph Dantica_2004-11-03:
+      gender: M
+    Jose Zarou_2004-11-01:
+      gender: M
+    Jose Lopez-Lara_2004-10-24:
+      gender: M
+    Simon Reyes-Altimirano_2004-10-12:
+      gender: M
+    Ervin Ruiz-Tabares_2004-09-25:
+      gender: M
+    Antonio Ayala-Garcia_2004-09-24:
+      gender: M
+    Bhupinder Singh_2004-09-21:
+      gender: M
+    Otalio Soca-Ros_2004-08-23:
+      place_of_death: "Krome North Service Processing Center\nMiami, Florida"
+      gender: M
+    Sebastian Mejia Vicentes_2004-08-22:
+      gender: M
+    N. Enriquez-Betancourt_2004-08-11:
+      place_of_death: "Etowah County Jail\nGadsden, Alabama"
+      gender: M
+    Juan Alonso_2004-08-01:
+       gender: M
+    Jose Alberto Martinez_2004-07-28:
+      gender: M
+    Jose Herrera-Teran_2004-06-15:
+      gender: M
+    Enrique Mendez_2004-06-14:
+      gender: M
+    Juan Figueredo-Lopez_2004-05-29:
+      gender: M
+    Richard Rust_2004-05-29:
+      gender: M
+    Samou Fankeu_2004-05-11:
+      gender: M
+    Kandiah Satkunes-Waran_2004-04-17:
+      name: Kandiah Satkuneswaran
+      gender: M
+    Carlos Mendez-Bacca_2004-03-19:
+      gender: M
+    Manuel Perez-Ayala_2004-03-14:
+      gender: M
+    Jose De La Concepcion Alvarez Arias_2004-03-10:
+      gender: M
+    Maria Solis-Perez_2004-03-06:
+      gender: F
+    Wilfredo Hernandez_2004-03-03:
+      place_of_death: "Richland Memorial Hospital\nColumbia, South Carolina"
+      gender: M
+    Jose Rangel Rodriguez_2004-03-03:
+      gender: M
+    Hector Mosley_2004-02-27:
+      gender: M
+    Cezar Rioz-Martinez_2004-02-13:
+      gender: M
+    Adetunji Popoola_2004-02-02:
+      gender: M
+    Ramiro Gutierrez_2004-01-17:
+      gender: M
+    Argelio Leyva-Arjona_2004-01-05:
+      gender: M
+    Joseph Dantica_2004-01-01: 
+      date_of_death: 11/03/2004
+      gender: M
+    Alberto Linde-Cepero_2003-12-20:
+      gender: M
+    Daniel Jorrin-Miller_2003-11-04:
+      gender: M
+    Heriberto Verdecia-Carrillo_2003-10-07:
+      gender: M
+  mutations:
+    name: "clean_name(name)"
+    age: "as.integer(age)"
+    dod: "as_date(mdy(date_of_death))"
+    calendar_year: "as.numeric(cy) + 2000"
+    fiscal_year: "as.numeric(fy) + 2000"
+    dob: "as_date(mdy(do_b))"
+    death_location_unsplit: |
+      str_replace_all(place_of_death, '\\s+', ' ')
+    death_location_validation: |
+      str_replace_all(death_location_unsplit, '[^A-Za-z]', '')
+    death_location: "str_split_i(place_of_death, '\n', 1)"
+    death_city: "get_location_city(place_of_death)"
+    death_state: "get_location_state(place_of_death)"
+    last_updated: "now()"
+    ice_death_report: "str_replace(ice_death_report, '^[^h].*$', '')"
+  renamings:
+    state: state_territory
+    contractor_old: contractor
+    contractor_type_old: contractor_type
+  joins:
+    - how: left
+      right: facility_crosswalk
+      by: detention_center == detention_center_raw
+    - how: left
+      right: facilities
+      by: detention_center_id
+  filters:
+    - "!(name == 'Jose Castro Rivera' & dod == ymd('2025-10-23'))"
+    - "!(name == 'Francisco Castaneda' & dod == ymd('2008-02-01'))"
+    - "!(name == 'Juan Alexis Tineo Martinez')"
+    - "!(name == 'Martin Arellano Vargas' & dod == ymd('2021-03-08'))"
+    - "!(name == 'Oscar Lopez Acosta' & dod == ymd('2020-05-10'))"
+    - "!(name == 'Johana Medina Leon' & dod == ymd('2019-06-01'))"
+    - "!(name == 'Miguel Angel Garcia Hernandez')"
+    - "!(name == 'Norlan Guzman Fuentes')"
+    - "!(str_detect(name, 'Francisco Castaneda') & dod == ymd('2008-02-01'))"
+    - "fiscal_year >= 2004"
+    - "year(dod) >= 2003"
+    - "dod < ymd('2026-02-20')"
+  output_columns:
+    - name
+    - dod
+    - calendar_year
+    - fiscal_year
+    - listed_citizenship
+    - gender
+    - age
+    - dob
+    - death_location
+    - death_city
+    - death_state
+    - detention_center_id
+    - detention_center_name
+    - detention_center_state
+    - detention_center_city
+    - detention_center_aor
+    - detention_center_type_detailed
+    - detention_center_contractor_type
+    - ice_press_release
+    - ice_death_report
+    - death_location_validation
+    - latitude
+    - longitude
+    - last_updated
+  qa:
+    strict: false
+    required_columns:  # These should never have NA values
+      - name
+      - dod
+      - latitude
+      - longitude
+    suspect_checks:  # Weird stuff to look out for
+      - condition: "!(death_state %in% usdata::state_stats$state)"
+        value_col: death_state
+        index_col: name
+        strict: false
+      - condition: "is.na(death_city)"
+        value_col: death_city
+        index_col: name
+        strict: false
+      - condition: "is.na(death_location)"
+        value_col: death_city
+        index_col: name
+        strict: false
+      - condition: "is.na(dob)"
+        value_col: dob
+        index_col: name
+        strict: false
+      - condition: "is.na(detention_center_id)"
+        value_col: detention_center_id
+        index_col: name
+        strict: false
+code_red:
+  src: 
+    path: "Data/Raw/CodeRed.csv"
+    generator: "Rscript Code/load_code_red.R"
+    args:
+      col_types: cccccccccc
+  corrections_index: name
+  corrections:
+    Jorge Garcia-Maldanado: 
+      name: Jorge Garcia Maldonado
+    Jose Javier Hernandez Valencia: 
+      name: Jose Javier Hernandez-Valencia
+    Raul Ernesto Morales Ramos: 
+      name: Raul Ernesto Morales-Ramos
+    Marcos, Navarrette-Quontana: 
+      name: Marcos Navarrette-Quintana
+    Jose Manuel Azurdia Hernandez: 
+      name: Jose Manuel Azurdia-Hernandez
+      death_date: 12/24/2015 # see above
+    Rafael Barcenas Padilla: 
+      name: Rafael Barcenas-Padilla
+    José Leonardo Lemus Rajo: 
+      name: Jose Leonardo Lemus Rajo
+    Raquel Calderon de Hildago: 
+      name: Raquel Calderon-De Hidalgo
+    Jean Carlos Alfonso Jimenez‐Joseph: 
+      name: Jeancarlo Alfonso Jimenez-Joseph
+    Rolando Mesa-Espinoza (Identified by ICE as Carlos Mejia-Bonilla): 
+      name: Carlos Mejia-Bonilla
+      age_death: 46
+      death_date: 6/10/2017
+    Ronal Francisco Romero (Identified by ICE as Ronald Cruz): 
+      name: Ronal Francisco Romero
+      death_date: 5/16/2018  # https://www.ice.gov/news/releases/south-texas-ice-detainee-honduras-passes-away-local-hospital
+    Roxana Hernandez (Identified by ICE as Jeffrey Hernandez): 
+      name: Roxana Hernandez
+    Kamyar Samimi: 
+      death_date: 12/2/2017  # see above
+    Yulio Castro-Garrido: 
+      death_date: 1/30/2018  # https://www.ice.gov/news/releases/ice-detainee-passes-away
+    Juan Pablo Flores-Segura:
+      age_death: 31  # based on dob and dod
+    Glaston Smith:
+      age_death: 51  # based on dob and dod
+    Saul Enrique Banegas-Guzman:
+      age_death: 45  # based on dob and dod
+    Amra Militec:
+      name: Amra Miletic
+  mutations:
+    name: "clean_name(name)"
+    death_date: "mdy(death_date)"
+    age_death: "as.integer(age_death)"
+  renamings:
+    dod: death_date
+    age: age_death
+facility_crosswalk:
+  src:
+    path: Data/Raw/facility-crosswalk.csv
+  renamings:
+    detention_center_id: detention_facility_code
+facilities:
+  src:
+    path: Data/Raw/facilities.csv
+  renamings:
+    detention_center_id: detention_facility_code
+    detention_center_name: detention_facility_name_bbdp
+    detention_center_state: state
+    detention_center_city: city
+    detention_center_aor: aor
+    detention_center_type_detailed: type_detailed
+    detention_center_type_grouped: type_grouped
+    detention_center_contractor: contractor
+    detention_center_contractor_type: contractor_type
+    detention_center_data_source: data_source
+    
+bbdp_data_clean:  # short-cut for analysis
+  src:
+    path: Data/Processed/ice_deaths_validated.csv
+    generator: "Rscript Code/ice_mortality_validation.R"

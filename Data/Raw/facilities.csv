@@ -1,0 +1,123 @@
+detention_facility_code,detention_facility_name_vera,detention_facility_name_bbdp,address,city,county,state,zip,aor,latitude,longitude,type_detailed,type_grouped,contractor,contractor_type,data_source
+ADAMSMS,Adams County Det Center,Adams County Detention Center,20 Hobo Fork Rd.,Natchez,Adams,MS,39120,New Orleans,31.569175,-91.230469,DIGSA,Dedicated,CoreCivic,Private,vera
+ADLNTCA,Adelanto ICE Processing Center,Adelanto ICE Processing Center,10250 Rancho Road,Adelanto,San Bernardino,CA,92301,Los Angeles,34.557729,-117.441865,CDF,Dedicated,GEO,Private,vera
+ALBCONY,Albany County Jail,Albany County Jail,840 Albany Shaker Road,Albany,Albany,NY,12211,Buffalo,42.75141,-73.81536,USMS IGA,Federal,Albany County Sheriff's Department,County,vera
+BOPALM,Allenwood (Med) FCI,FCI Allenwood,2 Us-15,White Deer,Union,PA,17887,Philadelphia,41.127767,-76.921971,BOP,Federal,Bureau of Prisons,Federal,vera
+ATLANGA,Atlanta Pretrial Detn Ctr,Atlanta Pretrial Detention Center,254 Peachtree Street Southwest,Atlanta,Fulton,GA,30303,Atlanta,33.747313,-84.395391,USMS IGA,Federal,City of Atlanta Department of Corrections,City,vera
+BOPATW,,USP Atwater,1 Federal Way,Atwater,Merced,CA,95301,Los Angeles,37.3840277,-120.5587741,BOP,Federal,Bureau of Prisons,Federal,bbdp
+BAKERFL,Baker County Sheriff Dept.,Baker County Jail,1 Sheriff Office Drive,Macclenny,Baker,FL,32063,Miami,30.29596,-82.12172,IGSA,Non-Dedicated,Baker County Sheriff's Office,County,vera
+BERGENJ,Bergen County Jail,Bergen County Jail,160 South River Street,Hackensack,Bergen,NJ,7601,Newark,40.873873,-74.039042,USMS IGA,Federal,Bergen County Sheriff's Office,County,vera
+BERNANM,Bernalillo County Det Ctr,Albuquerque Regional Correctional Center,415 Roma N.W.,Albuquerque,Bernalillo,NM,87102,El Paso,35.089343,-106.651437,DIGSA,Dedicated,Cornell Companies,Private,vera
+BSAHOLD,Broadview Service Staging,Broadview ICE Facility,1930 Beach Street,Broadview,Cook,IL,60155,Chicago,41.868522,-87.86562,Staging,Hold/Staging,GEO,Private,vera
+BOPBUT,Butner Fed.Corr.Inst.,FCI Butner,3000 Old 75 Hwy,Butner,Granville,NC,27509,Atlanta,36.187179,-78.740535,BOP,Federal,Bureau of Prisons,Federal,vera
+CALHOMI,"Calhoun Co., Battle Cr,MI",Calhoun County Correctional Center,185 East Michigan Avenue,Battle Creek,Calhoun,MI,49014,Detroit,42.316674,-85.175892,IGSA,Non-Dedicated,Calhoun County Sheriff's Office,County,vera
+EROFCB,ERO El Paso Camp East Montana,Camp East Montana,6920 Digital Rd,El Paso,El Paso,TX,79936,El Paso,31.812729,-106.298333,CDF,Dedicated,Akima,Private,vera
+CATAHLA,Catahoula Correctional Center,Catahoula Correctional Center,499 Old Columbia Road,Harrisonburg,Catahoula,LA,71430,New Orleans,31.860451,-91.962215,IGSA,Non-Dedicated,LaSalle,Private,vera
+FLO,Florence SPC,Florence Service Processing Center,3250 North Pinal Parkway,Florence,Pinal,AZ,85132,Phoenix,33.06496,-111.378505,SPC,Dedicated,CoreCivic,Private,vera
+CIBOCNM,Cibola County Correctional Center,Cibola County Correctional Center,2000 Cibola Loop,Milan,Cibola,NM,87021,El Paso,35.179783,-107.907649,IGSA,Non-Dedicated,CoreCivic,Private,vera
+CLINTPA,Clinton County Corr. Fac.,Clinton County Correctional Facility,58 Pine Mountain Road,McElhattan,Clinton,PA,17748,Philadelphia,41.154871,-77.336887,USMS IGA,Federal,Clinton County,County,vera
+COLCASC,Columbia Care Center,Columbia Care Center,7901 Farrow Road,Columbia,Richland,SC,29203,Atlanta,34.075744,-80.979724,Hospital,Medical,Columbia Care Center,Private,vera
+DALCOTX,Dallas County Jail-Lew Sterrett,Dallas County Jail,111 West Commerce Street,Dallas,Dallas,TX,75202,Dallas,32.776299,-96.815601,USMS IGA,Federal,Dallas County Sheriff Department,County,vera
+DHDFNJ,Delaney Hall Detention Facility,Delaney Hall Detention Facility,451 Doremus Avenue,Newark,Essex,NJ,7105,Newark,40.717437,-74.127789,IGSA,Non-Dedicated,GEO,Private,vera
+DENICDF,Denver Contract Det. Fac.,Denver Contract Detention Facility,3130 North Oakland Street,Aurora,Adams,CO,80010,Denver,39.766325,-104.864502,CDF,Dedicated,GEO,Private,vera
+BOPDEV,Devens FMC,FMC Devens,42 Patton Road,Ayer,Middlesex,MA,1432,Boston,42.529248,-71.613805,BOP/Medical,Federal,Bureau of Prisons,Federal,vera
+ECC,El Centro SPC,El Centro Service Processing Center,1115 North Imperial Avenue,El Centro,Imperial,CA,92243,San Diego,32.802962,-115.569768,SPC,Dedicated,GEO,Private,vera
+ELPASCO,El Paso County Jail (CO),El Paso County Jail,2739 East Las Vegas,Colorado Springs,El Paso,CO,80906,Denver,38.788166,-104.77912,IGSA,Non-Dedicated,El Paso County Sheriff,County,vera
+EPC,El Paso SPC,El Paso Service Processing Center,8915 Montana Ave.,El Paso,El Paso,TX,79925,El Paso,31.796447,-106.369651,SPC,Dedicated,GPS,Private,vera
+ELVDFTX,El Valle Detention Facility,El Valle Detention Facility,1800 Industrial Drive,Raymondville,Willacy,TX,78580,Harlingen,26.480407,-97.767334,IGSA,Non-Dedicated,MTC,Private,vera
+ELZICDF,Elizabeth Contract D.F.,Elizabeth Contract Detention Facility,625 Evans Street,Elizabeth,Union,NJ,7201,Newark,40.666157,-74.189694,CDF,Dedicated,CoreCivic,Private,vera
+EAZ,Eloy Federal Contract Fac,Eloy Detention Center,1705 East Hanna Rd.,Eloy,Pinal,AZ,85131,Phoenix,32.817677,-111.51927,DIGSA,Dedicated,CoreCivic,Private,vera
+ESSEXNJ,Essex County Jail,Essex County Jail,354 Doremus Avenue,Newark,Essex,NJ,7105,Newark,40.730608,-74.135742,IGSA,Non-Dedicated,Essex Corrections Department,County,vera
+ETOWAAL,Etowah County Jail (AL),Etowah County Jail,827 Forrest Avenue,Gadsden,Etowah,AL,35901,New Orleans,34.015737,-86.011933,USMS IGA,Federal,Etowah County Sheriff's Office,County,vera
+FRMVLVA,ICA - Farmville,Farmville Detention Center,508 Waterworks Road,Farmville,Prince Edward,VA,23901,Washington,37.319501,-78.438276,DIGSA,Dedicated,CoreCivic,Private,vera
+BOPMIM,Miami Fed.Det.Center,FDC Miami,33 NE 4th St,Miami,Miami-Dade,FL,33132,Miami,25.778491,-80.193199,BOP,Federal,Bureau of Prisons,Federal,vera
+BOPPHL,FDC Philadelphia,FDC Philadelphia,700 Arch Street,Philadelphia,Philadelphia,PA,19106,Philadelphia,39.952909,-75.151925,BOP,Federal,Bureau of Prisons,Federal,vera
+FSF,Florence Staging Facility,Florence Staging Facility,3250 North Pinal Parkway,Florence,Pinal,AZ,85132,Phoenix,33.06496,-111.378505,Staging,Hold/Staging,CoreCivic,Private,vera
+FIPCMGA,Folkston Main IPC,Folkston ICE Processing Center,3026 Hwy 252 East,Folkston,Charlton,GA,31537,Atlanta,30.87638,-81.977941,DIGSA,Dedicated,GEO,Private,vera
+BOPFTW,,FMC Fort Worth,3150 Horton Rd,Fort Worth,Tarrant,TX,76119,Dallas,32.6797719,-97.2874593,BOP,Federal,Bureau of Prisons,Federal,bbdp
+FRIOCTX,Frio County Jail,Frio County Jail,502 S Cedar St,Pearsall,Frio,TX,78061,San Antonio,28.887948,-99.091675,IGSA,Non-Dedicated,GEO,Private,vera
+GLADEFL,Glades County Detention Center,Glades County Detention Center,1297 East Sr 78,Moore Haven,Glades,FL,33471,Miami,26.838714,-81.124018,IGSA,Non-Dedicated,Glades County Sheriff's Department,County,vera
+GUADATX,Guadalupe Cty Jail,Guadalupe County Jail,2615 N Guadalupe St,Seguin,Guadalupe,TX,78155,San Antonio,29.603766,-97.970028,IGSA,Non-Dedicated,Guadalupe County Sheriff's Office,County,vera
+BOPGUA,Guaynabo MDC (San Juan),MDC Guaynabo,Hwy 28 Intsect of Road 165,San Juan,Guaynabo,PR,939,Miami,18.423156,-66.112209,BOP,Federal,Bureau of Prisons,Federal,vera
+HALLJGA,Hall Co Jail,Hall County Jail,1700 Barber Road,Gainesville,Hall,GA,30507,Atlanta,34.242651,-83.815583,USMS IGA,Federal,Hall County Department of Corrections,County,vera
+HRREGVA,Hampton Roads Regional Jail,Hampton Roads Regional Jail,2690 Elmhurst Lane,Portsmouth,Portsmouth City,VA,23701,Washington,36.804472,-76.368436,USMS IGA,Federal,City of Hampton Sheriff's Office,City,vera
+HARRIGA,Harris County Jail,Harris County Jail,"Hwy 116 E, Po Box 286",Hamilton,Harris,GA,31811,Atlanta,32.764412,-84.866192,IGSA,Non-Dedicated,Harris County Sheriff's Office,County,vera
+HENDETX,Henderson County Jail,Henderson County Jail,206-A North Murchison Street,Athens,Henderson,TX,75751,Dallas,32.212801,-95.855713,IGSA,Non-Dedicated,City of Henderson,City,vera
+HOUICDF,Houston Contract Det.Fac.,Houston Contract Detention Facility,15850 Export Plaza Drive,Houston,Harris,TX,77032,Houston,29.950836,-95.312188,CDF,Dedicated,CoreCivic,Private,vera
+HUDSONJ,Hudson County Jail,Hudson County Jail,30-35 Hackensack Ave.,Kearny,Hudson,NJ,7032,Newark,40.72991,-74.103398,IGSA,Non-Dedicated,Hudson County Department of Corrections,County,vera
+POLKCTX,IAH Secure Adult Det. Facility,IAH Polk Adult Detention Facility,3400 Fm 350 South,Livingston,Polk,TX,77351,Houston,30.698151,-95.005792,IGSA,Non-Dedicated,MTC,Private,vera
+DALHOLD,Dallas F.O. Hold,Dallas Field Office Hold Room,8101 N Stemmons Fwy,Dallas,Dallas,TX,75247,Dallas,32.823622,-96.872156,Hold,Hold/Staging,ICE,Federal,vera
+INMIAMI,Miami Correctional Center,Miami Correctional Facility,3038 West 850 South P.O. Box 900,Bunkerhill,Miami,IN,46914,Chicago,40.644997,-86.132978,IGSA,Non-Dedicated,Indiana Department of Corrections,State,vera
+IRADFCA,Imperial Regional Adult Det Fac,Imperial Regional Detention Facility,1572 Gateway,Calexico,Imperial,CA,92231,San Diego,32.690811,-115.397861,CDF,Dedicated,MTC,Private,vera
+CHIHOLD,Chicago Hold Room,O'Hare Airport Hold Room,"Chicago O'Hare Airport, Terminal #5",Chicago,Cook,IL,60666,Chicago,41.974839,-87.890021,Hold,Hold/Staging,ICE,Federal,vera
+JEFFETX,Jefferson County Jail,Jefferson County Jail,1001 Pearl Street,Beaumont,Jefferson,TX,77701,Houston,30.079492,-94.094305,IGSA,Non-Dedicated,GEO,Private,vera
+JCRLYTX,Joe Corley Processing Ctr,Joe Corley Processing Center,500 Hilbig Rd,Conroe,Montgomery,TX,77301,Houston,30.34444,-95.46021,IGSA,Non-Dedicated,GEO,Private,vera
+KARNETX,Karnes Cty Corr Ctr,Karnes County Correctional Center,810 Commerce St,Karnes City,Karnes,TX,78118,San Antonio,28.883485,-97.911848,USMS IGA,Federal,GEO,Private,vera
+KCCDCTX,Karnes County Civil Det. Facility,Karnes County Immigration Processing Center,Fm 1144 At Us Highway 181,Karnes City,Karnes,TX,78118,San Antonio,28.884651,-97.915298,Family,Family/Youth,GEO,Private,vera
+KERCOCA,Kern County Jail (Lerdo),Lerdo Pre-Trial Facility,17695 Industrial Farm Road,Bakersfield,Kern,CA,93308,San Francisco,35.653064,-119.107939,IGSA,Non-Dedicated,Kern County Sheriff's Office,County,vera
+KRO,Krome North SPC,Krome North Service Processing Center,18201 SW 12th St,Miami,Miami-Dade,FL,33194,Miami,25.76032,-80.496826,SPC,Dedicated,Ahtna,Private,vera
+LRKBHFL,Larkin Behavioral Health Svcs,Larkin Behavioral Health Center,1201 N 37th Ave,Hollywood,Broward,FL,33021,Miami,26.021177,-80.180662,Hospital,Medical,Larkin Health System,Private,vera
+LAPAZAZ,La Paz County Adult Det. Fac.,La Paz Adult Detention Facility,1109 Arizona Ave.,Parker,La Paz,AZ,85344,Phoenix,34.146226,-114.290189,USMS IGA,Federal,La Paz County Sheriff's Office,County,vera
+LRDICDF,Laredo Processing Center,Laredo Processing Center,4702 East Saunders Street,Laredo,Webb,TX,78041,Harlingen,27.529476,-99.447773,DIGSA,Dedicated,CoreCivic,Private,vera
+LVGHOLD,Las Vegas Hold Room,Las Vegas Field Office Hold Room,3373 Pepper Lane,Las Vegas,Clark,NV,89120,Salt Lake City,36.058347,-115.225127,Hold,Hold/Staging,ICE,Federal,vera
+OLACCLA,Lasalle Corr Ctr Olla,Lasalle Correctional Center,15976 Hwy 165,Olla,Lasalle,LA,71465,New Orleans,31.85131,-92.28482,IGSA,Non-Dedicated,GEO,Private,vera
+LSHOSMA,Lemuel Shattuck Hospital,Lemuel Shattuck Hospital,170 Morton Street,Jamaica Plain,Suffolk,MA,2130,Boston,42.29991,-71.10634,Hospital,Medical,Massachusetts Department of Public Health,State,vera
+MCHENIL,McHenry County Sheriff's,McHenry County Adult Correctional Facility,2200 North Seminary Avenue,Woodstock,Mchenry,IL,60098,Chicago,42.337002,-88.443168,USMS IGA,Federal,McHenry County Sheriff's Office,County,vera
+CACFMES,Mesa Verde ICE Processing Center,Mesa Verde ICE Processing Center,425 Golden State Ave,Bakersfield,Kern,CA,93301,San Francisco,35.393033,-119.027482,CDF,Dedicated,GEO,Private,vera
+MIDDLNJ,Middlesex County Jail,Middlesex County Jail,Apple Orchard Road,North Brunswick,Middlesex,NJ,8902,Newark,40.421388,-74.488991,IGSA,Non-Dedicated,Middlesex County Sheriff's Office,County,vera
+LANCACA,Mira Loma Det.Center,Mira Loma Detention Center,45100 60th Street West,Lancaster,Los Angeles,CA,93536,Los Angeles,34.701656,-118.233176,DIGSA,Dedicated,Los Angeles County Sheriff's Department,County,vera
+MONMONJ,Monmouth County Jail,Monmouth County Jail,1 Waterworks Road,Freehold,Monmouth,NJ,7728,Newark,40.267897,-74.286962,IGSA,Non-Dedicated,Monmouth County Sheriff's Department,County,vera
+MONROFL,Monroe County Jail,Monroe County Jail,5501 College Road,Key West,Monroe,FL,33040,Miami,24.577137,-81.751524,IGSA,Non-Dedicated,Monroe County Sheriff's Department,County,vera
+MTGPCTX,Montgomery Processing Ctr,Montgomery Processing Center,806 Hilbig Rd,Conroe,Montgomery,TX,77301,Houston,30.34444,-95.44922,CDF,Dedicated,GEO,Private,vera
+MOROWOH,Morrow Co. Correctional Facility,Morrow County Correctional Facility,101 Home Road,Mount Gilead,Morrow,OH,43338,Detroit,40.559931,-82.806718,IGSA,Non-Dedicated,Morrow County Sheriff's Office,County,vera
+MSVPCPA,Moshannon Valley Processing Center,Moshannon Valley Processing Center,555 Geo Drive,Philipsburg,Clearfield,PA,16866,Philadelphia,40.920042,-78.240515,DIGSA,Dedicated,GEO,Private,vera
+NASSANY,Nassau Co Correc Center,Nassau County Correctional Center,100 Carman Avenue,East Meadow,Nassau,NY,11554,New York,40.727807,-73.556165,IGSA,Non-Dedicated,Nassau County Sheriff's Office,County,vera
+NEWCOTX,,Newton County Correctional Center,2507 TX-87,Newton,Newton,TX,75966,Houston,30.8667431,-93.7355571,IGSA,Non-Dedicated,GEO,Private,bbdp
+NGDCTGA,North Georgia Detention Center,North Georgia Detention Center,622 Main Street Southwest,Gainesville,Hall,GA,30501,Atlanta,34.294675,-83.824166,IGSA,Non-Dedicated,CoreCivic,Private,vera
+NRLKCMI,North Lake Correctional Facility,North Lake Correctional Facility,1805 W 32nd St,Baldwin,Lake,MI,49304,Detroit,43.928658,-85.839408,CDF,Dedicated,GEO,Private,vera
+BOPNEO,Northeast Ohio Correctional Center,Northeast Ohio Correctional Center,2240 Hubbard Rd,Youngstown,Mahoning,OH,44505,Detroit,41.12896,-80.62683,Unknown,Other/Unknown,Bureau of Prisons,Federal,vera
+CSCNWWA,NW ICE Processing Ctr,Northwest ICE Processing Center,1623 E. J Street,Tacoma,Pierce,WA,98421,Seattle,47.25021,-122.422663,CDF,Dedicated,GEO,Private,vera
+OAK,Oakdale Fed. Det. Center,Oakdale Federal Detention Center,2105 East Whatley Road,Oakdale,Allen,LA,71463,New Orleans,30.820701,-92.640691,IGSA,Non-Dedicated,Bureau of Prisons,Federal,vera
+ORANGNY,Orange County Jail,Orange County Jail,110 Wells Farm Road,Goshen,Orange,NY,10924,New York,41.404669,-74.357459,IGSA,Non-Dedicated,Orange County Sheriff's Office (NY),County,vera
+ORPARLA,Orleans Parish Sheriff,Orleans Parish Prison,2800 Gravier Street,New Orleans,Orleans,LA,70119,New Orleans,29.961463,-90.093506,IGSA,Non-Dedicated,Orleans Parish Sheriff's Office,County,vera
+CCASDCA,Otay Mesa Detention Center,Otay Mesa Detention Center,7488 Calzada De La Fuente,San Diego,San Diego,CA,92154,San Diego,32.576525,-116.915478,CDF,Dedicated,CoreCivic,Private,vera
+OTRPCNM,Otero Co Processing Center,Otero County Processing Center,26 McGregor Range Road,Chaparral,Otero,NM,88081,El Paso,32.08042,-106.28262,DIGSA,Dedicated,MTC,Private,vera
+PASSANJ,Passaic County Jail,Passaic County Jail,11 Sheriffs Plaza,Paterson,Passaic,NJ,7501,Newark,40.913016,-74.174113,IGSA,Non-Dedicated,Passaic County Sheriff's Office,County,vera
+PERRYAL,Perry County Corr. Center,Perry County Correctional Center,United States Highway 80 East,Uniontown,Perry,AL,36786,New Orleans,32.634284,-87.316173,IGSA,Non-Dedicated,LCS Corrections Services,Private,vera
+PHELPMO,Phelps County Jail,Phelps County Jail,301 W. 2nd,Rolla,Phelps,MO,65401,Chicago,37.945714,-91.775053,USMS IGA,Federal,Phelps County Sheriff's Office,County,vera
+PMREGVA,Piedmont Reg Jail,Piedmont Regional Jail,801 Industrial Park Road,Farmville,Prince Edward,VA,23901,Washington,37.320601,-78.425392,IGSA,Non-Dedicated,Virginia Department of Corrections,State,vera
+PIKCOPA,Pike County Jail,Pike County Jail,175 Pike County Boulevard,Lords Valley,Pike,PA,18428,Philadelphia,41.38881,-75.071465,IGSA,Non-Dedicated,Pike County Prison Board,County,vera
+PINALAZ,Pinal County Jail,Pinal County Jail,971 N. Jason Lopez Circle,Florence,Pinal,AZ,85132,Phoenix,33.041291,-111.376034,IGSA,Non-Dedicated,Pinal County Sheriff's Office,County,vera
+PIC,Port Isabel SPC,Port Isabel Service Processing Center,27991 Buena Vista Blvd,Los Fresnos,Cameron,TX,78566,Harlingen,26.157941,-97.35047,SPC,Dedicated,Ahtna,Private,vera
+POTTAIA,Pottawattamie County Jail,Pottawattamie County Jail,1400 Big Lake Road,Council Bluffs,Pottawattamie,IA,51501,St. Paul,41.281836,-95.867184,USMS IGA,Federal,Pottawattamie County Sheriff's Office,County,vera
+PRLDCTX,Prairieland Detention Center,Prairieland Detention Facility,1209 Sunflower Ln,Alvarado,Johnson,TX,76009,Dallas,32.420785,-97.196902,DIGSA,Dedicated,LaSalle,Private,vera
+PROHOLD,Providence Holdroom,Providence ICE ERO Hold Room,1 International Way,Warwick,Kent,RI,02886,Boston,41.726973,-71.457116,Hold,Hold/Staging,Federal,ICE,vera
+RAADCMN,"Ramsey ADC Annex, SPM",Ramsey County Adult Detention Center,425 Grove Street,St. Paul,Ramsey,MN,55101,St. Paul,44.955749,-93.089261,USMS IGA,Federal,Ramsey County Sheriff's Office,County,vera
+RIHPRRI,Rhode Island Hospital,Rhode Island Hospital,593 Eddy St,Providence,Providence,RI,2903,Boston,41.811448,-71.41093,Hospital,Medical,Brown University Health,Private,vera
+RWCCMLA,Richwood Cor Center,Richwood Correctional Center,180 Pine Bayou Circle,Monroe,Ouachita,LA,71202,New Orleans,32.463426,-92.087402,DIGSA,Dedicated,LaSalle,Private,vera
+RGRNDTX,Rio Grande Detention Center,Rio Grande Detention Center,1001 San Rio Boulevard,Laredo,Webb,TX,78046,Harlingen,27.377813,-99.489677,USMS CDF,Federal,GEO,Private,vera
+RGS,Rio Grande Valley Staging,Rio Grande Valley Staging Facility,27991 Buena Vista Blvd,Los Fresnos,Cameron,TX,78566,Harlingen,26.157941,-97.35047,Staging,Hold/Staging,Ahtna,Private,vera
+RADDFGA,Robert A Deyton Detention Fac,Robert A. Deyton Detention Facility,11866 Hastings Bridge Rd,Lovejoy,Clayton,GA,30250,Atlanta,33.440609,-84.320068,USMS CDF,Federal,GEO,Private,vera
+BOPRCH,Rochester Fed.Med.Center,FMC Rochester,2110 E Center St,Rochester,Olmsted,MN,55904,St. Paul,44.023339,-92.439526,BOP,Federal,Bureau of Prisons,Federal,vera
+HASKLTX,Rolling Plains Detention Center,Rolling Plains Detention Center,118 County Road 206,Haskell,Haskell,TX,79521,Dallas,33.176272,-99.721789,USMS IGA,Federal,Emerald,Private,vera
+SACRACA,Sacramento County Jail,Sacramento County Jail,651 I Street,Sacramento,Sacramento,CA,95814,San Francisco,38.582987,-121.49743,USMS IGA,Federal,Sacramento County Sheriff's Office,County,vera
+SBDHOLD,San Bernadino Hold Room,San Bernardino Field Office Hold Room,655 West Rialto Avenue,San Bernardino,San Bernardino,CA,92410,Los Angeles,34.10077,-117.297624,Hold,Hold/Staging,ICE,Federal,vera
+SPE,,San Pedro Service Processing Center,2001 S. Seaside Avenue,San Pedro,Los Angeles,CA,90731,Los Angeles,33.7272854,-118.269007,SPC,Dedicated,ICE,Federal,bbdp
+BASILLA,Basile Detention Center,Basile Detention Center,3843 Stagg Avenue,Basile,Evangeline,LA,70515,New Orleans,30.486577,-92.583366,DIGSA,Dedicated,GEO,Private,vera
+STCDFTX,South Texas ICE Processing Center,South Texas ICE Processing Center,566 Veterans Drive,Pearsall,Frio,TX,78061,San Antonio,28.894651,-99.121943,CDF,Dedicated,GEO,Private,vera
+BOPSPG,Springfield Fed.Med.Cntr,FMC Springfield,1900 W. Sunshine,Springfield,Greene,MO,65808,Chicago,37.177542,-93.323273,BOP,Federal,Bureau of Prisons,Federal,vera
+STGENMO,Ste. Genevieve County Sheriff/Jail,Sainte Genevieve County Jail,5 Basler Drive,Ste. Genevieve,Ste. Genevieve,MO,63670,Chicago,37.965948,-90.055775,USMS IGA,Federal,Ste. Genevieve County Sheriff's Office,County,vera
+STWRTGA,Stewart Detention Center,Stewart Detention Center,146 Cca Road,Lumpkin,Stewart,GA,31815,Atlanta,32.036676,-84.771746,DIGSA,Dedicated,CoreCivic,Private,vera
+SUFFOMA,Suffolk Hoc Sbay,Suffolk House of Correction,20 Bradston Street,Boston,Suffolk,MA,2118,Boston,42.332922,-71.070939,IGSA,Non-Dedicated,Suffolk County Sheriff's Department,County,vera
+TENSALA,Tensas Parish Det. Cntr.,Tensas Parish Detention Center,8606 Hwy 65,Waterproof,Tensas,LA,71375,New Orleans,31.808719,-91.397103,IGSA,Non-Dedicated,Emerald,Private,vera
+BOPTHA,Terre Haute USP,USP Terre Haute,Highway 63 South,Terre Haute,Vigo,IN,47808,Chicago,39.416285,-87.450698,BOP,Federal,Bureau of Prisons,Federal,vera
+TLACYCA,Theo Lacy Facility,Theo Lacy Facility,501 The City Drive South,Orange,Orange,CA,92868,Los Angeles,33.782671,-117.888617,IGSA,Non-Dedicated,Orange County Sheriff's Office (CA),County,vera
+TOORANM,"Torrance/Estancia, NM",Torrance County Detention Facility,County Road 49,Estancia,Torrance,NM,87016,El Paso,34.767387,-106.018496,IGSA,Non-Dedicated,CoreCivic,Private,vera
+UTAHCUT,Utah County Jail,Utah County Jail,3075 North Main Street,Spanish Fork,Utah,UT,84660,Salt Lake City,40.148256,-111.656906,IGSA,Non-Dedicated,Utah County Sheriff's Office,County,vera
+WAKULFL,Wakulla County Jail,Wakulla County Jail,15 Oak Street,Crawfordville,Wakulla,FL,32327,Miami,30.196089,-84.376921,IGSA,Non-Dedicated,Wakulla County Sheriff's Department,County,vera
+WEBERUT,Weber County Jail,Weber County Jail,721 West 12th Street,Ogden,Weber,UT,84404,Salt Lake City,41.24009,-111.993298,USMS IGA,Federal,Weber County Sheriff's Office,County,vera
+WICCOMD,,Wicomico County Corrections Center,411 West Naylor Mill Road,Salisbury,Wicomico,MD,21801,Baltimore,38.4084909,-75.5833224,IGSA,Non-Dedicated,Wicomico County Department of Corrections,County,bbdp
+LAWINCI,Winn Corr Institute,Winn Correctional Center,560 Gum Spring Road,Winnfield,Winn,LA,71483,New Orleans,31.849565,-92.801514,DIGSA,Dedicated,LaSalle,Private,vera
+WORCEMD,Worcester Co. Jail,Worcester County Jail,5022 Joyner Road,Snow Hill,Worcester,MD,21863,Baltimore,38.170007,-75.375834,IGSA,Non-Dedicated,Worcester County,County,vera
+WYATTRI,Wyatt Detention Center,Wyatt Detention Center,950 High Street,Central Falls,Providence,RI,2863,Boston,41.892811,-71.3832,USMS IGA,Federal,Central Falls Detention Facility Corporation,Private,vera
+YORCOPA,"York County Jail, PA",York County Prison,3400 Concord Road,York,York,PA,17402,Philadelphia,39.987597,-76.663603,IGSA,Non-Dedicated,York County Department of Prisons,County,vera

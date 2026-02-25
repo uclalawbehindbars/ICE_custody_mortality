@@ -1,0 +1,139 @@
+detention_center_raw,state,detention_facility_code
+Larkin Community Hospital Behavioral Health Center,Florida,LRKBHFL
+Miami Correctional Facility,Indiana,INMIAMI
+Providence ICE ERO Holding Room,Rhode Island,PROHOLD
+Adams County Detention Center,Mississippi,ADAMSMS
+Adelanto Detention Facility,California,ADLNTCA
+Adelanto ICE Processing Center,California,ADLNTCA
+Albany County Jail,New York,ALBCONY
+"Allenwood Low Security Federal Correctional Institute
+(PA)",North Carolina,BOPALM
+Atlanta City Detention Center,Georgia,ATLANGA
+Atwater US Penitentiary,California,BOPATW
+Baker County Detention Center,Florida,BAKERFL
+Bergen County Jail,New Jersey,BERGENJ
+Bernalillo County Detention Center,New Mexico,BERNANM
+Broadview Service Staging,Illinois,BSAHOLD
+Brooks County Detention Center,Texas,BSAHOLD
+Broward Transitional Center,Florida,BSAHOLD
+Butner Federal Correctional Institute,North Carolina,BOPBUT
+Calhoun County Correctional Center,Michigan,CALHOMI
+Calhoun County Jail,Michigan,CALHOMI
+Camp East Montana,Texas,EROFCB
+Catahoula Correctional Center,Louisiana,CATAHLA
+Central Arizona Correctional Complex,Arizona,FLO
+Cibola County Correctional Center,New Mexico,CIBOCNM
+Clinton County Correctional Facility,Pennsylvania,CLINTPA
+Columbia Care Center,South Carolina,COLCASC
+Dallas County Jail,Texas,DALCOTX
+Delaney Hall,New Jersey,DHDFNJ
+Denver Contract Detention Facility,Colorado,DENICDF
+Devens Federal Medical Center,Massachusetts,BOPDEV
+El Centro Service Processing Center,California,ECC
+"El Paso County Criminal Justice Center
+(Colorado)",Colorado,ELPASCO
+El Paso Service Processing Center,Texas,EPC
+El Valle Detention Facility,Texas,ELVDFTX
+El Valle Valley Detention Facility,Texas,ELVDFTX
+Elizabeth Contract Detention Facility,New Jersey,ELZICDF
+Eloy Detention Center,Arizona,EAZ
+Essex County Detention Facility,New Jersey,ESSEXNJ
+Etowah County Jail,Alabama,ETOWAAL
+Farmville Detention Center,Virginia,FRMVLVA
+Federal Detention Center - Miami,Florida,BOPMIM
+Federal Detention Center - PHL,Pennsylvania,BOPPHL
+Florence Service Processing Center,Arizona,FLO
+Florence Staging Facility,Arizona,FSF
+Folkston ICE Processing Center,Georgia,FIPCMGA
+Fort Worth Federal Medical Center,Texas,BOPFTW
+Frio County Jail,Texas,FRIOCTX
+Glades County Detention Center,Florida,GLADEFL
+Guadalupe City Jail,Texas,GUADATX
+"Guaynabo Metropolitan Detention Center
+(Puerto Rico)",Puerto Rico,BOPGUA
+Hall County Jail,Nebraska,HALLJGA
+Hampton Roads Regional Jail,Virginia,HRREGVA
+Harris County Jail (GA),Georgia,HARRIGA
+Henderson Detention Center,Texas,HENDETX
+Houston Contract Detention Facility,Texas,HOUICDF
+Hudson County Correctional,New Jersey,HUDSONJ
+Hudson County Correctional Facility,New Jersey,HUDSONJ
+"IAH Secure Adult Detention Center
+Livingston, Texas",Texas,POLKCTX
+ICE ERO Dallas Field Office,Texas,DALHOLD
+Immigration Centers of America Farmville,Virginia,FRMVLVA
+Imperial Regional Detention Center,California,IRADFCA
+Imperial Regional Detention Facility,California,IRADFCA
+"INS Airport Hold, IL",Illinois,CHIHOLD
+Jefferson County Jail,Texas,JEFFETX
+Joe Corley ICE Processing Center,Texas,JCRLYTX
+Karnes City ICE Processing Center,Texas,KARNETX
+Karnes County ICE Processing Center,Texas,KCCDCTX
+Kern County Jail,California,KERCOCA
+Krome North Service Processing Center,Florida,KRO
+Krome Service Processing Center,Florida,KRO
+La Paz County Jail,Arizona,LAPAZAZ
+Laredo Processing Center,Texas,LRDICDF
+Las Vegas Hold Room,Nevada,LVGHOLD
+LaSalle Detention Center,Louisiana,OLACCLA
+Lemuel Shattuck Hospital,Massachusetts,LSHOSMA
+McHenry County Adult Correctional Facility,Illinois,MCHENIL
+Mesa Verde Detention Facility,California,CACFMES
+Middlesex County Jail,New Jersey,MIDDLNJ
+Mira Loma Detention Center,California,LANCACA
+Monmouth County Correctional Institute,New Jersey,MONMONJ
+Monroe County Detention Center,Florida,MONROFL
+Montgomery ICE Processing Center,Texas,MTGPCTX
+Morrow County Correctional Facility,Ohio,MOROWOH
+Moshannon Valley ICE Processing Center,Pennsylvania,MSVPCPA
+Nassau County Correctional Center,New York,NASSANY
+Newton County Correctional Center,Texas,NEWCOTX
+North Georgia Detention Center,Georgia,NGDCTGA
+North Lake Processing Center,Michigan,NRLKCMI
+Northeast Ohio Correctional Center,Ohio,BOPNEO
+Northwest Detention Center,Washington,CSCNWWA
+Oakdale Federal Detention Center,Louisiana,OAK
+Orange County Jail,New York,ORANGNY
+Orleans Parish Prison,Louisiana,ORPARLA
+Otay Mesa Detention Center,California,CCASDCA
+Otero County Processing Center,New Mexico,OTRPCNM
+Passaic County Jail,New Jersey,PASSANJ
+Perry County Correctional Center,Alabama,PERRYAL
+Phelps County Jail,Missouri,PHELPMO
+Piedmont Regional Jail,Virginia,PMREGVA
+Pike County Correctional Facility,Pennsylvania,PIKCOPA
+"Pinal County Jail
+(Arizona)",Pennsylvania,PINALAZ
+Port Isabel Detention Center,Texas,PIC
+Pottawattamie County Jail,Iowa,POTTAIA
+Prairieland Detention Center,Texas,PRLDCTX
+Ramsey County Adult Detention Center,Minnesota,RAADCMN
+Rhode Island Hospital,Rhode Island,RIHPRRI
+Richwood Correctional Center,Louisiana,RWCCMLA
+Rio Grande Detention Center,Texas,RGRNDTX
+Rio Grande Valley Staging,Texas,RGS
+Robert A. Deyton Detention Center,Georgia,RADDFGA
+Rochester Federal Medical Center,Colorado,BOPRCH
+Rolling Plains Detention Center,Texas,HASKLTX
+Sacramento County Jail,California,SACRACA
+San Bernadino Hold Room,California,SBDHOLD
+San Pedro Service Processing Center,California,SPE
+South Louisiana Detention Center,Louisiana,BASILLA
+South Texas Detention Complex,Texas,STCDFTX
+South Texas ICE Processing Center,Texas,STCDFTX
+Springfield Federal Medical Center,Missouri,BOPSPG
+Ste. Genevieve County Jail,Missouri,STGENMO
+Stewart Detention Center,Georgia,STWRTGA
+Suffolk County House of Corrections,Massachusetts,SUFFOMA
+Tensas Parish Detention Center,Louisiana,TENSALA
+Terre Haute US Penitentiary,Indiana,BOPTHA
+Theo Lacy Facility,California,TLACYCA
+Torrance County Detention Facility,New Mexico,TOORANM
+Utah County Jail,Utah,UTAHCUT
+Wakulla County Jail,Florida,WAKULFL
+Weber County Jail,Utah,WEBERUT
+Wicomico County Detention Center,Maryland,WICCOMD
+Winn Correctional Center,Louisiana,LAWINCI
+Worcester County Jail,Maryland,WORCEMD
+Wyatt Detention Center,Rhode Island,WYATTRI
+York County Prison,Pennsylvania,YORCOPA
