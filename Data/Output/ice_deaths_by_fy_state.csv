@@ -40,10 +40,10 @@ fiscal_year,detention_center_state,deaths_n
 2007,AZ,2
 2007,CA,2
 2007,NJ,2
+2007,RI,1
 2007,TX,3
 2007,VA,1
 2007,WA,1
-2007,NA,1
 2008,AL,1
 2008,AZ,2
 2008,CA,1
@@ -117,9 +117,9 @@ fiscal_year,detention_center_state,deaths_n
 2018,CO,1
 2018,FL,1
 2018,GA,2
+2018,IL,1
 2018,NM,1
 2018,TX,2
-2018,NA,1
 2019,AZ,2
 2019,FL,2
 2019,GA,1
@@ -162,8 +162,9 @@ fiscal_year,detention_center_state,deaths_n
 2025,MO,1
 2025,NY,1
 2025,PA,1
-2025,TX,3
+2025,TX,5
 2025,WA,1
+2025,NA,1
 2026,CA,2
 2026,FL,2
 2026,GA,1
@@ -174,4 +175,3 @@ fiscal_year,detention_center_state,deaths_n
 2026,NJ,1
 2026,PA,2
 2026,TX,7
-2026,NA,2

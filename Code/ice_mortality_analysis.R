@@ -7,7 +7,6 @@ library(common)
 library(here)
 library(lubridate)
 library(yaml)
-library(common)
 
 common::source.all(here("Code/library"), isolate = FALSE)
 
@@ -28,7 +27,12 @@ overall_calyr <- data_validated |>
   arrange(calendar_year)
 
 overall_facility <- data_validated |>
-  get_death_counts(detention_center_name) |>
+  get_death_counts(
+    detention_center_name,
+    detention_center_type,
+    latitude,
+    longitude
+  ) |>
   arrange(desc(deaths_n))
 
 
@@ -52,11 +56,23 @@ deaths_by_calyr_state <- data_validated |>
 ### Facility-level counts
 
 deaths_by_fy_facility <- data_validated |>
-  get_death_counts(fiscal_year, detention_center_name) |>
+  get_death_counts(
+    fiscal_year,
+    detention_center_name,
+    detention_center_type,
+    latitude,
+    longitude
+  ) |>
   arrange(fiscal_year, detention_center_name)
 
 deaths_by_calyr_facility <- data_validated |>
-  get_death_counts(calendar_year, detention_center_name) |>
+  get_death_counts(
+    calendar_year,
+    detention_center_name,
+    detention_center_type,
+    latitude,
+    longitude
+  ) |>
   arrange(calendar_year, detention_center_name)
 
 ### Contractor-level (public/private) counts
@@ -89,4 +105,3 @@ deaths_by_fy_detention_center_type |>
   write_csv(here("Data/Output/ice_deaths_by_fy_facility_type.csv"))
 deaths_by_calyr_detention_center_type |>
   write_csv(here("Data/Output/ice_deaths_by_calyr_facility_type.csv"))
-

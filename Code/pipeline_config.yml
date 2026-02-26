@@ -822,12 +822,9 @@ bbdp_ice_deaths:
   filters:
     - "!(name == 'Jose Castro Rivera' & dod == ymd('2025-10-23'))"
     - "!(name == 'Francisco Castaneda' & dod == ymd('2008-02-01'))"
-    - "!(name == 'Juan Alexis Tineo Martinez')"
     - "!(name == 'Martin Arellano Vargas' & dod == ymd('2021-03-08'))"
     - "!(name == 'Oscar Lopez Acosta' & dod == ymd('2020-05-10'))"
     - "!(name == 'Johana Medina Leon' & dod == ymd('2019-06-01'))"
-    - "!(name == 'Miguel Angel Garcia Hernandez')"
-    - "!(name == 'Norlan Guzman Fuentes')"
     - "!(str_detect(name, 'Francisco Castaneda') & dod == ymd('2008-02-01'))"
     - "fiscal_year >= 2004"
     - "year(dod) >= 2003"

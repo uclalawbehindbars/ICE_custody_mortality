@@ -1,6 +1,6 @@
 # Title: ICE Pipeline
 # Author: Hena Vadher, Annette Dekker, and Ethan Corey for BBDP
-# Date (Last Updated): 25 February 2026
+# Date (Last Updated): 26 February 2026
 # Purpose: Library functions for ICE pipeline
 
 library(dplyr)
@@ -40,7 +40,7 @@ apply_corrections <- function(
   config,
   id_col = "id"
 ) {
-  force(data)
+  force(uncorrected_df)
   if (is.null(config$corrections)) {
     log_me_maybe("No corrections to apply!")
     return(uncorrected_df)

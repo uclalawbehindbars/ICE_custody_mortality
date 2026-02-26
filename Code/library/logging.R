@@ -1,6 +1,6 @@
 # Title: ICE Logging
 # Author: Hena Vadher, Annette Dekker, and Ethan Corey for BBDP
-# Date (Last Updated): 25 February 2026
+# Date (Last Updated): 26 February 2026
 # Purpose: Logging functions for ICE pipeline
 
 library(glue)
