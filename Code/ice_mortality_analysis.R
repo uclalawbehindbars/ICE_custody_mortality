@@ -1,6 +1,6 @@
 # Title: ICE Mortality Analysis
 # Authors: Hena Vadher, Annette Dekker, and Ethan Corey for BBDP
-# Date (Last Updated): 5 February 2026
+# Date (Last Updated): 26 February 2026
 # Purpose: Analyze ICE mortality data.
 
 library(common)
@@ -59,6 +59,7 @@ deaths_by_fy_facility <- data_validated |>
   get_death_counts(
     fiscal_year,
     detention_center_name,
+    detention_center_state,
     detention_center_type,
     latitude,
     longitude
@@ -69,6 +70,7 @@ deaths_by_calyr_facility <- data_validated |>
   get_death_counts(
     calendar_year,
     detention_center_name,
+    detention_center_state,
     detention_center_type,
     latitude,
     longitude
@@ -80,7 +82,7 @@ deaths_by_fy_detention_center_type <- data_validated |>
   get_death_counts(fiscal_year, detention_center_type) |>
   arrange(fiscal_year, detention_center_type)
 
-deaths_by_calyr_detention_center_type <- data_validated |>
+deaths_by_year_detention_center_type <- data_validated |>
   get_death_counts(calendar_year, detention_center_type) |>
   arrange(calendar_year, detention_center_type)
 
@@ -103,5 +105,5 @@ deaths_by_calyr_facility |>
 
 deaths_by_fy_detention_center_type |>
   write_csv(here("Data/Output/ice_deaths_by_fy_facility_type.csv"))
-deaths_by_calyr_detention_center_type |>
-  write_csv(here("Data/Output/ice_deaths_by_calyr_facility_type.csv"))
+deaths_by_year_detention_center_type |>
+  write_csv(here("Data/Output/ice_deaths_by_year_facility_type.csv"))
