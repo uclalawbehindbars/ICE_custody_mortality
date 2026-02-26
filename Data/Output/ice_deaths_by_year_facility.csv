@@ -1,239 +1,241 @@
-calendar_year,detention_center_name,deaths_n
-2003,Columbia Care Center,1
-2003,San Pedro Service Processing Center,1
-2003,USP Atwater,1
-2004,Columbia Care Center,4
-2004,Dallas County Jail,1
-2004,El Centro Service Processing Center,1
-2004,El Paso Service Processing Center,1
-2004,Eloy Detention Center,1
-2004,Etowah County Jail,1
-2004,FCI Allenwood,1
-2004,FMC Devens,1
-2004,FMC Rochester,1
-2004,FMC Springfield,2
-2004,Frio County Jail,1
-2004,Guadalupe County Jail,1
-2004,Hampton Roads Regional Jail,3
-2004,Jefferson County Jail,1
-2004,Krome North Service Processing Center,2
-2004,Lerdo Pre-Trial Facility,1
-2004,MDC Guaynabo,1
-2004,Middlesex County Jail,1
-2004,O'Hare Airport Hold Room,1
-2004,Oakdale Federal Detention Center,1
-2004,Pike County Jail,1
-2004,Sacramento County Jail,1
-2004,USP Terre Haute,1
-2004,Wicomico County Corrections Center,1
-2004,York County Prison,1
-2005,Columbia Care Center,1
-2005,Eloy Detention Center,3
-2005,FCI Butner,3
-2005,FMC Fort Worth,1
-2005,FMC Springfield,1
-2005,Hampton Roads Regional Jail,1
-2005,Harris County Jail,1
-2005,Houston Contract Detention Facility,1
-2005,Laredo Processing Center,1
-2005,McHenry County Adult Correctional Facility,1
-2005,Monmouth County Jail,1
-2005,Otay Mesa Detention Center,2
-2005,Passaic County Jail,1
-2005,San Pedro Service Processing Center,1
-2005,Tensas Parish Detention Center,1
-2006,Albuquerque Regional Correctional Center,1
-2006,Eloy Detention Center,2
-2006,FMC Devens,1
-2006,FMC Springfield,2
-2006,Houston Contract Detention Facility,1
-2006,Lerdo Pre-Trial Facility,2
-2006,Mira Loma Detention Center,1
-2006,Newton County Correctional Center,1
-2006,Northwest ICE Processing Center,1
-2006,Oakdale Federal Detention Center,1
-2006,Otay Mesa Detention Center,1
-2006,Piedmont Regional Jail,1
-2006,Ramsey County Adult Detention Center,1
-2006,San Pedro Service Processing Center,1
-2006,Suffolk House of Correction,1
-2007,Bergen County Jail,1
-2007,El Paso Service Processing Center,2
-2007,Elizabeth Contract Detention Facility,1
-2007,Eloy Detention Center,1
-2007,Mira Loma Detention Center,1
-2007,Providence ICE ERO Hold Room,1
-2007,San Pedro Service Processing Center,1
-2008,Basile Detention Center,1
-2008,Eloy Detention Center,2
-2008,FMC Springfield,1
-2008,Glades County Detention Center,1
-2008,Lasalle Correctional Center,1
-2008,Lemuel Shattuck Hospital,1
-2008,Lerdo Pre-Trial Facility,1
-2008,Middlesex County Jail,1
-2008,Otero County Processing Center,1
-2008,Perry County Correctional Center,1
-2008,Piedmont Regional Jail,1
-2008,Pinal County Jail,1
-2008,Rolling Plains Detention Center,1
-2008,Stewart Detention Center,1
-2008,Wyatt Detention Center,1
-2009,Columbia Care Center,2
-2009,Lasalle Correctional Center,1
-2009,Otay Mesa Detention Center,1
-2009,Port Isabel Service Processing Center,1
-2009,Stewart Detention Center,1
-2009,Suffolk House of Correction,1
-2009,Tensas Parish Detention Center,1
-2009,Wakulla County Jail,1
-2009,York County Prison,1
-2010,Broadview ICE Facility,1
-2010,Columbia Care Center,1
-2010,FCI Butner,1
-2010,Krome North Service Processing Center,1
-2010,Mira Loma Detention Center,1
-2010,Oakdale Federal Detention Center,2
-2010,Orleans Parish Prison,1
-2010,York County Prison,1
-2011,Albany County Jail,1
-2011,Clinton County Correctional Facility,1
-2011,El Paso Service Processing Center,1
-2011,Elizabeth Contract Detention Facility,1
-2011,Eloy Detention Center,1
-2011,Farmville Detention Center,1
-2011,Houston Contract Detention Facility,2
-2011,North Georgia Detention Center,1
-2011,Theo Lacy Facility,1
-2011,Weber County Jail,1
-2012,Adelanto ICE Processing Center,1
-2012,Denver Contract Detention Facility,1
-2012,Eloy Detention Center,1
-2012,Las Vegas Field Office Hold Room,1
-2012,San Bernardino Field Office Hold Room,1
-2013,Broadview ICE Facility,1
-2013,Eloy Detention Center,2
-2013,Houston Contract Detention Facility,1
-2013,Joe Corley Processing Center,1
-2013,MDC Guaynabo,1
-2013,Port Isabel Service Processing Center,1
-2013,Rolling Plains Detention Center,1
-2013,York County Prison,1
-2014,Houston Contract Detention Facility,2
-2014,Otay Mesa Detention Center,1
-2014,Rio Grande Detention Center,1
-2014,South Texas ICE Processing Center,1
-2014,Utah County Jail,1
-2015,Adelanto ICE Processing Center,2
-2015,El Paso County Jail,1
-2015,Eloy Detention Center,1
-2015,Florence Service Processing Center,1
-2015,Houston Contract Detention Facility,1
-2015,Port Isabel Service Processing Center,1
-2016,Eloy Detention Center,1
-2016,Essex County Jail,1
-2016,Hall County Jail,1
-2016,Krome North Service Processing Center,1
-2016,Lasalle Correctional Center,3
-2016,Orange County Jail,1
-2016,Otay Mesa Detention Center,1
-2016,Otero County Processing Center,1
-2016,Rolling Plains Detention Center,1
-2016,South Texas ICE Processing Center,1
-2017,Adelanto ICE Processing Center,3
-2017,Atlanta Pretrial Detention Center,1
-2017,Denver Contract Detention Facility,1
-2017,Hudson County Jail,1
-2017,IAH Polk Adult Detention Facility,1
-2017,Krome North Service Processing Center,1
-2017,Lasalle Correctional Center,1
-2017,Stewart Detention Center,1
-2018,Baker County Jail,1
-2018,Broadview ICE Facility,1
-2018,Cibola County Correctional Center,1
-2018,Eloy Detention Center,1
-2018,Krome North Service Processing Center,1
-2018,Monroe County Jail,1
-2018,Northwest ICE Processing Center,1
-2018,Otay Mesa Detention Center,1
-2018,Port Isabel Service Processing Center,1
-2018,Prairieland Detention Facility,1
-2018,Stewart Detention Center,2
-2019,Florence Service Processing Center,1
-2019,Houston Contract Detention Facility,1
-2019,La Paz Adult Detention Facility,1
-2019,McHenry County Adult Correctional Facility,1
-2019,Otay Mesa Detention Center,1
-2019,Richwood Correctional Center,1
-2019,Stewart Detention Center,1
-2019,Torrance County Detention Facility,1
-2019,Worcester County Jail,1
-2020,Adams County Detention Center,1
-2020,Baker County Jail,1
-2020,Catahoula Correctional Center,1
-2020,Farmville Detention Center,1
-2020,Glades County Detention Center,1
-2020,Joe Corley Processing Center,1
-2020,Karnes County Immigration Processing Center,1
-2020,Krome North Service Processing Center,2
-2020,Mesa Verde ICE Processing Center,1
-2020,Northeast Ohio Correctional Center,1
-2020,Otay Mesa Detention Center,1
-2020,Port Isabel Service Processing Center,1
-2020,Prairieland Detention Facility,1
-2020,Stewart Detention Center,3
-2020,Winn Correctional Center,1
-2021,Adams County Detention Center,1
-2021,Calhoun County Correctional Center,1
-2021,El Valle Detention Facility,1
-2021,Port Isabel Service Processing Center,1
-2021,Stewart Detention Center,1
-2022,Denver Contract Detention Facility,1
-2022,Florence Service Processing Center,1
-2022,Torrance County Detention Facility,1
-2023,Karnes County Immigration Processing Center,1
-2023,Krome North Service Processing Center,1
-2023,Lasalle Correctional Center,1
-2023,Moshannon Valley Processing Center,1
-2023,Otay Mesa Detention Center,1
-2023,Port Isabel Service Processing Center,1
-2023,Stewart Detention Center,1
-2024,Calhoun County Correctional Center,1
-2024,El Valle Detention Facility,1
-2024,Folkston ICE Processing Center,1
-2024,Henderson County Jail,1
-2024,Joe Corley Processing Center,1
-2024,Krome North Service Processing Center,1
-2024,Northwest ICE Processing Center,2
-2024,Otero County Processing Center,1
-2024,Stewart Detention Center,1
-2024,Winn Correctional Center,1
-2025,Adams County Detention Center,1
-2025,Adelanto ICE Processing Center,2
-2025,Broadview ICE Facility,1
-2025,Camp East Montana,1
-2025,Delaney Hall Detention Facility,1
-2025,El Paso Service Processing Center,1
-2025,Eloy Detention Center,1
-2025,FDC Miami,1
-2025,Florence Service Processing Center,1
-2025,Florence Staging Facility,1
-2025,Imperial Regional Detention Facility,1
-2025,Karnes County Correctional Center,1
-2025,Krome North Service Processing Center,4
-2025,Montgomery Processing Center,1
-2025,Moshannon Valley Processing Center,2
-2025,Nassau County Correctional Center,1
-2025,North Lake Correctional Facility,1
-2025,Phelps County Jail,1
-2025,Prairieland Detention Facility,1
-2025,Sainte Genevieve County Jail,1
-2025,South Texas ICE Processing Center,1
-2025,Stewart Detention Center,2
-2026,Camp East Montana,2
-2026,FDC Philadelphia,1
-2026,Imperial Regional Detention Facility,1
-2026,Joe Corley Processing Center,1
-2026,Larkin Behavioral Health Center,1
-2026,Miami Correctional Facility,1
-2026,Robert A. Deyton Detention Facility,1
+calendar_year,detention_center_name,detention_center_type,latitude,longitude,deaths_n
+2003,Columbia Care Center,Private,34.075744,-80.979724,1
+2003,San Pedro Service Processing Center,Public,33.7272854,-118.269007,1
+2003,USP Atwater,Public,37.3840277,-120.5587741,1
+2004,Columbia Care Center,Private,34.075744,-80.979724,4
+2004,Dallas County Jail,Public,32.776299,-96.815601,1
+2004,El Centro Service Processing Center,Private,32.802962,-115.569768,1
+2004,El Paso Service Processing Center,Private,31.796447,-106.369651,1
+2004,Eloy Detention Center,Private,32.817677,-111.51927,1
+2004,Etowah County Jail,Public,34.015737,-86.011933,1
+2004,FCI Allenwood,Public,41.127767,-76.921971,1
+2004,FMC Devens,Public,42.529248,-71.613805,1
+2004,FMC Rochester,Public,44.023339,-92.439526,1
+2004,FMC Springfield,Public,37.177542,-93.323273,2
+2004,Frio County Jail,Private,28.887948,-99.091675,1
+2004,Guadalupe County Jail,Public,29.603766,-97.970028,1
+2004,Hampton Roads Regional Jail,Public,36.804472,-76.368436,3
+2004,Jefferson County Jail,Private,30.079492,-94.094305,1
+2004,Krome North Service Processing Center,Private,25.76032,-80.496826,2
+2004,Lerdo Pre-Trial Facility,Public,35.653064,-119.107939,1
+2004,MDC Guaynabo,Public,18.423156,-66.112208999999993,1
+2004,Middlesex County Jail,Public,40.421388,-74.488991,1
+2004,O'Hare Airport Hold Room,Public,41.974839,-87.890021,1
+2004,Oakdale Federal Detention Center,Public,30.820701,-92.640691,1
+2004,Pike County Jail,Public,41.38881,-75.071465,1
+2004,Sacramento County Jail,Public,38.582987,-121.49743,1
+2004,USP Terre Haute,Public,39.416285,-87.450698,1
+2004,Wicomico County Corrections Center,Public,38.4084909,-75.5833224,1
+2004,York County Prison,Public,39.987597,-76.663603,1
+2005,Columbia Care Center,Private,34.075744,-80.979724,1
+2005,Eloy Detention Center,Private,32.817677,-111.51927,3
+2005,FCI Butner,Public,36.187179,-78.740535,3
+2005,FMC Fort Worth,Public,32.6797719,-97.2874593,1
+2005,FMC Springfield,Public,37.177542,-93.323273,1
+2005,Hampton Roads Regional Jail,Public,36.804472,-76.368436,1
+2005,Harris County Jail,Public,32.764412,-84.866192,1
+2005,Houston Contract Detention Facility,Private,29.950836,-95.312188,1
+2005,Laredo Processing Center,Private,27.529476,-99.447773,1
+2005,McHenry County Adult Correctional Facility,Public,42.337002,-88.443168,1
+2005,Monmouth County Jail,Public,40.267897,-74.286962,1
+2005,Otay Mesa Detention Center,Private,32.576525,-116.915478,2
+2005,Passaic County Jail,Public,40.913016,-74.174113,1
+2005,San Pedro Service Processing Center,Public,33.7272854,-118.269007,1
+2005,Tensas Parish Detention Center,Private,31.808719,-91.397103,1
+2006,Albuquerque Regional Correctional Center,Private,35.089343,-106.651437,1
+2006,Eloy Detention Center,Private,32.817677,-111.51927,2
+2006,FMC Devens,Public,42.529248,-71.613805,1
+2006,FMC Springfield,Public,37.177542,-93.323273,2
+2006,Houston Contract Detention Facility,Private,29.950836,-95.312188,1
+2006,Lerdo Pre-Trial Facility,Public,35.653064,-119.107939,2
+2006,Mira Loma Detention Center,Public,34.701656,-118.233176,1
+2006,Newton County Correctional Center,Private,30.8667431,-93.7355571,1
+2006,Northwest ICE Processing Center,Private,47.25021,-122.422663,1
+2006,Oakdale Federal Detention Center,Public,30.820701,-92.640691,1
+2006,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2006,Piedmont Regional Jail,Public,37.320601,-78.425392,1
+2006,Ramsey County Adult Detention Center,Public,44.955749,-93.089261,1
+2006,San Pedro Service Processing Center,Public,33.7272854,-118.269007,1
+2006,Suffolk House of Correction,Public,42.332922,-71.070939,1
+2007,Bergen County Jail,Public,40.873873,-74.039042,1
+2007,El Paso Service Processing Center,Private,31.796447,-106.369651,2
+2007,Elizabeth Contract Detention Facility,Private,40.666157,-74.189694,1
+2007,Eloy Detention Center,Private,32.817677,-111.51927,1
+2007,Mira Loma Detention Center,Public,34.701656,-118.233176,1
+2007,Providence ICE ERO Hold Room,NA,41.726973,-71.457116,1
+2007,San Pedro Service Processing Center,Public,33.7272854,-118.269007,1
+2008,Basile Detention Center,Private,30.486577,-92.583366,1
+2008,Eloy Detention Center,Private,32.817677,-111.51927,2
+2008,FMC Springfield,Public,37.177542,-93.323273,1
+2008,Glades County Detention Center,Public,26.838714,-81.124018,1
+2008,Lasalle Correctional Center,Private,31.85131,-92.28482,1
+2008,Lemuel Shattuck Hospital,Public,42.29991,-71.10634,1
+2008,Lerdo Pre-Trial Facility,Public,35.653064,-119.107939,1
+2008,Middlesex County Jail,Public,40.421388,-74.488991,1
+2008,Otero County Processing Center,Private,32.08042,-106.28262,1
+2008,Perry County Correctional Center,Private,32.634284,-87.316173,1
+2008,Piedmont Regional Jail,Public,37.320601,-78.425392,1
+2008,Pinal County Jail,Public,33.041291,-111.376034,1
+2008,Rolling Plains Detention Center,Private,33.176272,-99.721789,1
+2008,Stewart Detention Center,Private,32.036676,-84.771746,1
+2008,Wyatt Detention Center,Private,41.892811,-71.3832,1
+2009,Columbia Care Center,Private,34.075744,-80.979724,2
+2009,Lasalle Correctional Center,Private,31.85131,-92.28482,1
+2009,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2009,Port Isabel Service Processing Center,Private,26.157941,-97.35047,1
+2009,Stewart Detention Center,Private,32.036676,-84.771746,1
+2009,Suffolk House of Correction,Public,42.332922,-71.070939,1
+2009,Tensas Parish Detention Center,Private,31.808719,-91.397103,1
+2009,Wakulla County Jail,Public,30.196089,-84.376921,1
+2009,York County Prison,Public,39.987597,-76.663603,1
+2010,Broadview ICE Facility,Private,41.868522,-87.86562,1
+2010,Columbia Care Center,Private,34.075744,-80.979724,1
+2010,FCI Butner,Public,36.187179,-78.740535,1
+2010,Krome North Service Processing Center,Private,25.76032,-80.496826,1
+2010,Mira Loma Detention Center,Public,34.701656,-118.233176,1
+2010,Oakdale Federal Detention Center,Public,30.820701,-92.640691,2
+2010,Orleans Parish Prison,Public,29.961463,-90.093506,1
+2010,York County Prison,Public,39.987597,-76.663603,1
+2011,Albany County Jail,Public,42.75141,-73.81536,1
+2011,Clinton County Correctional Facility,Public,41.154871,-77.336887,1
+2011,El Paso Service Processing Center,Private,31.796447,-106.369651,1
+2011,Elizabeth Contract Detention Facility,Private,40.666157,-74.189694,1
+2011,Eloy Detention Center,Private,32.817677,-111.51927,1
+2011,Farmville Detention Center,Private,37.319501,-78.438276,1
+2011,Houston Contract Detention Facility,Private,29.950836,-95.312188,2
+2011,North Georgia Detention Center,Private,34.294675,-83.824166,1
+2011,Theo Lacy Facility,Public,33.782671,-117.888617,1
+2011,Weber County Jail,Public,41.24009,-111.993298,1
+2012,Adelanto ICE Processing Center,Private,34.557729,-117.441865,1
+2012,Denver Contract Detention Facility,Private,39.766325,-104.864502,1
+2012,Eloy Detention Center,Private,32.817677,-111.51927,1
+2012,Las Vegas Field Office Hold Room,Public,36.058347,-115.225127,1
+2012,San Bernardino Field Office Hold Room,Public,34.10077,-117.297624,1
+2013,Broadview ICE Facility,Private,41.868522,-87.86562,1
+2013,Eloy Detention Center,Private,32.817677,-111.51927,2
+2013,Houston Contract Detention Facility,Private,29.950836,-95.312188,1
+2013,Joe Corley Processing Center,Private,30.34444,-95.46021,1
+2013,MDC Guaynabo,Public,18.423156,-66.112208999999993,1
+2013,Port Isabel Service Processing Center,Private,26.157941,-97.35047,1
+2013,Rolling Plains Detention Center,Private,33.176272,-99.721789,1
+2013,York County Prison,Public,39.987597,-76.663603,1
+2014,Houston Contract Detention Facility,Private,29.950836,-95.312188,2
+2014,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2014,Rio Grande Detention Center,Private,27.377813,-99.489677,1
+2014,South Texas ICE Processing Center,Private,28.894651,-99.121943,1
+2014,Utah County Jail,Public,40.148256,-111.656906,1
+2015,Adelanto ICE Processing Center,Private,34.557729,-117.441865,2
+2015,El Paso County Jail,Public,38.788166,-104.77912,1
+2015,Eloy Detention Center,Private,32.817677,-111.51927,1
+2015,Florence Service Processing Center,Private,33.06496,-111.378505,1
+2015,Houston Contract Detention Facility,Private,29.950836,-95.312188,1
+2015,Port Isabel Service Processing Center,Private,26.157941,-97.35047,1
+2016,Eloy Detention Center,Private,32.817677,-111.51927,1
+2016,Essex County Jail,Public,40.730608,-74.135742,1
+2016,Hall County Jail,Public,34.242651,-83.815583,1
+2016,Krome North Service Processing Center,Private,25.76032,-80.496826,1
+2016,Lasalle Correctional Center,Private,31.85131,-92.28482,3
+2016,Orange County Jail,Public,41.404669,-74.357459,1
+2016,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2016,Otero County Processing Center,Private,32.08042,-106.28262,1
+2016,Rolling Plains Detention Center,Private,33.176272,-99.721789,1
+2016,South Texas ICE Processing Center,Private,28.894651,-99.121943,1
+2017,Adelanto ICE Processing Center,Private,34.557729,-117.441865,3
+2017,Atlanta Pretrial Detention Center,Public,33.747313,-84.395391,1
+2017,Denver Contract Detention Facility,Private,39.766325,-104.864502,1
+2017,Hudson County Jail,Public,40.72991,-74.103398,1
+2017,IAH Polk Adult Detention Facility,Private,30.698151,-95.005792,1
+2017,Krome North Service Processing Center,Private,25.76032,-80.496826,1
+2017,Lasalle Correctional Center,Private,31.85131,-92.28482,1
+2017,Stewart Detention Center,Private,32.036676,-84.771746,1
+2018,Baker County Jail,Public,30.29596,-82.12172,1
+2018,Broadview ICE Facility,Private,41.868522,-87.86562,1
+2018,Cibola County Correctional Center,Private,35.179783,-107.907649,1
+2018,Eloy Detention Center,Private,32.817677,-111.51927,1
+2018,Krome North Service Processing Center,Private,25.76032,-80.496826,1
+2018,Monroe County Jail,Public,24.577137,-81.751524,1
+2018,Northwest ICE Processing Center,Private,47.25021,-122.422663,1
+2018,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2018,Port Isabel Service Processing Center,Private,26.157941,-97.35047,1
+2018,Prairieland Detention Facility,Private,32.420785,-97.196902,1
+2018,Stewart Detention Center,Private,32.036676,-84.771746,2
+2019,Florence Service Processing Center,Private,33.06496,-111.378505,1
+2019,Houston Contract Detention Facility,Private,29.950836,-95.312188,1
+2019,La Paz Adult Detention Facility,Public,34.146226,-114.290189,1
+2019,McHenry County Adult Correctional Facility,Public,42.337002,-88.443168,1
+2019,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2019,Richwood Correctional Center,Private,32.463426,-92.087402,1
+2019,Stewart Detention Center,Private,32.036676,-84.771746,1
+2019,Torrance County Detention Facility,Private,34.767387,-106.018496,1
+2019,Worcester County Jail,Public,38.170007,-75.375834,1
+2020,Adams County Detention Center,Private,31.569175,-91.230469,1
+2020,Baker County Jail,Public,30.29596,-82.12172,1
+2020,Catahoula Correctional Center,Private,31.860451,-91.962215,1
+2020,Farmville Detention Center,Private,37.319501,-78.438276,1
+2020,Glades County Detention Center,Public,26.838714,-81.124018,1
+2020,Joe Corley Processing Center,Private,30.34444,-95.46021,1
+2020,Karnes County Immigration Processing Center,Private,28.884651,-97.915298,1
+2020,Krome North Service Processing Center,Private,25.76032,-80.496826,2
+2020,Mesa Verde ICE Processing Center,Private,35.393033,-119.027482,1
+2020,Northeast Ohio Correctional Center,Public,41.12896,-80.62683,1
+2020,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2020,Port Isabel Service Processing Center,Private,26.157941,-97.35047,1
+2020,Prairieland Detention Facility,Private,32.420785,-97.196902,1
+2020,Stewart Detention Center,Private,32.036676,-84.771746,3
+2020,Winn Correctional Center,Private,31.849565,-92.801514,1
+2021,Adams County Detention Center,Private,31.569175,-91.230469,1
+2021,Calhoun County Correctional Center,Public,42.316674,-85.175892,1
+2021,El Valle Detention Facility,Private,26.480407,-97.767334,1
+2021,Port Isabel Service Processing Center,Private,26.157941,-97.35047,1
+2021,Stewart Detention Center,Private,32.036676,-84.771746,1
+2022,Denver Contract Detention Facility,Private,39.766325,-104.864502,1
+2022,Florence Service Processing Center,Private,33.06496,-111.378505,1
+2022,Torrance County Detention Facility,Private,34.767387,-106.018496,1
+2023,Karnes County Immigration Processing Center,Private,28.884651,-97.915298,1
+2023,Krome North Service Processing Center,Private,25.76032,-80.496826,1
+2023,Lasalle Correctional Center,Private,31.85131,-92.28482,1
+2023,Moshannon Valley Processing Center,Private,40.920042,-78.240515,1
+2023,Otay Mesa Detention Center,Private,32.576525,-116.915478,1
+2023,Port Isabel Service Processing Center,Private,26.157941,-97.35047,1
+2023,Stewart Detention Center,Private,32.036676,-84.771746,1
+2024,Calhoun County Correctional Center,Public,42.316674,-85.175892,1
+2024,El Valle Detention Facility,Private,26.480407,-97.767334,1
+2024,Folkston ICE Processing Center,Private,30.87638,-81.977941,1
+2024,Henderson County Jail,Public,32.212801,-95.855713,1
+2024,Joe Corley Processing Center,Private,30.34444,-95.46021,1
+2024,Krome North Service Processing Center,Private,25.76032,-80.496826,1
+2024,Northwest ICE Processing Center,Private,47.25021,-122.422663,2
+2024,Otero County Processing Center,Private,32.08042,-106.28262,1
+2024,Stewart Detention Center,Private,32.036676,-84.771746,1
+2024,Winn Correctional Center,Private,31.849565,-92.801514,1
+2025,Adams County Detention Center,Private,31.569175,-91.230469,1
+2025,Adelanto ICE Processing Center,Private,34.557729,-117.441865,2
+2025,Broadview ICE Facility,Private,41.868522,-87.86562,1
+2025,Camp East Montana,Private,31.812729,-106.298333,1
+2025,Dallas Field Office Hold Room,Public,32.823622,-96.872156,2
+2025,Delaney Hall Detention Facility,Private,40.717437,-74.127789,1
+2025,El Paso Service Processing Center,Private,31.796447,-106.369651,1
+2025,Eloy Detention Center,Private,32.817677,-111.51927,1
+2025,FDC Miami,Public,25.778491,-80.193199,1
+2025,Florence Service Processing Center,Private,33.06496,-111.378505,1
+2025,Florence Staging Facility,Private,33.06496,-111.378505,1
+2025,Imperial Regional Detention Facility,Private,32.690811,-115.397861,1
+2025,Karnes County Correctional Center,Private,28.883485,-97.911848,1
+2025,Krome North Service Processing Center,Private,25.76032,-80.496826,4
+2025,Montgomery Processing Center,Private,30.34444,-95.44922,1
+2025,Moshannon Valley Processing Center,Private,40.920042,-78.240515,2
+2025,Nassau County Correctional Center,Public,40.727807,-73.556165,1
+2025,North Lake Correctional Facility,Private,43.928658,-85.839408,1
+2025,Phelps County Jail,Public,37.945714,-91.775053,1
+2025,Prairieland Detention Facility,Private,32.420785,-97.196902,1
+2025,Sainte Genevieve County Jail,Public,37.965948,-90.055775,1
+2025,South Texas ICE Processing Center,Private,28.894651,-99.121943,1
+2025,Stewart Detention Center,Private,32.036676,-84.771746,2
+2025,NA,NA,NA,NA,1
+2026,Camp East Montana,Private,31.812729,-106.298333,2
+2026,FDC Philadelphia,Public,39.952909,-75.151925,1
+2026,Imperial Regional Detention Facility,Private,32.690811,-115.397861,1
+2026,Joe Corley Processing Center,Private,30.34444,-95.46021,1
+2026,Larkin Behavioral Health Center,Private,26.021177,-80.180662,1
+2026,Miami Correctional Facility,Public,40.644997,-86.132978,1
+2026,Robert A. Deyton Detention Facility,Private,33.440609,-84.320068,1

@@ -1,6 +1,6 @@
 # Title: ICE Mortality Validation
 # Authors: Hena Vadher, Annette Dekker, and Ethan Corey for BBDP
-# Date (Last Updated): 25 February 2026
+# Date (Last Updated): 26 February 2026
 # Purpose: Clean and validate ICE mortality data.
 
 library(common)
@@ -17,7 +17,7 @@ options("logr.autolog" = TRUE)
 # Data Import -----------------------------------------------------------------
 config <- read_yaml(here("Code", "pipeline_config.yml"))
 log_file <- glue("ice_mortality_validation_{now()}.log")
-data <- with_logging(log_file, load_df, "bbdp_ice_deaths", config) 
+data <- with_logging(log_file, load_df, "bbdp_ice_deaths", config)
 
 # Validate against FOIA -------------------------------------------------------
 check_foia <- load_df("foia2003-2017", config) # foia confirmed deaths 2003-Oct 2017 here: https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf
@@ -76,7 +76,6 @@ double_plus_unvalidated <- inner_join(
 citations_needed <- double_plus_unvalidated |>
   filter(is.na(ice_press_release) & is.na(ice_death_report))
 data_validated <- data |>
-  anti_join(citations_needed, by = c("name", "dod")) |>
   select(-ends_with("_validation")) |>
   mutate(
     additional_source = if_else(
@@ -89,20 +88,43 @@ data_validated <- data |>
     additional_source = if_else(
       data_validated_foia$validated,
       "ICE FOIA Death Log",
-      NA_character_
+      additional_source
     )
-  )
+  ) |>
+  anti_join(citations_needed, by = c("name", "dod"))
 
 # Trimmed fully-validated death data ------------------------------------------
 
 trimmed <- data_validated |>
-  mutate(detention_center_type = classify_detention_type(detention_center_contractor_type)) |> 
+  mutate(
+    detention_center_type = classify_detention_type(
+      detention_center_contractor_type
+    )
+  ) |>
   select(
-    name, dod, calendar_year, fiscal_year, gender, age, dob,
-    death_location, death_city, death_state,
-    detention_center_id, detention_center_name, detention_center_state,
-    detention_center_city, detention_center_aor,
-    detention_center_type, ice_press_release, ice_death_report, latitude, longitude, last_updated, additional_source
+    name,
+    dod,
+    calendar_year,
+    fiscal_year,
+    gender,
+    age,
+    dob,
+    listed_citizenship,
+    death_location,
+    death_city,
+    death_state,
+    detention_center_id,
+    detention_center_name,
+    detention_center_state,
+    detention_center_city,
+    detention_center_aor,
+    detention_center_type,
+    ice_press_release,
+    ice_death_report,
+    latitude,
+    longitude,
+    last_updated,
+    additional_source
   )
 
 # Output QA artifacts ---------------------------------------------------------
@@ -116,8 +138,9 @@ unvalidated_code_red |>
   write_csv(here("Data/Processed/ice_deaths_unvalidated_code_red.csv"))
 double_plus_unvalidated |>
   write_csv(here("Data/Processed/ice_deaths_double_unvalidated.csv"))
-citations_needed |> write_csv("Data/Processed/ice_deaths_citations_needed.csv")
+citations_needed |>
+  write_csv(here("Data/Processed/ice_deaths_citations_needed.csv"))
 data_validated |>
   write_csv(here("Data/Processed/processed_ice_deaths_unvalidated.csv"))
-trimmed |> 
+trimmed |>
   write_csv(here("Data/Processed/ice_deaths_validated.csv"))

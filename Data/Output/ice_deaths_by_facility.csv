@@ -1,119 +1,120 @@
-detention_center_name,deaths_n
-Eloy Detention Center,17
-Krome North Service Processing Center,14
-Stewart Detention Center,14
-Otay Mesa Detention Center,10
-Columbia Care Center,9
-Houston Contract Detention Facility,9
-Adelanto ICE Processing Center,8
-Lasalle Correctional Center,7
-Port Isabel Service Processing Center,7
-FMC Springfield,6
-El Paso Service Processing Center,5
-NA,5
-FCI Butner,4
-Florence Service Processing Center,4
-Hampton Roads Regional Jail,4
-Joe Corley Processing Center,4
-Lerdo Pre-Trial Facility,4
-Northwest ICE Processing Center,4
-Oakdale Federal Detention Center,4
-San Pedro Service Processing Center,4
-York County Prison,4
-Adams County Detention Center,3
-Broadview ICE Facility,3
-Camp East Montana,3
-Denver Contract Detention Facility,3
-Mira Loma Detention Center,3
-Moshannon Valley Processing Center,3
-Otero County Processing Center,3
-Prairieland Detention Facility,3
-Rolling Plains Detention Center,3
-South Texas ICE Processing Center,3
-Baker County Jail,2
-Calhoun County Correctional Center,2
-El Valle Detention Facility,2
-Elizabeth Contract Detention Facility,2
-FMC Devens,2
-Farmville Detention Center,2
-Glades County Detention Center,2
-Imperial Regional Detention Facility,2
-Karnes County Immigration Processing Center,2
-MDC Guaynabo,2
-McHenry County Adult Correctional Facility,2
-Middlesex County Jail,2
-Piedmont Regional Jail,2
-Suffolk House of Correction,2
-Tensas Parish Detention Center,2
-Torrance County Detention Facility,2
-Winn Correctional Center,2
-Albany County Jail,1
-Albuquerque Regional Correctional Center,1
-Atlanta Pretrial Detention Center,1
-Basile Detention Center,1
-Bergen County Jail,1
-Catahoula Correctional Center,1
-Cibola County Correctional Center,1
-Clinton County Correctional Facility,1
-Dallas County Jail,1
-Delaney Hall Detention Facility,1
-El Centro Service Processing Center,1
-El Paso County Jail,1
-Essex County Jail,1
-Etowah County Jail,1
-FCI Allenwood,1
-FDC Miami,1
-FDC Philadelphia,1
-FMC Fort Worth,1
-FMC Rochester,1
-Florence Staging Facility,1
-Folkston ICE Processing Center,1
-Frio County Jail,1
-Guadalupe County Jail,1
-Hall County Jail,1
-Harris County Jail,1
-Henderson County Jail,1
-Hudson County Jail,1
-IAH Polk Adult Detention Facility,1
-Jefferson County Jail,1
-Karnes County Correctional Center,1
-La Paz Adult Detention Facility,1
-Laredo Processing Center,1
-Larkin Behavioral Health Center,1
-Las Vegas Field Office Hold Room,1
-Lemuel Shattuck Hospital,1
-Mesa Verde ICE Processing Center,1
-Miami Correctional Facility,1
-Monmouth County Jail,1
-Monroe County Jail,1
-Montgomery Processing Center,1
-Nassau County Correctional Center,1
-Newton County Correctional Center,1
-North Georgia Detention Center,1
-North Lake Correctional Facility,1
-Northeast Ohio Correctional Center,1
-O'Hare Airport Hold Room,1
-Orange County Jail,1
-Orleans Parish Prison,1
-Passaic County Jail,1
-Perry County Correctional Center,1
-Phelps County Jail,1
-Pike County Jail,1
-Pinal County Jail,1
-Providence ICE ERO Hold Room,1
-Ramsey County Adult Detention Center,1
-Richwood Correctional Center,1
-Rio Grande Detention Center,1
-Robert A. Deyton Detention Facility,1
-Sacramento County Jail,1
-Sainte Genevieve County Jail,1
-San Bernardino Field Office Hold Room,1
-Theo Lacy Facility,1
-USP Atwater,1
-USP Terre Haute,1
-Utah County Jail,1
-Wakulla County Jail,1
-Weber County Jail,1
-Wicomico County Corrections Center,1
-Worcester County Jail,1
-Wyatt Detention Center,1
+detention_center_name,detention_center_type,latitude,longitude,deaths_n
+Eloy Detention Center,Private,32.817677,-111.51927,17
+Krome North Service Processing Center,Private,25.76032,-80.496826,14
+Stewart Detention Center,Private,32.036676,-84.771746,14
+Otay Mesa Detention Center,Private,32.576525,-116.915478,10
+Columbia Care Center,Private,34.075744,-80.979724,9
+Houston Contract Detention Facility,Private,29.950836,-95.312188,9
+Adelanto ICE Processing Center,Private,34.557729,-117.441865,8
+Lasalle Correctional Center,Private,31.85131,-92.28482,7
+Port Isabel Service Processing Center,Private,26.157941,-97.35047,7
+FMC Springfield,Public,37.177542,-93.323273,6
+El Paso Service Processing Center,Private,31.796447,-106.369651,5
+Broadview ICE Facility,Private,41.868522,-87.86562,4
+FCI Butner,Public,36.187179,-78.740535,4
+Florence Service Processing Center,Private,33.06496,-111.378505,4
+Hampton Roads Regional Jail,Public,36.804472,-76.368436,4
+Joe Corley Processing Center,Private,30.34444,-95.46021,4
+Lerdo Pre-Trial Facility,Public,35.653064,-119.107939,4
+Northwest ICE Processing Center,Private,47.25021,-122.422663,4
+Oakdale Federal Detention Center,Public,30.820701,-92.640691,4
+San Pedro Service Processing Center,Public,33.7272854,-118.269007,4
+York County Prison,Public,39.987597,-76.663603,4
+Adams County Detention Center,Private,31.569175,-91.230469,3
+Camp East Montana,Private,31.812729,-106.298333,3
+Denver Contract Detention Facility,Private,39.766325,-104.864502,3
+Mira Loma Detention Center,Public,34.701656,-118.233176,3
+Moshannon Valley Processing Center,Private,40.920042,-78.240515,3
+Otero County Processing Center,Private,32.08042,-106.28262,3
+Prairieland Detention Facility,Private,32.420785,-97.196902,3
+Rolling Plains Detention Center,Private,33.176272,-99.721789,3
+South Texas ICE Processing Center,Private,28.894651,-99.121943,3
+Baker County Jail,Public,30.29596,-82.12172,2
+Calhoun County Correctional Center,Public,42.316674,-85.175892,2
+Dallas Field Office Hold Room,Public,32.823622,-96.872156,2
+El Valle Detention Facility,Private,26.480407,-97.767334,2
+Elizabeth Contract Detention Facility,Private,40.666157,-74.189694,2
+FMC Devens,Public,42.529248,-71.613805,2
+Farmville Detention Center,Private,37.319501,-78.438276,2
+Glades County Detention Center,Public,26.838714,-81.124018,2
+Imperial Regional Detention Facility,Private,32.690811,-115.397861,2
+Karnes County Immigration Processing Center,Private,28.884651,-97.915298,2
+MDC Guaynabo,Public,18.423156,-66.112208999999993,2
+McHenry County Adult Correctional Facility,Public,42.337002,-88.443168,2
+Middlesex County Jail,Public,40.421388,-74.488991,2
+Piedmont Regional Jail,Public,37.320601,-78.425392,2
+Suffolk House of Correction,Public,42.332922,-71.070939,2
+Tensas Parish Detention Center,Private,31.808719,-91.397103,2
+Torrance County Detention Facility,Private,34.767387,-106.018496,2
+Winn Correctional Center,Private,31.849565,-92.801514,2
+Albany County Jail,Public,42.75141,-73.81536,1
+Albuquerque Regional Correctional Center,Private,35.089343,-106.651437,1
+Atlanta Pretrial Detention Center,Public,33.747313,-84.395391,1
+Basile Detention Center,Private,30.486577,-92.583366,1
+Bergen County Jail,Public,40.873873,-74.039042,1
+Catahoula Correctional Center,Private,31.860451,-91.962215,1
+Cibola County Correctional Center,Private,35.179783,-107.907649,1
+Clinton County Correctional Facility,Public,41.154871,-77.336887,1
+Dallas County Jail,Public,32.776299,-96.815601,1
+Delaney Hall Detention Facility,Private,40.717437,-74.127789,1
+El Centro Service Processing Center,Private,32.802962,-115.569768,1
+El Paso County Jail,Public,38.788166,-104.77912,1
+Essex County Jail,Public,40.730608,-74.135742,1
+Etowah County Jail,Public,34.015737,-86.011933,1
+FCI Allenwood,Public,41.127767,-76.921971,1
+FDC Miami,Public,25.778491,-80.193199,1
+FDC Philadelphia,Public,39.952909,-75.151925,1
+FMC Fort Worth,Public,32.6797719,-97.2874593,1
+FMC Rochester,Public,44.023339,-92.439526,1
+Florence Staging Facility,Private,33.06496,-111.378505,1
+Folkston ICE Processing Center,Private,30.87638,-81.977941,1
+Frio County Jail,Private,28.887948,-99.091675,1
+Guadalupe County Jail,Public,29.603766,-97.970028,1
+Hall County Jail,Public,34.242651,-83.815583,1
+Harris County Jail,Public,32.764412,-84.866192,1
+Henderson County Jail,Public,32.212801,-95.855713,1
+Hudson County Jail,Public,40.72991,-74.103398,1
+IAH Polk Adult Detention Facility,Private,30.698151,-95.005792,1
+Jefferson County Jail,Private,30.079492,-94.094305,1
+Karnes County Correctional Center,Private,28.883485,-97.911848,1
+La Paz Adult Detention Facility,Public,34.146226,-114.290189,1
+Laredo Processing Center,Private,27.529476,-99.447773,1
+Larkin Behavioral Health Center,Private,26.021177,-80.180662,1
+Las Vegas Field Office Hold Room,Public,36.058347,-115.225127,1
+Lemuel Shattuck Hospital,Public,42.29991,-71.10634,1
+Mesa Verde ICE Processing Center,Private,35.393033,-119.027482,1
+Miami Correctional Facility,Public,40.644997,-86.132978,1
+Monmouth County Jail,Public,40.267897,-74.286962,1
+Monroe County Jail,Public,24.577137,-81.751524,1
+Montgomery Processing Center,Private,30.34444,-95.44922,1
+Nassau County Correctional Center,Public,40.727807,-73.556165,1
+Newton County Correctional Center,Private,30.8667431,-93.7355571,1
+North Georgia Detention Center,Private,34.294675,-83.824166,1
+North Lake Correctional Facility,Private,43.928658,-85.839408,1
+Northeast Ohio Correctional Center,Public,41.12896,-80.62683,1
+O'Hare Airport Hold Room,Public,41.974839,-87.890021,1
+Orange County Jail,Public,41.404669,-74.357459,1
+Orleans Parish Prison,Public,29.961463,-90.093506,1
+Passaic County Jail,Public,40.913016,-74.174113,1
+Perry County Correctional Center,Private,32.634284,-87.316173,1
+Phelps County Jail,Public,37.945714,-91.775053,1
+Pike County Jail,Public,41.38881,-75.071465,1
+Pinal County Jail,Public,33.041291,-111.376034,1
+Providence ICE ERO Hold Room,NA,41.726973,-71.457116,1
+Ramsey County Adult Detention Center,Public,44.955749,-93.089261,1
+Richwood Correctional Center,Private,32.463426,-92.087402,1
+Rio Grande Detention Center,Private,27.377813,-99.489677,1
+Robert A. Deyton Detention Facility,Private,33.440609,-84.320068,1
+Sacramento County Jail,Public,38.582987,-121.49743,1
+Sainte Genevieve County Jail,Public,37.965948,-90.055775,1
+San Bernardino Field Office Hold Room,Public,34.10077,-117.297624,1
+Theo Lacy Facility,Public,33.782671,-117.888617,1
+USP Atwater,Public,37.3840277,-120.5587741,1
+USP Terre Haute,Public,39.416285,-87.450698,1
+Utah County Jail,Public,40.148256,-111.656906,1
+Wakulla County Jail,Public,30.196089,-84.376921,1
+Weber County Jail,Public,41.24009,-111.993298,1
+Wicomico County Corrections Center,Public,38.4084909,-75.5833224,1
+Worcester County Jail,Public,38.170007,-75.375834,1
+Wyatt Detention Center,Private,41.892811,-71.3832,1
+NA,NA,NA,NA,1

@@ -30,9 +30,8 @@ calendar_year,detention_center_type,deaths_n
 2016,Public,3
 2017,Private,8
 2017,Public,2
-2018,Private,9
+2018,Private,10
 2018,Public,2
-2018,NA,1
 2019,Private,6
 2019,Public,3
 2020,Private,15
@@ -46,6 +45,5 @@ calendar_year,detention_center_type,deaths_n
 2025,Private,24
 2025,Public,6
 2025,NA,1
-2026,Private,5
-2026,Public,1
-2026,NA,2
+2026,Private,6
+2026,Public,2

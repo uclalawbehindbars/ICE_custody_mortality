@@ -7,12 +7,11 @@ config <- if (file.exists(".lintr")) ".lintr" else NULL
 
 
 targets <- c(
-  "Code/library.R",
-  "Code/2.deaths_validation.R"
+  "Code"
 )
 
 lints <- map(targets, function(target) {
- lintr::lint_dir(
+  lintr::lint_dir(
     path = target,
     linters = NULL,
     relative_path = TRUE,

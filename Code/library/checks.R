@@ -1,6 +1,6 @@
 # Title: ICE QA Checks
 # Author: Hena Vadher, Annette Dekker, and Ethan Corey for BBDP
-# Date (Last Updated): 25 February 2026
+# Date (Last Updated): 26 February 2026
 # Purpose: Check ICE data for QA purposes.
 
 library(glue)
@@ -53,13 +53,6 @@ check_required_columns <- function(data, required_columns, strict = TRUE) {
     if (!is.null(strict) && strict) {
       stop(msg)
     }
-  } else if (any_missing) {
-    log_me_maybe(
-      glue::glue(
-        "Missing values in {paste(missing_columns, collapse=', ')}"
-      ),
-      "error"
-    )
   }
   data
 }
