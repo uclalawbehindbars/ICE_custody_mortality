@@ -77,7 +77,7 @@ The `ICE_custody_mortality` repository includes the following:
   * Vera Institute of Justice ICE Detention facilities [data](https://github.com/vera-institute/ice-detention-trends/tree/main)
   * Journalistic Reporting: In rare instances, news sources were used to clarify conflicts between sources (for example, how a name is spelled). 
 
-* *A Note on Edge Cases:* This repository includes all deaths occuring from the moment someone was booked into an ICE detention facility until they were released from custody. Edge cases, including where someone died in ICE custody before being formally booked, or shortly after they were released, were individually considered but do not appear in this dataset. BBDP welcomes additional context that may help refine how individual edge cases are considered--whether they reflect deaths that are currently included in the final dataset or not. 
+* *A Note on Edge Cases:* Our inclusion criteria reflect the limitations of available data. BBDP recognizes that there is no criteria that would include every death that could be linked to ICE detention. This repository includes all deaths occurring from the moment someone was booked into ICE custody through book out and the process of removal. Edge cases, including where someone died in ICE custody before being formally booked, or shortly after they were released, were individually considered but do not appear in this dataset. BBDP welcomes additional context that may help refine how edge cases are considered--whether they reflect deaths that are currently included in the final dataset or not. 
 
 ## Data Dictionary 
 
