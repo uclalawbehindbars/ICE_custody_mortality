@@ -55,7 +55,7 @@ The `ICE_custody_mortality` repository includes the following:
     * By detention facility
       * `ice_deaths_by_facility.csv` : Total deaths by detention facility across all years
       * `ice_deaths_by_fy_facility.csv` : Total deaths by detention facility and fiscal year
-      *  `ice_deaths_by_calyr_facility.csv` : Total deaths by detention facility and calendar year
+      *  `ice_deaths_by_year_facility.csv` : Total deaths by detention facility and calendar year
     * By detention facility type (public/private)
       * `ice_deaths_by_facility_type.csv` : Total deaths by facility type across all years
       * `ice_deaths_by_fy_facility_type.csv` : Total deaths by detention facility type and fiscal year
