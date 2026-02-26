@@ -4,6 +4,10 @@
 
 This repository collects, cleans, analyzes, and publishes data on deaths in ICE detention facilities in the United States to enable meaningful oversight, empirical research, and informed policy decision-making.
 
+The Behind Bars Data Project's (BBDP's) complete, verified dataset can be found [here](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Data/Processed/ice_deaths_validated.csv). 
+
+We recommend reading through this repository's README file for clarification on how BBDP approached verification, and which data outputs are fully verified versus partially or un-verified. 
+
 ## Repository Structure
 
 The `ICE_custody_mortality` repository includes the following:
@@ -54,7 +58,7 @@ The `ICE_custody_mortality` repository includes the following:
       *  `ice_deaths_by_calyr_facility.csv` : Total deaths by detention facility and calendar year
     * By detention facility type (public/private)
       * `ice_deaths_by_facility_type.csv` : Total deaths by facility type across all years
-      * `ice_deaths_by_fy_state.csv` : Total deaths by detention facility type and fiscal year
+      * `ice_deaths_by_fy_facility_type.csv` : Total deaths by detention facility type and fiscal year
       * `ice_deaths_by_year_facility_type.csv` : Reported deaths by detention facility type and calendar year
     * By state
       * `ice_deaths_by_state.csv` : Total deaths by detention facility state across all years
@@ -77,11 +81,9 @@ The `ICE_custody_mortality` repository includes the following:
   * Vera Institute of Justice ICE Detention facilities [data](https://github.com/vera-institute/ice-detention-trends/tree/main)
   * Journalistic Reporting: In rare instances, news sources were used to clarify conflicts between sources (for example, how a name is spelled).
 
-* *A Note on Edge Cases:* Our inclusion criteria reflect the limitations of available data. BBDP recognizes that there is no criteria that would include every death that could be linked to ICE detention. This repository includes all deaths occurring from the moment someone was booked into ICE custody through book out and the process of removal. Edge cases, including where someone died in ICE custody before being formally booked, or shortly after they were released, were individually considered but do not appear in this dataset. BBDP welcomes additional context that may help refine how edge cases are considered--whether they reflect deaths that are currently included in the final dataset or not.
+* *A Note on Edge Cases:* Our inclusion criteria reflect the limitations of available data. BBDP recognizes that there is no criteria that would include every death that could be linked to ICE detention. This repository includes deaths occurring during between book in and book out, transport to a detention facility, or during that individual's process of removal. Edge cases, including where someone died in ICE custody before being formally booked, or shortly after they were released, were individually considered but do not appear in this dataset. BBDP welcomes additional context that may help refine how edge cases are considered--whether they reflect deaths that are currently included in the final dataset or not.
 
 ## Data Dictionary
-
-This section is under construction. You may note missing elements under revision.
 
 ### All files are within `/Data`
 
@@ -182,4 +184,4 @@ Please contact Hena Vadher with any questions or suggestions at vadher@law.ucla.
 
 ## Acknowledgements
 
-All data was initially collated by [Andrew Free](https://theintercept.com/staff/r-andrew-free/).
+All data was initially collated by [Andrew Free](https://detentionkills.substack.com/).
