@@ -19,6 +19,20 @@ renv::restore()
 4. To generate the processed validated and partially-validated data files, run: [`Code/ice_mortality_validation.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_validation.R). 
 5. To generate aggregate death counts located in the `Data/Ouput` folder, run: [`Code/ice_mortality_analysis.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_analysis.R). 
 
+## Data and Validation Sources
+
+* Raw data is sourced from Andrew Free's ICE Deaths in Custody [dataset](https://docs.google.com/spreadsheets/d/1Zwpt9Uk2xJDX91rJ9f_s4zlSab4i8CaYW1E3FrogWjI/edit?gid=0#gid=0)
+
+* To validate Andrew's dataset, we leverage data from the following:
+  * ICE List of Deaths in ICE Custody [FOIA release](https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf)
+  * Human Rights Watch's [Code Red Report](https://www.hrw.org/report/2018/06/20/code-red/fatal-consequences-dangerously-substandard-medical-care-immigration)
+  * ICE [Detainee Death Reports](https://www.ice.gov/detain/detainee-death-reporting)
+  * ICE [Press Releases](https://www.ice.gov/newsroom)
+  * Vera Institute of Justice ICE Detention facilities [data](https://github.com/vera-institute/ice-detention-trends/tree/main)
+  * Journalistic Reporting: In rare instances, news sources were used to clarify conflicts between sources (for example, how a name is spelled).
+
+* *A Note on Edge Cases:* Our inclusion criteria reflect the limitations of available data. BBDP recognizes that there is no criteria that would include every death that could be linked to ICE detention. This repository includes deaths occurring during between book in and book out, transport to a detention facility, or during that individual's process of removal. Edge cases, including where someone died in ICE custody before being formally booked, or shortly after they were released, were individually considered but do not appear in this dataset. BBDP welcomes additional context that may help refine how edge cases are considered--whether they reflect deaths that are currently included in the final dataset or not.
+
 ## Repository Structure
 
 The `ICE_custody_mortality` repository includes the following:
@@ -79,20 +93,6 @@ The `ICE_custody_mortality` repository includes the following:
 * `renv.lock` : This project uses renv for package management. To restore the project library and install all required packages, you can run renv::restore() in the console.
 
 * `/renv` : Contains renv activation and configuration files enabling package management. This folder does not contain the packages themselves.
-
-## Data and Validation Sources
-
-* Raw data is sourced from Andrew Free's ICE Deaths in Custody [dataset](https://docs.google.com/spreadsheets/d/1Zwpt9Uk2xJDX91rJ9f_s4zlSab4i8CaYW1E3FrogWjI/edit?gid=0#gid=0)
-
-* To validate Andrew's dataset, we leverage data from the following:
-  * ICE List of Deaths in ICE Custody [FOIA release](https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf)
-  * Human Rights Watch's [Code Red Report](https://www.hrw.org/report/2018/06/20/code-red/fatal-consequences-dangerously-substandard-medical-care-immigration)
-  * ICE [Detainee Death Reports](https://www.ice.gov/detain/detainee-death-reporting)
-  * ICE [Press Releases](https://www.ice.gov/newsroom)
-  * Vera Institute of Justice ICE Detention facilities [data](https://github.com/vera-institute/ice-detention-trends/tree/main)
-  * Journalistic Reporting: In rare instances, news sources were used to clarify conflicts between sources (for example, how a name is spelled).
-
-* *A Note on Edge Cases:* Our inclusion criteria reflect the limitations of available data. BBDP recognizes that there is no criteria that would include every death that could be linked to ICE detention. This repository includes deaths occurring during between book in and book out, transport to a detention facility, or during that individual's process of removal. Edge cases, including where someone died in ICE custody before being formally booked, or shortly after they were released, were individually considered but do not appear in this dataset. BBDP welcomes additional context that may help refine how edge cases are considered--whether they reflect deaths that are currently included in the final dataset or not.
 
 ## Data Dictionary
 
