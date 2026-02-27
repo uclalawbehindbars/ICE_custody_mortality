@@ -23,7 +23,7 @@ renv::restore()
 
 * Raw data is sourced from Andrew Free's ICE Deaths in Custody [dataset](https://docs.google.com/spreadsheets/d/1Zwpt9Uk2xJDX91rJ9f_s4zlSab4i8CaYW1E3FrogWjI/edit?gid=0#gid=0)
 
-* To validate Andrew's dataset, we leverage data from the following:
+* To validate Andrew's dataset, we leveraged the following sources:
   * ICE List of Deaths in ICE Custody [FOIA release](https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf)
   * Human Rights Watch's [Code Red Report](https://www.hrw.org/report/2018/06/20/code-red/fatal-consequences-dangerously-substandard-medical-care-immigration)
   * ICE [Detainee Death Reports](https://www.ice.gov/detain/detainee-death-reporting)
