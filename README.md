@@ -8,6 +8,17 @@ The Behind Bars Data Project's (BBDP's) complete, verified dataset can be found 
 
 We recommend reading through this repository's README file for clarification on how BBDP approached verification, and which data outputs are fully verified versus partially or un-verified. 
 
+## How to Run Code
+
+1. Open the R Project folder, `ICE_custody_mortality.Rproj`
+2. Run the following code in your Console:
+```r
+renv::restore()
+```
+3. Navigate to the `Code` folder in your local environment within `ICE_custody_mortality.Rproj` project. 
+4. To generate the processed validated and partially-validated data files, run: [`Code/ice_mortality_validation.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_validation.R). 
+5. To generate aggregate death counts located in the `Data/Ouput` folder, run: [`Code/ice_mortality_analysis.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_analysis.R). 
+
 ## Repository Structure
 
 The `ICE_custody_mortality` repository includes the following:
@@ -173,10 +184,6 @@ The `ICE_custody_mortality` repository includes the following:
 #### `/Output` files
 
 Output file variable names mirror Processed variables, with the addition that `deaths_n` indicates the number of total deaths.
-
-## How to Run Code
-
-To generate the processed data files, run `Code/ice_mortality_validation.R` in your local environment. To generate analysis data files, run `Code/ice_mortality_analysis.R` in your local environment.
 
 ## Contact
 
