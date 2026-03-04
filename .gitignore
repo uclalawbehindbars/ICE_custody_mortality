@@ -2,11 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
-
 /.quarto/
-
 **/*.quarto_ipynb
 .DS_Store
 ~$*
 scratch/
 log/
+.here
