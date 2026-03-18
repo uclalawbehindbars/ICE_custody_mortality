@@ -101,10 +101,20 @@ bbdp_ice_deaths:
   src:
     path: https://docs.google.com/spreadsheets/d/1Zwpt9Uk2xJDX91rJ9f_s4zlSab4i8CaYW1E3FrogWjI/edit?usp=sharing
     args:
-      col_types: cccccccccccccccccccccccccccc
+      col_types: ccccccccccccccccccccccccccc
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Mohammad Nazeer Paktiawal_2026-03-14:
+      place_of_death: "Parkland Hospital\nDallas, Texas"
+    Pejman Karshenas Najafabadi_2026-03-01:
+      place_of_death: "Merit Health Hospital\nNatchez, Mississippi"
+      detention_center: Louisiana ICE Processing Center
+    Emmanuel Damas_2026-03-02:
+      place_of_death: "HonorHealth Scottsdale Osborn Medical Center John C. Lincoln Medical Center\nScottsdale, Arizona"
+      detention_center: Florence Staging Facility
+    Alberto Gutierrez Reyes_2026-02-27:
+      place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
     Jairo Garcia-Hernandez_2026-02-16:
       place_of_death: "Larkin Community Hospital\nMiami, Florida"
       detention_center: Larkin Community Hospital Behavioral Health Center
@@ -828,7 +838,7 @@ bbdp_ice_deaths:
     - "!(str_detect(name, 'Francisco Castaneda') & dod == ymd('2008-02-01'))"
     - "fiscal_year >= 2004"
     - "year(dod) >= 2003"
-    - "dod < ymd('2026-02-20')"
+    - "dod < ymd('2026-03-18')"
   output_columns:
     - name
     - dod
