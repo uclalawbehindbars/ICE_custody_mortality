@@ -105,6 +105,8 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Royer Perez Jimenez_2026-03-16:
+      place_of_death: "Glades County Detention Center\nMoore Haven, Florida"
     Mohammad Nazeer Paktiawal_2026-03-14:
       place_of_death: "Parkland Hospital\nDallas, Texas"
     Pejman Karshenas Najafabadi_2026-03-01:
@@ -817,7 +819,7 @@ bbdp_ice_deaths:
     death_city: "get_location_city(place_of_death)"
     death_state: "get_location_state(place_of_death)"
     last_updated: "now()"
-    ice_death_report: "str_replace(ice_death_report, '^[^h].*$', '')"
+    ice_death_report: "str_replace(ice_death_report, '^[^h].*$', NA_character_)"
   renamings:
     state: state_territory
     contractor_old: contractor
@@ -838,7 +840,7 @@ bbdp_ice_deaths:
     - "!(str_detect(name, 'Francisco Castaneda') & dod == ymd('2008-02-01'))"
     - "fiscal_year >= 2004"
     - "year(dod) >= 2003"
-    - "dod < ymd('2026-03-18')"
+    - "dod < ymd('2026-03-20')"
   output_columns:
     - name
     - dod
