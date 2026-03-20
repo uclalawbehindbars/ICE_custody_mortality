@@ -3,9 +3,9 @@ Eloy Detention Center,Private,32.817677,-111.51927,17
 Krome North Service Processing Center,Private,25.76032,-80.496826,14
 Stewart Detention Center,Private,32.036676,-84.771746,14
 Otay Mesa Detention Center,Private,32.576525,-116.915478,10
+Adelanto ICE Processing Center,Private,34.557729,-117.441865,9
 Columbia Care Center,Private,34.075744,-80.979724,9
 Houston Contract Detention Facility,Private,29.950836,-95.312188,9
-Adelanto ICE Processing Center,Private,34.557729,-117.441865,8
 Lasalle Correctional Center,Private,31.85131,-92.28482,7
 Port Isabel Service Processing Center,Private,26.157941,-97.35047,7
 FMC Springfield,Public,37.177542,-93.323273,6
@@ -22,6 +22,7 @@ San Pedro Service Processing Center,Public,33.7272854,-118.269007,4
 York County Prison,Public,39.987597,-76.663603,4
 Adams County Detention Center,Private,31.569175,-91.230469,3
 Camp East Montana,Private,31.812729,-106.298333,3
+Dallas Field Office Hold Room,Public,32.823622,-96.872156,3
 Denver Contract Detention Facility,Private,39.766325,-104.864502,3
 Mira Loma Detention Center,Public,34.701656,-118.233176,3
 Moshannon Valley Processing Center,Private,40.920042,-78.240515,3
@@ -31,11 +32,11 @@ Rolling Plains Detention Center,Private,33.176272,-99.721789,3
 South Texas ICE Processing Center,Private,28.894651,-99.121943,3
 Baker County Jail,Public,30.29596,-82.12172,2
 Calhoun County Correctional Center,Public,42.316674,-85.175892,2
-Dallas Field Office Hold Room,Public,32.823622,-96.872156,2
 El Valle Detention Facility,Private,26.480407,-97.767334,2
 Elizabeth Contract Detention Facility,Private,40.666157,-74.189694,2
 FMC Devens,Public,42.529248,-71.613805,2
 Farmville Detention Center,Private,37.319501,-78.438276,2
+Florence Staging Facility,Private,33.06496,-111.378505,2
 Glades County Detention Center,Public,26.838714,-81.124018,2
 Imperial Regional Detention Facility,Private,32.690811,-115.397861,2
 Karnes County Immigration Processing Center,Private,28.884651,-97.915298,2
@@ -66,7 +67,6 @@ FDC Miami,Public,25.778491,-80.193199,1
 FDC Philadelphia,Public,39.952909,-75.151925,1
 FMC Fort Worth,Public,32.6797719,-97.2874593,1
 FMC Rochester,Public,44.023339,-92.439526,1
-Florence Staging Facility,Private,33.06496,-111.378505,1
 Folkston ICE Processing Center,Private,30.87638,-81.977941,1
 Frio County Jail,Private,28.887948,-99.091675,1
 Guadalupe County Jail,Public,29.603766,-97.970028,1
@@ -82,6 +82,7 @@ Laredo Processing Center,Private,27.529476,-99.447773,1
 Larkin Behavioral Health Center,Private,26.021177,-80.180662,1
 Las Vegas Field Office Hold Room,Public,36.058347,-115.225127,1
 Lemuel Shattuck Hospital,Public,42.29991,-71.10634,1
+Louisiana ICE Processing Center,Private,30.941263,-91.568381,1
 Mesa Verde ICE Processing Center,Private,35.393033,-119.027482,1
 Miami Correctional Facility,Public,40.644997,-86.132978,1
 Monmouth County Jail,Public,40.267897,-74.286962,1
