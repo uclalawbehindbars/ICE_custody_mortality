@@ -1,0 +1,21 @@
+name: Trigger App Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - development
+    paths:
+      - 'Data/Output/ice_deaths_by_year_facility.csv'
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger development deploy
+        if: github.ref == 'refs/heads/development'
+        run: curl -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK_DEVELOPMENT }}"
+
+      - name: Trigger production deploy
+        if: github.ref == 'refs/heads/main'
+        run: curl -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK_PRODUCTION }}"
