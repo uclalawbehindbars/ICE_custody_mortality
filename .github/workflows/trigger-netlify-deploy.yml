@@ -14,8 +14,16 @@ jobs:
     steps:
       - name: Trigger development deploy
         if: github.ref == 'refs/heads/development'
-        run: curl -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK_DEVELOPMENT }}"
+        run: |
+          curl -X POST "https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/builds" \
+            -H "Authorization: Bearer ${{ secrets.NETLIFY_ACCESS_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{}'
 
       - name: Trigger production deploy
         if: github.ref == 'refs/heads/main'
-        run: curl -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK_PRODUCTION }}"
+        run: |
+          curl -X POST "https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/builds" \
+            -H "Authorization: Bearer ${{ secrets.NETLIFY_ACCESS_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{}'
