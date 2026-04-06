@@ -27,18 +27,18 @@ foia2003-2017:
       sex: F
     "CARLOS‐CORTEZ,\nRAUDEL":
       alien_name: Carlos Cortez-Raudel
-    "DELAPAZ,\nEDUARDO": 
+    "DELAPAZ,\nEDUARDO":
       alien_name: Eduardo DeLaPaz
-    "ENRIQUEZ‐\nBETANCOURT, N": 
+    "ENRIQUEZ‐\nBETANCOURT, N":
       alien_name: N. Enriquez-Betancourt
-    "JIMINEZ‐Joseph,\nJean Carlos\nAlfonso": 
+    "JIMINEZ‐Joseph,\nJean Carlos\nAlfonso":
       alien_name: Jeancarlo Alfonso Jimenez Joseph
       location_of_death: Phoebe Sumter Medical Center, Americus, Georgia  # add full hospital name
-    "JOSHUA‐Toyin,\nOlubunmi": 
+    "JOSHUA‐Toyin,\nOlubunmi":
       alien_name: Olubunmi Toyin Joshua
-    "Leonardo LEMUS‐\nRajo, Jose": 
+    "Leonardo LEMUS‐\nRajo, Jose":
       alien_name: Jose Leonardo Lemus Rajo
-    "GARCIA‐\nHERNADEZ, JUAN": 
+    "GARCIA‐\nHERNADEZ, JUAN":
       alien_name: Juan Garcia Hernandez
     "AZURDIA‐\nHERNANDEZ,\nJOSE MANUEL":
       date_of_death: 12-24-2015  # Press release gives 12/23, but DDR says 12/24
@@ -105,6 +105,8 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Jose Guadalupe Ramos-Solano_2026-03-25:
+      place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
     Royer Perez Jimenez_2026-03-16:
       place_of_death: "Glades County Detention Center\nMoore Haven, Florida"
     Mohammad Nazeer Paktiawal_2026-03-14:
@@ -473,7 +475,7 @@ bbdp_ice_deaths:
     Marjorie Annmarie Bell_2014-02-13:
       gender: F
       cause_of_death: sudden cardiac death, acute coronary syndrome, and multivessel coronary artery disease
-    Carlos Tiombe Kimana_2013-10-23: 
+    Carlos Tiombe Kimana_2013-10-23:
       name: Tiombe Kimana Carlos
       listed_citizenship: Antigua and Barbuda
       gender: F
@@ -535,7 +537,7 @@ bbdp_ice_deaths:
       place_of_death: "Albany Memorial Hospital and Medical Center\nAlbany, New York"
     Miguel Angel Hernandez_2011-04-28:
       gender: M
-    Amra Miletic (or Amra Militec)_2011-03-20: 
+    Amra Miletic (or Amra Militec)_2011-03-20:
       name: Amra Miletic
       gender: F
     Qi Gen Guo_2011-02-23:
@@ -592,7 +594,7 @@ bbdp_ice_deaths:
       gender: M
     Guido Newbrough_2008-11-27:
       gender: M
-    Hadayatullahh Saylab_2008-11-24: 
+    Hadayatullahh Saylab_2008-11-24:
       name: Hadayatullah Saylab
       gender: M
     Alberto Santos Maidiqui_2008-11-18:
@@ -795,7 +797,7 @@ bbdp_ice_deaths:
       gender: M
     Argelio Leyva-Arjona_2004-01-05:
       gender: M
-    Joseph Dantica_2004-01-01: 
+    Joseph Dantica_2004-01-01:
       date_of_death: 11/03/2004
       gender: M
     Alberto Linde-Cepero_2003-12-20:
@@ -895,44 +897,44 @@ bbdp_ice_deaths:
         index_col: name
         strict: false
 code_red:
-  src: 
+  src:
     path: "Data/Raw/CodeRed.csv"
     generator: "Rscript Code/load_code_red.R"
     args:
       col_types: cccccccccc
   corrections_index: name
   corrections:
-    Jorge Garcia-Maldanado: 
+    Jorge Garcia-Maldanado:
       name: Jorge Garcia Maldonado
-    Jose Javier Hernandez Valencia: 
+    Jose Javier Hernandez Valencia:
       name: Jose Javier Hernandez-Valencia
-    Raul Ernesto Morales Ramos: 
+    Raul Ernesto Morales Ramos:
       name: Raul Ernesto Morales-Ramos
-    Marcos, Navarrette-Quontana: 
+    Marcos, Navarrette-Quontana:
       name: Marcos Navarrette-Quintana
-    Jose Manuel Azurdia Hernandez: 
+    Jose Manuel Azurdia Hernandez:
       name: Jose Manuel Azurdia-Hernandez
       death_date: 12/24/2015 # see above
-    Rafael Barcenas Padilla: 
+    Rafael Barcenas Padilla:
       name: Rafael Barcenas-Padilla
-    José Leonardo Lemus Rajo: 
+    José Leonardo Lemus Rajo:
       name: Jose Leonardo Lemus Rajo
-    Raquel Calderon de Hildago: 
+    Raquel Calderon de Hildago:
       name: Raquel Calderon-De Hidalgo
-    Jean Carlos Alfonso Jimenez‐Joseph: 
+    Jean Carlos Alfonso Jimenez‐Joseph:
       name: Jeancarlo Alfonso Jimenez-Joseph
-    Rolando Mesa-Espinoza (Identified by ICE as Carlos Mejia-Bonilla): 
+    Rolando Mesa-Espinoza (Identified by ICE as Carlos Mejia-Bonilla):
       name: Carlos Mejia-Bonilla
       age_death: 46
       death_date: 6/10/2017
-    Ronal Francisco Romero (Identified by ICE as Ronald Cruz): 
+    Ronal Francisco Romero (Identified by ICE as Ronald Cruz):
       name: Ronal Francisco Romero
       death_date: 5/16/2018  # https://www.ice.gov/news/releases/south-texas-ice-detainee-honduras-passes-away-local-hospital
-    Roxana Hernandez (Identified by ICE as Jeffrey Hernandez): 
+    Roxana Hernandez (Identified by ICE as Jeffrey Hernandez):
       name: Roxana Hernandez
-    Kamyar Samimi: 
+    Kamyar Samimi:
       death_date: 12/2/2017  # see above
-    Yulio Castro-Garrido: 
+    Yulio Castro-Garrido:
       death_date: 1/30/2018  # https://www.ice.gov/news/releases/ice-detainee-passes-away
     Juan Pablo Flores-Segura:
       age_death: 31  # based on dob and dod
@@ -968,7 +970,7 @@ facilities:
     detention_center_contractor: contractor
     detention_center_contractor_type: contractor_type
     detention_center_data_source: data_source
-    
+
 bbdp_data_clean:  # short-cut for analysis
   src:
     path: Data/Processed/ice_deaths_validated.csv
