@@ -840,7 +840,7 @@ bbdp_ice_deaths:
     - "!(str_detect(name, 'Francisco Castaneda') & dod == ymd('2008-02-01'))"
     - "fiscal_year >= 2004"
     - "year(dod) >= 2003"
-    - "dod < ymd('2026-03-20')"
+    - "dod < ymd('2026-04-06')"
   output_columns:
     - name
     - dod
