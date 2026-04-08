@@ -2,8 +2,8 @@ detention_center_name,detention_center_type,latitude,longitude,deaths_n
 Eloy Detention Center,Private,32.817677,-111.51927,17
 Krome North Service Processing Center,Private,25.76032,-80.496826,14
 Stewart Detention Center,Private,32.036676,-84.771746,14
+Adelanto ICE Processing Center,Private,34.557729,-117.441865,10
 Otay Mesa Detention Center,Private,32.576525,-116.915478,10
-Adelanto ICE Processing Center,Private,34.557729,-117.441865,9
 Columbia Care Center,Private,34.075744,-80.979724,9
 Houston Contract Detention Facility,Private,29.950836,-95.312188,9
 Lasalle Correctional Center,Private,31.85131,-92.28482,7
@@ -24,6 +24,7 @@ Adams County Detention Center,Private,31.569175,-91.230469,3
 Camp East Montana,Private,31.812729,-106.298333,3
 Dallas Field Office Hold Room,Public,32.823622,-96.872156,3
 Denver Contract Detention Facility,Private,39.766325,-104.864502,3
+Glades County Detention Center,Public,26.838714,-81.124018,3
 Mira Loma Detention Center,Public,34.701656,-118.233176,3
 Moshannon Valley Processing Center,Private,40.920042,-78.240515,3
 Otero County Processing Center,Private,32.08042,-106.28262,3
@@ -37,7 +38,6 @@ Elizabeth Contract Detention Facility,Private,40.666157,-74.189694,2
 FMC Devens,Public,42.529248,-71.613805,2
 Farmville Detention Center,Private,37.319501,-78.438276,2
 Florence Staging Facility,Private,33.06496,-111.378505,2
-Glades County Detention Center,Public,26.838714,-81.124018,2
 Imperial Regional Detention Facility,Private,32.690811,-115.397861,2
 Karnes County Immigration Processing Center,Private,28.884651,-97.915298,2
 MDC Guaynabo,Public,18.423156,-66.112208999999993,2
@@ -48,6 +48,7 @@ Suffolk House of Correction,Public,42.332922,-71.070939,2
 Tensas Parish Detention Center,Private,31.808719,-91.397103,2
 Torrance County Detention Facility,Private,34.767387,-106.018496,2
 Winn Correctional Center,Private,31.849565,-92.801514,2
+NA,NA,NA,NA,2
 Albany County Jail,Public,42.75141,-73.81536,1
 Albuquerque Regional Correctional Center,Private,35.089343,-106.651437,1
 Atlanta Pretrial Detention Center,Public,33.747313,-84.395391,1
@@ -118,4 +119,3 @@ Weber County Jail,Public,41.24009,-111.993298,1
 Wicomico County Corrections Center,Public,38.4084909,-75.5833224,1
 Worcester County Jail,Public,38.170007,-75.375834,1
 Wyatt Detention Center,Private,41.892811,-71.3832,1
-NA,NA,NA,NA,1
