@@ -222,14 +222,15 @@ fiscal_year,detention_center_name,detention_center_state,detention_center_type,l
 2025,Northwest ICE Processing Center,WA,Private,47.25021,-122.422663,1
 2025,Phelps County Jail,MO,Public,37.945714,-91.775053,1
 2025,Stewart Detention Center,GA,Private,32.036676,-84.771746,2
-2025,NA,NA,NA,NA,NA,1
+2025,NA,NA,NA,NA,NA,2
 2026,Adams County Detention Center,MS,Private,31.569175,-91.230469,1
-2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,2
+2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,3
 2026,Camp East Montana,TX,Private,31.812729,-106.298333,3
 2026,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,1
 2026,Delaney Hall Detention Facility,NJ,Private,40.717437,-74.127789,1
 2026,FDC Philadelphia,PA,Public,39.952909,-75.151925,1
 2026,Florence Staging Facility,AZ,Private,33.06496,-111.378505,1
+2026,Glades County Detention Center,FL,Public,26.838714,-81.124018,1
 2026,Imperial Regional Detention Facility,CA,Private,32.690811,-115.397861,1
 2026,Joe Corley Processing Center,TX,Private,30.34444,-95.46021,1
 2026,Krome North Service Processing Center,FL,Private,25.76032,-80.496826,1
