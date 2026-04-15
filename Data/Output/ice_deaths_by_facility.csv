@@ -31,6 +31,7 @@ Otero County Processing Center,Private,32.08042,-106.28262,3
 Prairieland Detention Facility,Private,32.420785,-97.196902,3
 Rolling Plains Detention Center,Private,33.176272,-99.721789,3
 South Texas ICE Processing Center,Private,28.894651,-99.121943,3
+Winn Correctional Center,Private,31.849565,-92.801514,3
 Baker County Jail,Public,30.29596,-82.12172,2
 Calhoun County Correctional Center,Public,42.316674,-85.175892,2
 El Valle Detention Facility,Private,26.480407,-97.767334,2
@@ -42,13 +43,12 @@ Imperial Regional Detention Facility,Private,32.690811,-115.397861,2
 Karnes County Immigration Processing Center,Private,28.884651,-97.915298,2
 MDC Guaynabo,Public,18.423156,-66.112208999999993,2
 McHenry County Adult Correctional Facility,Public,42.337002,-88.443168,2
+Miami Correctional Facility,Public,40.644997,-86.132978,2
 Middlesex County Jail,Public,40.421388,-74.488991,2
 Piedmont Regional Jail,Public,37.320601,-78.425392,2
 Suffolk House of Correction,Public,42.332922,-71.070939,2
 Tensas Parish Detention Center,Private,31.808719,-91.397103,2
 Torrance County Detention Facility,Private,34.767387,-106.018496,2
-Winn Correctional Center,Private,31.849565,-92.801514,2
-NA,NA,NA,NA,2
 Albany County Jail,Public,42.75141,-73.81536,1
 Albuquerque Regional Correctional Center,Private,35.089343,-106.651437,1
 Atlanta Pretrial Detention Center,Public,33.747313,-84.395391,1
@@ -85,7 +85,6 @@ Las Vegas Field Office Hold Room,Public,36.058347,-115.225127,1
 Lemuel Shattuck Hospital,Public,42.29991,-71.10634,1
 Louisiana ICE Processing Center,Private,30.941263,-91.568381,1
 Mesa Verde ICE Processing Center,Private,35.393033,-119.027482,1
-Miami Correctional Facility,Public,40.644997,-86.132978,1
 Monmouth County Jail,Public,40.267897,-74.286962,1
 Monroe County Jail,Public,24.577137,-81.751524,1
 Montgomery Processing Center,Private,30.34444,-95.44922,1
@@ -119,3 +118,4 @@ Weber County Jail,Public,41.24009,-111.993298,1
 Wicomico County Corrections Center,Public,38.4084909,-75.5833224,1
 Worcester County Jail,Public,38.170007,-75.375834,1
 Wyatt Detention Center,Private,41.892811,-71.3832,1
+NA,NA,NA,NA,1
