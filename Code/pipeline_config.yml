@@ -105,8 +105,12 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Aled Damien Carbonell-Betancourt_2026-04-12:
+      place_of_death: "BOP Federal Detention Center Miami\nMiami, Florida"
     Alejandro Cabrera Clemente_2026-04-11:
       place_of_death: "Winn Correctional Center\nWinnfield, Louisiana"
+    Tuan Van Bui_2026-04-01:
+      place_of_death: "Miami Correctional Facility\nBunker Hill, Indiana"
     Jose Guadalupe Ramos-Solano_2026-03-25:
       place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
     Royer Perez Jimenez_2026-03-16:
