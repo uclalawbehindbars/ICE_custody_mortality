@@ -231,7 +231,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2025,Sainte Genevieve County Jail,MO,Public,37.965948,-90.055775,1
 2025,South Texas ICE Processing Center,TX,Private,28.894651,-99.121943,1
 2025,Stewart Detention Center,GA,Private,32.036676,-84.771746,2
-2025,NA,NA,NA,NA,NA,2
+2025,NA,NA,NA,NA,NA,1
 2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,2
 2026,Camp East Montana,TX,Private,31.812729,-106.298333,2
 2026,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,1
@@ -242,5 +242,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2026,Joe Corley Processing Center,TX,Private,30.34444,-95.46021,1
 2026,Larkin Behavioral Health Center,FL,Private,26.021177,-80.180662,1
 2026,Louisiana ICE Processing Center,LA,Private,30.941263,-91.568381,1
-2026,Miami Correctional Facility,IN,Public,40.644997,-86.132978,1
+2026,Miami Correctional Facility,IN,Public,40.644997,-86.132978,2
 2026,Robert A. Deyton Detention Facility,GA,Private,33.440609,-84.320068,1
+2026,Winn Correctional Center,LA,Private,31.849565,-92.801514,1
+2026,NA,NA,NA,NA,NA,1

@@ -105,6 +105,12 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Aled Damien Carbonell-Betancourt_2026-04-12:
+      place_of_death: "BOP Federal Detention Center Miami\nMiami, Florida"
+    Alejandro Cabrera Clemente_2026-04-11:
+      place_of_death: "Winn Correctional Center\nWinnfield, Louisiana"
+    Tuan Van Bui_2026-04-01:
+      place_of_death: "Miami Correctional Facility\nBunker Hill, Indiana"
     Jose Guadalupe Ramos-Solano_2026-03-25:
       place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
     Royer Perez Jimenez_2026-03-16:
@@ -834,6 +840,7 @@ bbdp_ice_deaths:
       right: facilities
       by: detention_center_id
   filters:
+    - "!(name == 'Silverio Villegas Gonzalez' & dod == ymd('2025-09-12'))"
     - "!(name == 'Jose Castro Rivera' & dod == ymd('2025-10-23'))"
     - "!(name == 'Francisco Castaneda' & dod == ymd('2008-02-01'))"
     - "!(name == 'Martin Arellano Vargas' & dod == ymd('2021-03-08'))"
@@ -842,7 +849,6 @@ bbdp_ice_deaths:
     - "!(str_detect(name, 'Francisco Castaneda') & dod == ymd('2008-02-01'))"
     - "fiscal_year >= 2004"
     - "year(dod) >= 2003"
-    - "dod < ymd('2026-04-06')"
   output_columns:
     - name
     - dod
