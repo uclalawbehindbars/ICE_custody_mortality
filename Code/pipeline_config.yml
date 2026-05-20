@@ -108,6 +108,7 @@ bbdp_ice_deaths:
     Denny Adan Gonzalez_2026-04-28:
       place_of_death: "Stewart Detention Center\nLumpkin, Georgia"
     Aled Damien Carbonell-Betancourt_2026-04-12:
+      detention_center: "Federal Detention Center - Miami"
       place_of_death: "BOP Federal Detention Center Miami\nMiami, Florida"
     Alejandro Cabrera Clemente_2026-04-11:
       place_of_death: "Winn Correctional Center\nWinnfield, Louisiana"
@@ -176,7 +177,7 @@ bbdp_ice_deaths:
       place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
     "Hasan Ali Moh'D Saleh_2025-10-11":
       place_of_death: "Larkin Community Hospital\nSouth Miami, Florida"
-    Leo Cruz-Silva_2025-10-08:
+    Leo Cruz-Silva_2025-10-04:
       date_of_death: 10/04/2025  # per press release
       place_of_death: "Ste. Genevieve County Jail\nSte. Genevieve, Missouri"
     Huabing Xie_2025-09-29:
@@ -220,7 +221,7 @@ bbdp_ice_deaths:
       place_of_death: "Mercy South Hospital\nSt. Louis, Missouri"
     Maksym Chernyak_2025-02-20:
       place_of_death: "HCA Kendall Hospital\nMiami, Florida"
-    Juan Alexis Tineo Martinez_2025-02-23:
+    Juan Alexis Tineo-Martinez_2025-02-23:
       age: 44
       place_of_death: "Centro Medical Hospital\nSan Juan, Puerto Rico"
       ice_death_report: "https://www.ice.gov/doclib/foia/reports/ddrTINEOMartinezJuanAlexis.pdf"
