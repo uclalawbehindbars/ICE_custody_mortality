@@ -16,6 +16,7 @@ CATAHLA,Catahoula Correctional Center,Catahoula Correctional Center,499 Old Colu
 FLO,Florence SPC,Florence Service Processing Center,3250 North Pinal Parkway,Florence,Pinal,AZ,85132,Phoenix,33.06496,-111.378505,SPC,Dedicated,CoreCivic,Private,vera
 CIBOCNM,Cibola County Correctional Center,Cibola County Correctional Center,2000 Cibola Loop,Milan,Cibola,NM,87021,El Paso,35.179783,-107.907649,IGSA,Non-Dedicated,CoreCivic,Private,vera
 CLINTPA,Clinton County Corr. Fac.,Clinton County Correctional Facility,58 Pine Mountain Road,McElhattan,Clinton,PA,17748,Philadelphia,41.154871,-77.336887,USMS IGA,Federal,Clinton County,County,vera
+CMEDHPR,Centro Medico Hospital,Centro Medico Hospital,Av Americo Miranda S/N,San Juan,San Juan,PR,00935,Miami,18.39152,-66.07489,Hospital,Medical,Centro Medico Hospital,State,vera
 COLCASC,Columbia Care Center,Columbia Care Center,7901 Farrow Road,Columbia,Richland,SC,29203,Atlanta,34.075744,-80.979724,Hospital,Medical,Columbia Care Center,Private,vera
 DALCOTX,Dallas County Jail-Lew Sterrett,Dallas County Jail,111 West Commerce Street,Dallas,Dallas,TX,75202,Dallas,32.776299,-96.815601,USMS IGA,Federal,Dallas County Sheriff Department,County,vera
 DHDFNJ,Delaney Hall Detention Facility,Delaney Hall Detention Facility,451 Doremus Avenue,Newark,Essex,NJ,7105,Newark,40.717437,-74.127789,IGSA,Non-Dedicated,GEO,Private,vera

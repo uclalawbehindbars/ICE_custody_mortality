@@ -212,6 +212,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2025,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,2
 2025,Broadview ICE Facility,IL,Private,41.868522,-87.86562,1
 2025,Camp East Montana,TX,Private,31.812729,-106.298333,1
+2025,Centro Medico Hospital,PR,Public,18.39152,-66.07489,1
 2025,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,2
 2025,Delaney Hall Detention Facility,NJ,Private,40.717437,-74.127789,1
 2025,El Paso Service Processing Center,TX,Private,31.796447,-106.369651,1
@@ -231,7 +232,6 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2025,Sainte Genevieve County Jail,MO,Public,37.965948,-90.055775,1
 2025,South Texas ICE Processing Center,TX,Private,28.894651,-99.121943,1
 2025,Stewart Detention Center,GA,Private,32.036676,-84.771746,2
-2025,NA,NA,NA,NA,NA,1
 2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,2
 2026,Camp East Montana,TX,Private,31.812729,-106.298333,2
 2026,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,1

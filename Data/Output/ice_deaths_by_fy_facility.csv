@@ -207,6 +207,7 @@ fiscal_year,detention_center_name,detention_center_state,detention_center_type,l
 2024,Winn Correctional Center,LA,Private,31.849565,-92.801514,1
 2025,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,1
 2025,Broadview ICE Facility,IL,Private,41.868522,-87.86562,1
+2025,Centro Medico Hospital,PR,Public,18.39152,-66.07489,1
 2025,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,2
 2025,El Paso Service Processing Center,TX,Private,31.796447,-106.369651,1
 2025,Eloy Detention Center,AZ,Private,32.817677,-111.51927,1
@@ -222,7 +223,6 @@ fiscal_year,detention_center_name,detention_center_state,detention_center_type,l
 2025,Northwest ICE Processing Center,WA,Private,47.25021,-122.422663,1
 2025,Phelps County Jail,MO,Public,37.945714,-91.775053,1
 2025,Stewart Detention Center,GA,Private,32.036676,-84.771746,2
-2025,NA,NA,NA,NA,NA,1
 2026,Adams County Detention Center,MS,Private,31.569175,-91.230469,1
 2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,3
 2026,Camp East Montana,TX,Private,31.812729,-106.298333,3
