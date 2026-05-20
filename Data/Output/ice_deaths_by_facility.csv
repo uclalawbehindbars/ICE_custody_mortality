@@ -1,7 +1,7 @@
 detention_center_name,detention_center_type,latitude,longitude,deaths_n
 Eloy Detention Center,Private,32.817677,-111.51927,17
+Stewart Detention Center,Private,32.036676,-84.771746,15
 Krome North Service Processing Center,Private,25.76032,-80.496826,14
-Stewart Detention Center,Private,32.036676,-84.771746,14
 Adelanto ICE Processing Center,Private,34.557729,-117.441865,10
 Otay Mesa Detention Center,Private,32.576525,-116.915478,10
 Columbia Care Center,Private,34.075744,-80.979724,9
@@ -36,6 +36,7 @@ Baker County Jail,Public,30.29596,-82.12172,2
 Calhoun County Correctional Center,Public,42.316674,-85.175892,2
 El Valle Detention Facility,Private,26.480407,-97.767334,2
 Elizabeth Contract Detention Facility,Private,40.666157,-74.189694,2
+FDC Miami,Public,25.778491,-80.193199,2
 FMC Devens,Public,42.529248,-71.613805,2
 Farmville Detention Center,Private,37.319501,-78.438276,2
 Florence Staging Facility,Private,33.06496,-111.378505,2
@@ -49,13 +50,13 @@ Piedmont Regional Jail,Public,37.320601,-78.425392,2
 Suffolk House of Correction,Public,42.332922,-71.070939,2
 Tensas Parish Detention Center,Private,31.808719,-91.397103,2
 Torrance County Detention Facility,Private,34.767387,-106.018496,2
-NA,NA,NA,NA,2
 Albany County Jail,Public,42.75141,-73.81536,1
 Albuquerque Regional Correctional Center,Private,35.089343,-106.651437,1
 Atlanta Pretrial Detention Center,Public,33.747313,-84.395391,1
 Basile Detention Center,Private,30.486577,-92.583366,1
 Bergen County Jail,Public,40.873873,-74.039042,1
 Catahoula Correctional Center,Private,31.860451,-91.962215,1
+Centro Medico Hospital,Public,18.39152,-66.07489,1
 Cibola County Correctional Center,Private,35.179783,-107.907649,1
 Clinton County Correctional Facility,Public,41.154871,-77.336887,1
 Dallas County Jail,Public,32.776299,-96.815601,1
@@ -65,7 +66,6 @@ El Paso County Jail,Public,38.788166,-104.77912,1
 Essex County Jail,Public,40.730608,-74.135742,1
 Etowah County Jail,Public,34.015737,-86.011933,1
 FCI Allenwood,Public,41.127767,-76.921971,1
-FDC Miami,Public,25.778491,-80.193199,1
 FDC Philadelphia,Public,39.952909,-75.151925,1
 FMC Fort Worth,Public,32.6797719,-97.2874593,1
 FMC Rochester,Public,44.023339,-92.439526,1

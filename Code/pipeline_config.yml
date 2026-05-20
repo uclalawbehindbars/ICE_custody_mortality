@@ -105,7 +105,10 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Denny Adan Gonzalez_2026-04-28:
+      place_of_death: "Stewart Detention Center\nLumpkin, Georgia"
     Aled Damien Carbonell-Betancourt_2026-04-12:
+      detention_center: "Federal Detention Center - Miami"
       place_of_death: "BOP Federal Detention Center Miami\nMiami, Florida"
     Alejandro Cabrera Clemente_2026-04-11:
       place_of_death: "Winn Correctional Center\nWinnfield, Louisiana"
@@ -133,7 +136,7 @@ bbdp_ice_deaths:
       place_of_death: "Miami Correctional Facility\nBunker Hill, Indiana"
     Victor Manuel Diaz_2026-01-14:
       place_of_death: "Camp East Montana\nFt. Bliss, Texas"
-    Heber Sanchaz Dominguez_2026-01-14:
+    Heber Sanchez Dominguez_2026-01-14:
       place_of_death: "Robert A Deyton Detention Center\nLovejoy, Georgia"
     Parady La_2026-01-09:
       place_of_death: "Thomas Jefferson University Hospital\nPhiladelphia, Pennsylvania"
@@ -174,7 +177,7 @@ bbdp_ice_deaths:
       place_of_death: "Victor Valley Global Medical Center\nVictorville, California"
     "Hasan Ali Moh'D Saleh_2025-10-11":
       place_of_death: "Larkin Community Hospital\nSouth Miami, Florida"
-    Leo Cruz-Silva_2025-10-08:
+    Leo Cruz-Silva_2025-10-04:
       date_of_death: 10/04/2025  # per press release
       place_of_death: "Ste. Genevieve County Jail\nSte. Genevieve, Missouri"
     Huabing Xie_2025-09-29:
@@ -191,7 +194,7 @@ bbdp_ice_deaths:
     Santos Reyes Banegas_2025-09-18:
       place_of_death: "Nassau County Correctional Center\nEast Meadow, New York"
     Oscar Rascon Duarte_2025-09-08:
-      do_b: NA
+      do_b: 5/29/1966
       detention_center: Florence Staging Facility
       place_of_death: "Banner Desert Medical Center\nMesa, Arizona"
     Lorenzo Antonio Batrez Vargas_2025-08-31:
