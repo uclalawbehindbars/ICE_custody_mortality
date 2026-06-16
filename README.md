@@ -4,9 +4,9 @@
 
 This repository collects, cleans, analyzes, and publishes data on deaths in ICE detention facilities in the United States to enable meaningful oversight, empirical research, and informed policy decision-making.
 
-The Behind Bars Data Project's (BBDP's) complete, verified dataset can be found [here](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Data/Processed/ice_deaths_validated.csv). 
+The Behind Bars Data Project's (BBDP's) complete, verified dataset can be found [here](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Data/Processed/ice_deaths_validated.csv).
 
-We recommend reading through this repository's README file for clarification on how BBDP approached verification, and which data outputs are fully verified versus partially or un-verified. 
+We recommend reading through this repository's README file for clarification on how BBDP approached verification, and which data outputs are fully verified versus partially or un-verified.
 
 ## How to Run Code
 
@@ -15,9 +15,18 @@ We recommend reading through this repository's README file for clarification on 
 ```r
 renv::restore()
 ```
-3. Navigate to the `Code` folder in your local environment within `ICE_custody_mortality.Rproj` project. 
-4. To generate the processed validated and partially-validated data files, run: [`Code/ice_mortality_validation.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_validation.R). 
-5. To generate aggregate death counts located in the `Data/Ouput` folder, run: [`Code/ice_mortality_analysis.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_analysis.R). 
+3. Navigate to the `Code` folder in your local environment within `ICE_custody_mortality.Rproj` project.
+4. To generate the processed validated and partially-validated data files, run: [`Code/ice_mortality_validation.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_validation.R).
+5. To generate aggregate death counts located in the `Data/Ouput` folder, run: [`Code/ice_mortality_analysis.R`](https://github.com/uclalawbehindbars/ICE_custody_mortality/blob/main/Code/ice_mortality_analysis.R).
+
+### Optional: Use Docker to Run Code
+
+Using Docker may help with ensuring that your R environment has the correct packages. To run via Docker, follow these steps:
+
+1. In your terminal, run `docker compose run --rm r`.
+2. To generate the processed validated and partially-validated data files, run `source("Code/ice_mortality_validation.R")` in the R REPL.
+3. To generate aggregate death counts located in the `Data/Output` folder, run: `source("Code/ice_mortality_analysis.R")` in the R REPL.
+4. Press CTRL+D (or CMD+D on Mac) to exit the R REPL.
 
 ## Data and Validation Sources
 

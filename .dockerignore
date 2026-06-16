@@ -1,0 +1,8 @@
+.git
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user
+renv/*
+!renv/activate.R
+!renv/settings.json
