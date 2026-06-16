@@ -1,0 +1,31 @@
+services:
+  rstudio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8787:8787"
+    environment:
+      PASSWORD: rstudio
+    volumes:
+      - .:/project
+      - renv-cache:/opt/renv/cache
+      - renv-library:/opt/renv/library
+    working_dir: /project
+
+  r:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: R
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/project
+      - renv-cache:/opt/renv/cache
+      - renv-library:/opt/renv/library
+    working_dir: /project
+
+volumes:
+  renv-cache:
+  renv-library:
