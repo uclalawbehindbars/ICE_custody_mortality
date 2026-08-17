@@ -298,7 +298,8 @@ load_df <- function(df_name, config) {
   }
   data <- read_any(config[[df_name]]) |>
     janitor::clean_names() |>
-    apply_corrections(config[[df_name]]) |>
+    check_source_schema(config[[df_name]]) |> 
+    check_against_reference(config[[df_name]]) |>
     apply_mutations(config[[df_name]]) |>
     apply_renamings(config[[df_name]]) |>
     apply_filters(config[[df_name]]) |>
@@ -311,8 +312,8 @@ load_df <- function(df_name, config) {
 
 #' Output columns based on config
 #'
-#' @param df The dataframe to output.
-#' @param config The config mapping for the dataframe.
+#' @param df The data frame to output.
+#' @param config The config mapping for the data frame.
 #'
 #' @returns The selected output columns.
 #' @export
@@ -325,7 +326,62 @@ output_columns <- function(df, config) {
   }
 }
 
+#' Flag facilities whose state disagrees with the Vera reference.
+#'
+#' Pulls the reference file and, for facilities present in both, warns wherever
+#' `state` differs. Purely a signal that a human should reconcile — it picks no
+#' winner and changes no data.
+#'
+#' @param data The local dataframe, already clean_names'd.
+#' @param data_config The data config object.
+#' @returns `data`, unchanged.
+#' @export
+check_against_reference <- function(data, data_config) {
+  ref_cfg <- data_config$reference
+  if (is.null(ref_cfg)) {
+    return(data)
+  }
+  log_me_maybe("Checking state against reference...")
+  by <- ref_cfg$by
+  
+  ref <- read_any(list(src = list(path = ref_cfg$path))) |>
+    janitor::clean_names()
+  
+  norm <- function(x) {
+    x <- trimws(as.character(x))
+    x[x == ""] <- NA
+    x
+  }
+  
+  cmp <- dplyr::inner_join(
+    data[c(by, "state")],
+    ref[c(by, "state")],
+    by = by,
+    suffix = c("_local", "_ref")
+  )
+  mismatch <- cmp[norm(cmp$state_local) != norm(cmp$state_ref) &
+                    !is.na(cmp$state_local) & !is.na(cmp$state_ref), ]
+  
+  if (nrow(mismatch)) {
+    lines <- glue::glue_data(
+      mismatch,
+      "{.data[[by]]}: state differs \u2014 local '{state_local}', reference '{state_ref}'."
+    )
+    warning(
+      glue::glue(
+        "State mismatch on {nrow(mismatch)} facility(ies) \u2014 reconcile before trusting output:\n  - ",
+        paste(lines, collapse = "\n  - ")
+      ),
+      call. = FALSE,
+      immediate. = TRUE
+    )
+  }
+  data
+}
+
+
 #' Uniform API for reading source data.
+#' Revised August 18, 2026 to include fetching URLs (e.g. remote files from GitHub) directly. Readr will accept a URL as a file where readxl does not, limiting remote fetching to csvs and tsvs
 #'
 #' @param source_config A source config.
 #' @returns A tibble.
@@ -348,6 +404,19 @@ read_any <- function(source_config, ...) {
     ) |>
       dplyr::select(where(~ !all(is.na(.))))
     return(df)
+  }
+  if (stringr::str_detect(src_path, "^https?://")) {
+    ext <- tolower(tools::file_ext(src_path))
+    reader <- switch(
+      ext,
+      "csv" = readr::read_csv,
+      "tsv" = readr::read_tsv,
+      stop("Unsupported remote file type: ", ext)
+    )
+    return(
+      exec(reader, file = src_path, !!!source_config$src$args, ...) |> 
+        dplyr::select(where(~ !all(is.na(.))))
+    )
   }
   if (!file.exists(src_path)) {
     message("\n[Step 1/2] Generating source file...\n")
