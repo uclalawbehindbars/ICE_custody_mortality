@@ -70,7 +70,7 @@ apply_corrections <- function(
     dplyr::select(-tidyselect::ends_with(".new")) |>
     dplyr::mutate(
       dplyr::across(
-        dplyr::everything(),
+        dplyr::where(is.character),
         ~ dplyr::if_else(.x == "", NA_character_, .x)
       )
     )
@@ -298,7 +298,6 @@ load_df <- function(df_name, config) {
   }
   data <- read_any(config[[df_name]]) |>
     janitor::clean_names() |>
-    check_against_reference(config[[df_name]]) |>
     apply_corrections(config[[df_name]]) |> 
     apply_mutations(config[[df_name]]) |>
     apply_renamings(config[[df_name]]) |>
@@ -324,59 +323,6 @@ output_columns <- function(df, config) {
   } else {
     df
   }
-}
-
-#' Flag facilities whose state disagrees with the Vera reference.
-#'
-#' Pulls the reference file and, for facilities present in both, warns wherever
-#' `state` differs. Purely a signal that a human should reconcile — it picks no
-#' winner and changes no data.
-#'
-#' @param data The local dataframe, already clean_names'd.
-#' @param data_config The data config object.
-#' @returns `data`, unchanged.
-#' @export
-check_against_reference <- function(data, data_config) {
-  ref_cfg <- data_config$reference
-  if (is.null(ref_cfg)) {
-    return(data)
-  }
-  log_me_maybe("Checking state against reference...")
-  by <- ref_cfg$by
-  
-  ref <- read_any(list(src = list(path = ref_cfg$path))) |>
-    janitor::clean_names()
-  
-  norm <- function(x) {
-    x <- trimws(as.character(x))
-    x[x == ""] <- NA
-    x
-  }
-  
-  cmp <- dplyr::inner_join(
-    data[c(by, "state")],
-    ref[c(by, "state")],
-    by = by,
-    suffix = c("_local", "_ref")
-  )
-  mismatch <- cmp[norm(cmp$state_local) != norm(cmp$state_ref) &
-                    !is.na(cmp$state_local) & !is.na(cmp$state_ref), ]
-  
-  if (nrow(mismatch)) {
-    lines <- glue::glue_data(
-      mismatch,
-      "{.data[[by]]}: state differs \u2014 local '{state_local}', reference '{state_ref}'."
-    )
-    warning(
-      glue::glue(
-        "State mismatch on {nrow(mismatch)} facility(ies) \u2014 reconcile before trusting output:\n  - ",
-        paste(lines, collapse = "\n  - ")
-      ),
-      call. = FALSE,
-      immediate. = TRUE
-    )
-  }
-  data
 }
 
 
