@@ -298,8 +298,8 @@ load_df <- function(df_name, config) {
   }
   data <- read_any(config[[df_name]]) |>
     janitor::clean_names() |>
-    check_source_schema(config[[df_name]]) |> 
     check_against_reference(config[[df_name]]) |>
+    apply_corrections(config[[df_name]]) |> 
     apply_mutations(config[[df_name]]) |>
     apply_renamings(config[[df_name]]) |>
     apply_filters(config[[df_name]]) |>

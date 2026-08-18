@@ -105,9 +105,8 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
-    #Felix Alcorta Rodriguez_2026-06-19: <- to fix
+    Felix Alcorta Rodriguez_2026-06-19: #<- to fix
       place_of_death: "Loreto Medical Center\nLoreto, Texas"
-      detention_center: 
     #Jesus Manuel Arenas Silva_ <- to fix
     Mamuka Artmeladze_2026-06-04:
       place_of_death: "Winn Parish Medical Center\nWinnfield, Louisiana"
