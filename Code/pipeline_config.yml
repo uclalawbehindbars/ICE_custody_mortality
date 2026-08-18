@@ -105,10 +105,6 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
-    #Felix Alcorta Rodriguez_2026-06-19: <- to fix
-      place_of_death: "Loreto Medical Center\nLoreto, Texas"
-      detention_center: 
-    #Jesus Manuel Arenas Silva_ <- to fix
     Mamuka Artmeladze_2026-06-04:
       place_of_death: "Winn Parish Medical Center\nWinnfield, Louisiana"
     Denny Adan Gonzalez_2026-04-28:
@@ -856,7 +852,6 @@ bbdp_ice_deaths:
     - "!(name == 'Oscar Lopez Acosta' & dod == ymd('2020-05-10'))"
     - "!(name == 'Johana Medina Leon' & dod == ymd('2019-06-01'))"
     - "!(str_detect(name, 'Francisco Castaneda') & dod == ymd('2008-02-01'))"
-    - "!(name == 'Prisciliano Trejo Ricano')"
     - "fiscal_year >= 2004"
     - "year(dod) >= 2003"
   output_columns:
@@ -975,9 +970,6 @@ facility_crosswalk:
 facilities:
   src:
     path: Data/Raw/facilities.csv
-  reference:
-    path: https://raw.githubusercontent.com/vera-institute/ice-detention-trends/main/metadata/facilities.csv
-    by: detention_facility_code
   renamings:
     detention_center_id: detention_facility_code
     detention_center_name: detention_facility_name_bbdp
