@@ -111,7 +111,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2012,Eloy Detention Center,AZ,Private,32.817677,-111.51927,1
 2012,Las Vegas Field Office Hold Room,NV,Public,36.058347,-115.225127,1
 2012,San Bernardino Field Office Hold Room,CA,Public,34.10077,-117.297624,1
-2013,Broadview ICE Facility,IL,Private,41.868522,-87.86562,1
+2013,Brooks County Detention Center,TX,Private,27.2479455,-98.1265995,1
 2013,Eloy Detention Center,AZ,Private,32.817677,-111.51927,2
 2013,Houston Contract Detention Facility,TX,Private,29.950836,-95.312188,1
 2013,Joe Corley Processing Center,TX,Private,30.34444,-95.46021,1
@@ -149,7 +149,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2017,Lasalle Correctional Center,LA,Private,31.85131,-92.28482,1
 2017,Stewart Detention Center,GA,Private,32.036676,-84.771746,1
 2018,Baker County Jail,FL,Public,30.29596,-82.12172,1
-2018,Broadview ICE Facility,IL,Private,41.868522,-87.86562,1
+2018,Broward Transitional Center,FL,Private,26.2772479,-80.1510147,1
 2018,Cibola County Correctional Center,NM,Private,35.179783,-107.907649,1
 2018,Eloy Detention Center,AZ,Private,32.817677,-111.51927,1
 2018,Krome North Service Processing Center,FL,Private,25.76032,-80.496826,1
@@ -210,7 +210,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2024,Winn Correctional Center,LA,Private,31.849565,-92.801514,1
 2025,Adams County Detention Center,MS,Private,31.569175,-91.230469,1
 2025,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,2
-2025,Broadview ICE Facility,IL,Private,41.868522,-87.86562,1
+2025,Broward Transitional Center,FL,Private,26.2772479,-80.1510147,1
 2025,Camp East Montana,TX,Private,31.812729,-106.298333,1
 2025,Centro Medico Hospital,PR,Public,18.39152,-66.07489,1
 2025,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,2
@@ -235,15 +235,19 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,2
 2026,Camp East Montana,TX,Private,31.812729,-106.298333,2
 2026,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,1
+2026,Delaney Hall Detention Facility,NJ,Private,40.717437,-74.127789,1
 2026,FDC Miami,FL,Public,25.778491,-80.193199,1
 2026,FDC Philadelphia,PA,Public,39.952909,-75.151925,1
 2026,Florence Staging Facility,AZ,Private,33.06496,-111.378505,1
 2026,Glades County Detention Center,FL,Public,26.838714,-81.124018,1
 2026,Imperial Regional Detention Facility,CA,Private,32.690811,-115.397861,1
+2026,Irwin County Detention Center,GA,Private,31.5798201,-83.2553638,1
 2026,Joe Corley Processing Center,TX,Private,30.34444,-95.46021,1
 2026,Larkin Behavioral Health Center,FL,Private,26.021177,-80.180662,1
 2026,Louisiana ICE Processing Center,LA,Private,30.941263,-91.568381,1
 2026,Miami Correctional Facility,IN,Public,40.644997,-86.132978,2
+2026,Port Isabel Service Processing Center,TX,Private,26.157941,-97.35047,1
 2026,Robert A. Deyton Detention Facility,GA,Private,33.440609,-84.320068,1
 2026,Stewart Detention Center,GA,Private,32.036676,-84.771746,1
+2026,Webb County Detention Center,TX,Private,27.3698188,-99.4902136,1
 2026,Winn Correctional Center,LA,Private,31.849565,-92.801514,2

@@ -6,11 +6,10 @@ Adelanto ICE Processing Center,Private,34.557729,-117.441865,10
 Otay Mesa Detention Center,Private,32.576525,-116.915478,10
 Columbia Care Center,Private,34.075744,-80.979724,9
 Houston Contract Detention Facility,Private,29.950836,-95.312188,9
+Port Isabel Service Processing Center,Private,26.157941,-97.35047,8
 Lasalle Correctional Center,Private,31.85131,-92.28482,7
-Port Isabel Service Processing Center,Private,26.157941,-97.35047,7
 FMC Springfield,Public,37.177542,-93.323273,6
 El Paso Service Processing Center,Private,31.796447,-106.369651,5
-Broadview ICE Facility,Private,41.868522,-87.86562,4
 FCI Butner,Public,36.187179,-78.740535,4
 Florence Service Processing Center,Private,33.06496,-111.378505,4
 Hampton Roads Regional Jail,Public,36.804472,-76.368436,4
@@ -33,7 +32,9 @@ Prairieland Detention Facility,Private,32.420785,-97.196902,3
 Rolling Plains Detention Center,Private,33.176272,-99.721789,3
 South Texas ICE Processing Center,Private,28.894651,-99.121943,3
 Baker County Jail,Public,30.29596,-82.12172,2
+Broward Transitional Center,Private,26.2772479,-80.1510147,2
 Calhoun County Correctional Center,Public,42.316674,-85.175892,2
+Delaney Hall Detention Facility,Private,40.717437,-74.127789,2
 El Valle Detention Facility,Private,26.480407,-97.767334,2
 Elizabeth Contract Detention Facility,Private,40.666157,-74.189694,2
 FDC Miami,Public,25.778491,-80.193199,2
@@ -55,12 +56,13 @@ Albuquerque Regional Correctional Center,Private,35.089343,-106.651437,1
 Atlanta Pretrial Detention Center,Public,33.747313,-84.395391,1
 Basile Detention Center,Private,30.486577,-92.583366,1
 Bergen County Jail,Public,40.873873,-74.039042,1
+Broadview ICE Facility,Private,41.868522,-87.86562,1
+Brooks County Detention Center,Private,27.2479455,-98.1265995,1
 Catahoula Correctional Center,Private,31.860451,-91.962215,1
 Centro Medico Hospital,Public,18.39152,-66.07489,1
 Cibola County Correctional Center,Private,35.179783,-107.907649,1
 Clinton County Correctional Facility,Public,41.154871,-77.336887,1
 Dallas County Jail,Public,32.776299,-96.815601,1
-Delaney Hall Detention Facility,Private,40.717437,-74.127789,1
 El Centro Service Processing Center,Private,32.802962,-115.569768,1
 El Paso County Jail,Public,38.788166,-104.77912,1
 Essex County Jail,Public,40.730608,-74.135742,1
@@ -77,6 +79,7 @@ Harris County Jail,Public,32.764412,-84.866192,1
 Henderson County Jail,Public,32.212801,-95.855713,1
 Hudson County Jail,Public,40.72991,-74.103398,1
 IAH Polk Adult Detention Facility,Private,30.698151,-95.005792,1
+Irwin County Detention Center,Private,31.5798201,-83.2553638,1
 Jefferson County Jail,Private,30.079492,-94.094305,1
 Karnes County Correctional Center,Private,28.883485,-97.911848,1
 La Paz Adult Detention Facility,Public,34.146226,-114.290189,1
@@ -115,6 +118,7 @@ USP Atwater,Public,37.3840277,-120.5587741,1
 USP Terre Haute,Public,39.416285,-87.450698,1
 Utah County Jail,Public,40.148256,-111.656906,1
 Wakulla County Jail,Public,30.196089,-84.376921,1
+Webb County Detention Center,Private,27.3698188,-99.4902136,1
 Weber County Jail,Public,41.24009,-111.993298,1
 Wicomico County Corrections Center,Public,38.4084909,-75.5833224,1
 Worcester County Jail,Public,38.170007,-75.375834,1
