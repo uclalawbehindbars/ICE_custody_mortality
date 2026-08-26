@@ -107,7 +107,7 @@ bbdp_ice_deaths:
   corrections:
     Edvin Jovanny Lopez Cornejo_2026-08-01:
       place_of_death: "Delaney Hall\nNewark, New Jersey"
-    Felix Alcorta Rodriguez_2026-06-19: 
+    Felix Alcorta Rodriguez_2026-06-19:
       detention_center: Webb County Detention Center
       place_of_death: "Loreto Medical Center\nLoreto, Texas"
     Jesus Manuel Arenas Silva_2026-07-13:
@@ -1018,3 +1018,9 @@ bbdp_data_clean:  # short-cut for analysis
   src:
     path: Data/Processed/ice_deaths_validated.csv
     generator: "Rscript Code/ice_mortality_validation.R"
+
+vera_ice_population:
+  src:
+    path: "https://raw.githubusercontent.com/vera-institute/ice-detention-trends/main/national.csv"
+  mutations:
+    calendar_year: "year(date)"
