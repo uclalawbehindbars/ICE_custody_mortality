@@ -123,3 +123,7 @@ LAWINCI,Winn Corr Institute,Winn Correctional Center,560 Gum Spring Road,Winnfie
 WORCEMD,Worcester Co. Jail,Worcester County Jail,5022 Joyner Road,Snow Hill,Worcester,MD,21863,Baltimore,38.170007,-75.375834,IGSA,Non-Dedicated,Worcester County,County,vera
 WYATTRI,Wyatt Detention Center,Wyatt Detention Center,950 High Street,Central Falls,Providence,RI,2863,Boston,41.892811,-71.3832,USMS IGA,Federal,Central Falls Detention Facility Corporation,Private,vera
 YORCOPA,"York County Jail, PA",York County Prison,3400 Concord Road,York,York,PA,17402,Philadelphia,39.987597,-76.663603,IGSA,Non-Dedicated,York County Department of Prisons,County,vera
+WCCPBFL,Broward Transitional Center,Broward Transitional Center,3900 North Powerline Road,Pompano Beach,Broward,FL,33073,Miami,26.2772479,-80.1510147,CDF,Dedicated,GEO,Private,bbdp
+BROKSTX,Brooks County Jail (Contract),Brooks County Detention Center,901 County Road 201,Falfurrias,Brooks,TX,78355,Harlingen,27.2479455,-98.1265995,USMS IGA,Federal,GEO,Private,bbdp
+WEBDCTX,Webb County Detention Center (CCA),Webb County Detention Center,9998 South Highway 83,Laredo,Webb,TX,78046,Harlingen,27.3698188,-99.4902136,DIGSA,Dedicated,CoreCivic,Private,bbdp
+IRWINGA,Irwin County Detention Center,Irwin County Detention Center,132 Cotton Drive,Ocilla,Irwin,GA,31774,Atlanta,31.5798201,-83.2553638,IGSA,Non-Dedicated,LaSalle,Private,bbdp

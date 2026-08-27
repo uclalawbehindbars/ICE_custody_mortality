@@ -70,7 +70,7 @@ apply_corrections <- function(
     dplyr::select(-tidyselect::ends_with(".new")) |>
     dplyr::mutate(
       dplyr::across(
-        dplyr::everything(),
+        dplyr::where(is.character),
         ~ dplyr::if_else(.x == "", NA_character_, .x)
       )
     )

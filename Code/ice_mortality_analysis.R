@@ -1,11 +1,12 @@
 # Title: ICE Mortality Analysis
 # Authors: Hena Vadher, Annette Dekker, and Ethan Corey for BBDP
-# Date (Last Updated): 20 May 2026
+# Date (Last Updated): 18 August 2026
 # Purpose: Analyze ICE mortality data.
 
 library(common)
 library(here)
 library(lubridate)
+library(scales)
 library(yaml)
 
 common::source.all(here("Code/library"), isolate = FALSE)
@@ -13,6 +14,7 @@ common::source.all(here("Code/library"), isolate = FALSE)
 # Data Import -----------------------------------------------------------------
 config <- read_yaml(here("Code", "pipeline_config.yml"))
 data_validated <- load_df("bbdp_data_clean", config)
+population <- load_df("vera_ice_population", config)
 
 # Analysis --------------------------------------------------------------------
 
@@ -86,6 +88,44 @@ deaths_by_year_detention_center_type <- data_validated |>
   get_death_counts(calendar_year, detention_center_type) |>
   arrange(calendar_year, detention_center_type)
 
+## Mortality analysis
+coverage_start_year <- 2009
+coverage_end <- max(population$date)
+scale_factor <- 100000
+ci_lower_percentile <- 0.025
+ci_upper_percentile <- 0.975
+
+mortality_numerator <- data_validated |>
+  filter(calendar_year >= coverage_start_year, dod <= coverage_end) |>
+  group_by(calendar_year) |>
+  count() |>
+  rename(deaths = n)
+
+mortality_denominator <- population |>
+  filter(calendar_year >= coverage_start_year) |>
+  group_by(calendar_year) |>
+  summarize(person_years = sum(midnight_pop) / 365.25)
+
+national_rates_midnight <- mortality_numerator |>
+  full_join(mortality_denominator, by = "calendar_year") |>
+    mutate(
+        deaths = coalesce(deaths, 0L),
+        mortality_per_100k = ((deaths / person_years) * scale_factor),
+    ) |>
+    mutate(
+        ci_lower_95 = if_else(
+          deaths == 0,
+          0,
+          (scale_factor*qchisq(ci_lower_percentile, 2*deaths)/2) / person_years,
+        ),
+        ci_upper_95 = if_else(
+          deaths == 0,
+          0,
+          (scale_factor*qchisq(ci_upper_percentile, 2*(deaths + 1))/2) / person_years
+        ),
+    ) |>
+    arrange(calendar_year)
+
 # Save analysis artifacts -----------------------------------------------------
 overall_fy |> write_csv(here("Data/Output/ice_deaths_by_fy.csv"))
 overall_calyr |> write_csv(here("Data/Output/ice_deaths_by_year.csv"))
@@ -107,3 +147,5 @@ deaths_by_fy_detention_center_type |>
   write_csv(here("Data/Output/ice_deaths_by_fy_facility_type.csv"))
 deaths_by_year_detention_center_type |>
   write_csv(here("Data/Output/ice_deaths_by_year_facility_type.csv"))
+
+national_rates_midnight |> write_csv(here("Data/Output/national_midnight_mortality_rates.csv"))

@@ -105,6 +105,17 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Edvin Jovanny Lopez Cornejo_2026-08-01:
+      place_of_death: "Delaney Hall\nNewark, New Jersey"
+    Felix Alcorta Rodriguez_2026-06-19:
+      detention_center: Webb County Detention Center
+      place_of_death: "Loreto Medical Center\nLoreto, Texas"
+    Jesus Manuel Arenas Silva_2026-07-13:
+      detention_center: Irwin County Detention Center
+      place_of_death: "Irwin County Hospital\nAtlanta, Georgia"
+    Adrian Andreas Florian_2026-06-24:
+      detention_center: Port Isabel Detention Center
+      place_of_death: "Valley Baptist Medical Center\n Harlingen, Texas"
     Mamuka Artmeladze_2026-06-04:
       place_of_death: "Winn Parish Medical Center\nWinnfield, Louisiana"
     Denny Adan Gonzalez_2026-04-28:
@@ -229,7 +240,7 @@ bbdp_ice_deaths:
       ice_death_report: "https://www.ice.gov/doclib/foia/reports/ddrTINEOMartinezJuanAlexis.pdf"
     Serawit Gezahegn Dejene_2025-01-29:
       place_of_death: "Banner University Medical Center Phoenix\nPhoenix, Arizona"
-    Genry Ruiz Guillen_2025-01-23:
+    Genry Donaldo Ruiz-Guillen_2025-01-23:
       place_of_death: "Larkin Hospital Palm Springs\nHialeah, Florida"
     Ramesh Amerchand_2024-12-16:
       name: Ramesh Amechand
@@ -845,6 +856,9 @@ bbdp_ice_deaths:
       right: facilities
       by: detention_center_id
   filters:
+    - "!(name == 'Jose Chajon-Raxon')" #no dod avail 8/18/28
+    - "!(name == 'Marvin Alexander Mejia Alvarado')" #no dod avail 8/18/26
+    - "!(name == 'Prisciliano Trejo Ricano' & dod == ymd('2026-07-22'))"
     - "!(name == 'Silverio Villegas Gonzalez' & dod == ymd('2025-09-12'))"
     - "!(name == 'Jose Castro Rivera' & dod == ymd('2025-10-23'))"
     - "!(name == 'Francisco Castaneda' & dod == ymd('2008-02-01'))"
@@ -965,11 +979,29 @@ code_red:
 facility_crosswalk:
   src:
     path: Data/Raw/facility-crosswalk.csv
+  corrections_index: detention_center_raw
+  corrections:
+    Broward Transitional Center:
+      detention_facility_code: WCCPBFL
+    Brooks County Detention Center:
+      detention_facility_code: BROKSTX
   renamings:
     detention_center_id: detention_facility_code
 facilities:
   src:
     path: Data/Raw/facilities.csv
+  corrections_index: detention_facility_code
+  corrections:
+    WCCPBFL:
+      detention_facility_name_bbdp: Broward Transitional Center
+      contractor: GEO
+      contractor_type: Private
+      data_source: bbdp
+    BROKSTX:
+      detention_facility_name_bbdp: Brooks County Detention Center
+      contractor: GEO
+      contractor_type: Private
+      data_source: bbdp
   renamings:
     detention_center_id: detention_facility_code
     detention_center_name: detention_facility_name_bbdp
@@ -986,3 +1018,9 @@ bbdp_data_clean:  # short-cut for analysis
   src:
     path: Data/Processed/ice_deaths_validated.csv
     generator: "Rscript Code/ice_mortality_validation.R"
+
+vera_ice_population:
+  src:
+    path: "https://raw.githubusercontent.com/vera-institute/ice-detention-trends/main/national.csv"
+  mutations:
+    calendar_year: "year(date)"

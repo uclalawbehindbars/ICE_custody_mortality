@@ -86,10 +86,9 @@ calendar_year,detention_center_state,deaths_n
 2012,CO,1
 2012,NV,1
 2013,AZ,2
-2013,IL,1
 2013,PA,1
 2013,PR,1
-2013,TX,4
+2013,TX,5
 2014,CA,1
 2014,TX,4
 2014,UT,1
@@ -115,9 +114,8 @@ calendar_year,detention_center_state,deaths_n
 2017,TX,1
 2018,AZ,1
 2018,CA,1
-2018,FL,3
+2018,FL,4
 2018,GA,2
-2018,IL,1
 2018,NM,1
 2018,TX,2
 2018,WA,1
@@ -159,9 +157,8 @@ calendar_year,detention_center_state,deaths_n
 2024,WA,2
 2025,AZ,3
 2025,CA,3
-2025,FL,5
+2025,FL,6
 2025,GA,2
-2025,IL,1
 2025,MI,1
 2025,MO,2
 2025,MS,1
@@ -173,8 +170,9 @@ calendar_year,detention_center_state,deaths_n
 2026,AZ,1
 2026,CA,3
 2026,FL,3
-2026,GA,2
+2026,GA,3
 2026,IN,2
 2026,LA,3
+2026,NJ,1
 2026,PA,1
-2026,TX,4
+2026,TX,6
