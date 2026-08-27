@@ -33,4 +33,3 @@ validate_data <- function(
     ) |>
     dplyr::mutate(validated = !is.na(validated))
 }
-

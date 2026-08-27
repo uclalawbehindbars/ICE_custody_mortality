@@ -298,7 +298,7 @@ load_df <- function(df_name, config) {
   }
   data <- read_any(config[[df_name]]) |>
     janitor::clean_names() |>
-    apply_corrections(config[[df_name]]) |> 
+    apply_corrections(config[[df_name]]) |>
     apply_mutations(config[[df_name]]) |>
     apply_renamings(config[[df_name]]) |>
     apply_filters(config[[df_name]]) |>
@@ -311,8 +311,8 @@ load_df <- function(df_name, config) {
 
 #' Output columns based on config
 #'
-#' @param df The data frame to output.
-#' @param config The config mapping for the data frame.
+#' @param df The dataframe to output.
+#' @param config The config mapping for the dataframe.
 #'
 #' @returns The selected output columns.
 #' @export
@@ -325,9 +325,7 @@ output_columns <- function(df, config) {
   }
 }
 
-
 #' Uniform API for reading source data.
-#' Revised August 18, 2026 to include fetching URLs (e.g. remote files from GitHub) directly. Readr will accept a URL as a file where readxl does not, limiting remote fetching to csvs and tsvs
 #'
 #' @param source_config A source config.
 #' @returns A tibble.
@@ -350,19 +348,6 @@ read_any <- function(source_config, ...) {
     ) |>
       dplyr::select(where(~ !all(is.na(.))))
     return(df)
-  }
-  if (stringr::str_detect(src_path, "^https?://")) {
-    ext <- tolower(tools::file_ext(src_path))
-    reader <- switch(
-      ext,
-      "csv" = readr::read_csv,
-      "tsv" = readr::read_tsv,
-      stop("Unsupported remote file type: ", ext)
-    )
-    return(
-      exec(reader, file = src_path, !!!source_config$src$args, ...) |> 
-        dplyr::select(where(~ !all(is.na(.))))
-    )
   }
   if (!file.exists(src_path)) {
     message("\n[Step 1/2] Generating source file...\n")
