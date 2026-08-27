@@ -38,9 +38,13 @@ Using Docker may help with ensuring that your R environment has the correct pack
   * ICE [Detainee Death Reports](https://www.ice.gov/detain/detainee-death-reporting)
   * ICE [Press Releases](https://www.ice.gov/newsroom)
   * Vera Institute of Justice ICE Detention facilities [data](https://github.com/vera-institute/ice-detention-trends/tree/main)
+  * Vera Institute of Justice ICE Detention population [data](https://raw.githubusercontent.com/vera-institute/ice-detention-trends/main/national.csv)
   * Journalistic Reporting: In rare instances, news sources were used to clarify conflicts between sources (for example, how a name is spelled).
 
 * *A Note on Edge Cases:* Our inclusion criteria reflect the limitations of available data. BBDP recognizes that there is no criteria that would include every death that could be linked to ICE detention. This repository includes deaths occurring between book in and book out, transport to a detention facility, or during that individual's process of removal. Edge cases, including where someone died in ICE custody before being formally booked, or shortly after they were released, were individually considered but do not appear in this dataset. BBDP welcomes additional context that may help refine how edge cases are considered--whether they reflect deaths that are currently included in the final dataset or not.
+
+* We calculated mortality rates using the midnight population in ICE facilities on each day from January 1, 2009, to March 13, 2025 (the latest date available). The midnight population excludes anyone booked and released on the same day, meaning it may underestimate the total ICE population (though we believe any difference is negligible). To calculate confidence intervals for mortality rates, we used exact (Clopper-Pearson) 95% confidence intervals based on a Poisson distribution, following [(Ulm 1990)](https://doi.org/10.1093/oxfordjournals.aje.a115507
+). We use exact intervals (rather than normal distributions) because of low counts and risk of negative lower bounds. Note that the confidence intervals capture sampling variability, not uncertainty in underlying data (such as undercounting, incomplete reporting, error in population figures).
 
 ## Repository Structure
 
