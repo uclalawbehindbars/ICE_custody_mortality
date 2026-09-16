@@ -115,7 +115,7 @@ get_death_counts <- function(data, ...) {
 #'@returns The extracted city
 get_location_city <- function(location) {
   # some "states" aren't technically states
-  state_allow_list = c("Egypt", "Puerto Rico") # Should additional states of interest arise, this will need to be revised
+  state_allow_list <- c("Egypt", "Puerto Rico", "Northern Mariana Islands") # Should additional states of interest arise, this will need to be revised
   city_state <- stringr::str_split_i(location, "\n", -1)
   state <- stringr::str_split_i(city_state, ",", -1)
   city <- stringr::str_split_i(city_state, ",", 1)
@@ -141,7 +141,7 @@ get_location_city <- function(location) {
 #'@returns The extracted state.
 get_location_state <- function(location) {
   # some "states" aren't technically states
-  state_allow_list = c("Egypt", "Puerto Rico") # Should additional states of interest arise, this will need to be revised
+  state_allow_list <- c("Egypt", "Puerto Rico", "Northern Mariana Islands") # Should additional states of interest arise, this will need to be revised
   city_state <- stringr::str_split_i(location, "\n", -1)
   state <- stringr::str_split_i(city_state, ",", -1)
   dplyr::if_else(
