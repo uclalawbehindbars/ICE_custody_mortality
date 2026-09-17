@@ -360,7 +360,7 @@ read_any <- function(source_config, ...) {
       )
       system(generator)
     }
-    if (!file.exists(src_path)) {
+    if (!file.exists(src_path) && !stringr::str_detect(src_path, "^https")) {
       stop(glue::glue("File generation failed for `{src_path}`."))
     }
     message(
