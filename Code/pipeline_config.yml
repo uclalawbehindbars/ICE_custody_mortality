@@ -105,6 +105,8 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Carlos Josué Marchena_2026-09-18:
+      place_of_death: "Winn Parish Medical Center\nWinnfield, Louisiana"
     Lian Yong Wei_2026-08-23:
       place_of_death: "Commonwealth Health Care Corporation Emergency Room\nSaipan, Northern Mariana Islands"
     Edvin Jovanny Lopez Cornejo_2026-08-01:
