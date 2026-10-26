@@ -105,6 +105,12 @@ bbdp_ice_deaths:
       sheet: 1. Master Data Set
   corrections_index: "str_c(name, mdy(date_of_death), sep = '_')"
   corrections:
+    Luis Sandoval_2026-10-23:
+      place_of_death: "Folkston ICE Processing Center,\nFolkston, Georgia"
+    Emiliano Andrade-Covarrubias_2026-10-17:
+      place_of_death: "Rio Grande Processing Center,\n Laredo, Texas"
+    Julian Curo Churata_2026-09-29:
+      place_of_death: "Ochsner Louisiana State University Health\nMonroe, Louisiana"
     Carlos Josué Marchena_2026-09-18:
       place_of_death: "Winn Parish Medical Center,\nWinnfield, Louisiana"
     Lian Yong Wei_2026-08-23:
