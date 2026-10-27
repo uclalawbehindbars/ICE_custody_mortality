@@ -239,6 +239,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2026,FDC Miami,FL,Public,25.778491,-80.193199,1
 2026,FDC Philadelphia,PA,Public,39.952909,-75.151925,1
 2026,Florence Staging Facility,AZ,Private,33.06496,-111.378505,1
+2026,Folkston ICE Processing Center,GA,Private,30.87638,-81.977941,1
 2026,Glades County Detention Center,FL,Public,26.838714,-81.124018,1
 2026,Imperial Regional Detention Facility,CA,Private,32.690811,-115.397861,1
 2026,Irwin County Detention Center,GA,Private,31.5798201,-83.2553638,1
@@ -247,8 +248,10 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2026,Louisiana ICE Processing Center,LA,Private,30.941263,-91.568381,1
 2026,Miami Correctional Facility,IN,Public,40.644997,-86.132978,2
 2026,Port Isabel Service Processing Center,TX,Private,26.157941,-97.35047,1
+2026,Richwood Correctional Center,LA,Private,32.463426,-92.087402,1
+2026,Rio Grande Detention Center,TX,Private,27.377813,-99.489677,1
 2026,Robert A. Deyton Detention Facility,GA,Private,33.440609,-84.320068,1
 2026,Stewart Detention Center,GA,Private,32.036676,-84.771746,1
 2026,Webb County Detention Center,TX,Private,27.3698188,-99.4902136,1
-2026,Winn Correctional Center,LA,Private,31.849565,-92.801514,2
+2026,Winn Correctional Center,LA,Private,31.849565,-92.801514,3
 2026,NA,NA,NA,NA,NA,1
