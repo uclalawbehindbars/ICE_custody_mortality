@@ -108,15 +108,16 @@ bbdp_ice_deaths:
     Roberto Jimenez Gutierrez_2026-10-24:
       place_of_death: "Otay Mesa Detention Center\nSan Diego, California"
     Luis Sandoval_2026-10-23:
-      place_of_death: "Folkston ICE Processing Center,\nFolkston, Georgia"
+      place_of_death: "Folkston ICE Processing Center\nFolkston, Georgia"
     Emiliano Andrade-Covarrubias_2026-10-17:
-      place_of_death: "Rio Grande Processing Center,\n Laredo, Texas"
+      place_of_death: "Rio Grande Processing Center\n Laredo, Texas"
     Julian Curo Churata_2026-09-29:
       place_of_death: "Ochsner Louisiana State University Health\nMonroe, Louisiana"
     Carlos Josué Marchena_2026-09-18:
-      place_of_death: "Winn Parish Medical Center,\nWinnfield, Louisiana"
+      place_of_death: "Winn Parish Medical Center\nWinnfield, Louisiana"
     Lian Yong Wei_2026-08-23:
       place_of_death: "Commonwealth Health Care Corporation Emergency Room\nSaipan, Northern Mariana Islands"
+      detention_center: Commonwealth Health Care Corporation
     Edvin Jovanny Lopez Cornejo_2026-08-01:
       place_of_death: "Delaney Hall\nNewark, New Jersey"
     Felix Alcorta Rodriguez_2026-06-19:
@@ -868,6 +869,7 @@ bbdp_ice_deaths:
       right: facilities
       by: detention_center_id
   filters:
+    - "!(name == 'Gustavo Rivera Napoli' & dod == ymd('2026-10-25'))"
     - "!(name == 'Jose Chajon-Raxon')" #no dod avail 8/18/28
     - "!(name == 'Marvin Alexander Mejia Alvarado')" #no dod avail 8/18/26
     - "!(name == 'Prisciliano Trejo Ricano' & dod == ymd('2026-07-22'))"
