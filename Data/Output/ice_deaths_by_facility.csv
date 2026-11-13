@@ -2,8 +2,8 @@ detention_center_name,detention_center_type,latitude,longitude,deaths_n
 Eloy Detention Center,Private,32.817677,-111.51927,17
 Stewart Detention Center,Private,32.036676,-84.771746,15
 Krome North Service Processing Center,Private,25.76032,-80.496826,14
+Otay Mesa Detention Center,Private,32.576525,-116.915478,11
 Adelanto ICE Processing Center,Private,34.557729,-117.441865,10
-Otay Mesa Detention Center,Private,32.576525,-116.915478,10
 Columbia Care Center,Private,34.075744,-80.979724,9
 Houston Contract Detention Facility,Private,29.950836,-95.312188,9
 Port Isabel Service Processing Center,Private,26.157941,-97.35047,8
@@ -65,6 +65,7 @@ Catahoula Correctional Center,Private,31.860451,-91.962215,1
 Centro Medico Hospital,Public,18.39152,-66.07489,1
 Cibola County Correctional Center,Private,35.179783,-107.907649,1
 Clinton County Correctional Facility,Public,41.154871,-77.336887,1
+Commonwealth Health Care Corporation,NA,15.185048,145.746726,1
 Dallas County Jail,Public,32.776299,-96.815601,1
 El Centro Service Processing Center,Private,32.802962,-115.569768,1
 El Paso County Jail,Public,38.788166,-104.77912,1
@@ -123,4 +124,3 @@ Weber County Jail,Public,41.24009,-111.993298,1
 Wicomico County Corrections Center,Public,38.4084909,-75.5833224,1
 Worcester County Jail,Public,38.170007,-75.375834,1
 Wyatt Detention Center,Private,41.892811,-71.3832,1
-NA,NA,NA,NA,1

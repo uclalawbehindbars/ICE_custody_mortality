@@ -234,6 +234,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2025,Stewart Detention Center,GA,Private,32.036676,-84.771746,2
 2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,2
 2026,Camp East Montana,TX,Private,31.812729,-106.298333,2
+2026,Commonwealth Health Care Corporation,MP,NA,15.185048,145.746726,1
 2026,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,1
 2026,Delaney Hall Detention Facility,NJ,Private,40.717437,-74.127789,1
 2026,FDC Miami,FL,Public,25.778491,-80.193199,1
@@ -247,6 +248,7 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2026,Larkin Behavioral Health Center,FL,Private,26.021177,-80.180662,1
 2026,Louisiana ICE Processing Center,LA,Private,30.941263,-91.568381,1
 2026,Miami Correctional Facility,IN,Public,40.644997,-86.132978,2
+2026,Otay Mesa Detention Center,CA,Private,32.576525,-116.915478,1
 2026,Port Isabel Service Processing Center,TX,Private,26.157941,-97.35047,1
 2026,Richwood Correctional Center,LA,Private,32.463426,-92.087402,1
 2026,Rio Grande Detention Center,TX,Private,27.377813,-99.489677,1
@@ -254,4 +256,3 @@ calendar_year,detention_center_name,detention_center_state,detention_center_type
 2026,Stewart Detention Center,GA,Private,32.036676,-84.771746,1
 2026,Webb County Detention Center,TX,Private,27.3698188,-99.4902136,1
 2026,Winn Correctional Center,LA,Private,31.849565,-92.801514,3
-2026,NA,NA,NA,NA,NA,1

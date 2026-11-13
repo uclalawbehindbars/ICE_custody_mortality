@@ -226,6 +226,7 @@ fiscal_year,detention_center_name,detention_center_state,detention_center_type,l
 2026,Adams County Detention Center,MS,Private,31.569175,-91.230469,1
 2026,Adelanto ICE Processing Center,CA,Private,34.557729,-117.441865,3
 2026,Camp East Montana,TX,Private,31.812729,-106.298333,3
+2026,Commonwealth Health Care Corporation,MP,NA,15.185048,145.746726,1
 2026,Dallas Field Office Hold Room,TX,Public,32.823622,-96.872156,1
 2026,Delaney Hall Detention Facility,NJ,Private,40.717437,-74.127789,2
 2026,FDC Miami,FL,Public,25.778491,-80.193199,1
@@ -251,6 +252,6 @@ fiscal_year,detention_center_name,detention_center_state,detention_center_type,l
 2026,Stewart Detention Center,GA,Private,32.036676,-84.771746,1
 2026,Webb County Detention Center,TX,Private,27.3698188,-99.4902136,1
 2026,Winn Correctional Center,LA,Private,31.849565,-92.801514,3
-2026,NA,NA,NA,NA,NA,1
 2027,Folkston ICE Processing Center,GA,Private,30.87638,-81.977941,1
+2027,Otay Mesa Detention Center,CA,Private,32.576525,-116.915478,1
 2027,Rio Grande Detention Center,TX,Private,27.377813,-99.489677,1
