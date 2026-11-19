@@ -26,11 +26,21 @@ services:
       - renv-library:/opt/renv/library
     working_dir: /project
 
-  pipeline:
+  validate:
     build:
       context: .
       dockerfile: Dockerfile
-    command: Rscript Code/ice_mortality_validation.R && Rscript Code/ice_mortality_analysis.R
+    command: Rscript Code/ice_mortality_validation.R
+    volumes:
+      - .:/project
+      - renv-cache:/opt/renv/cache
+      - renv-library:/opt/renv/library
+    working_dir: /project
+  analyze:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: Rscript Code/ice_mortality_analysis.R
     volumes:
       - .:/project
       - renv-cache:/opt/renv/cache
